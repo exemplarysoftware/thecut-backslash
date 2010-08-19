@@ -1,0 +1,218 @@
+/*@import url(reset.css);*/
+
+html, body {
+  background-color: #cfcfcf;
+  /*color: #000000;
+  font-family: "Frutiger", "Frutiger Linotype", "Univers", "Calibri",
+    "Gill Sans", "Gill Sans MT", "Myriad Pro", "Myriad", "DejaVu Sans Condensed",
+    "Liberation Sans", "Nimbus Sans L", "Tahoma", "Geneva", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;*/
+}
+
+
+#container {
+  width: 982px;
+  margin: 0 auto;
+}
+
+
+#container #header {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+  #container #header #branding #site-name {
+    margin: 40px 0 0 0;
+    padding: 0;
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #container #header #user-tools {
+    margin: 40px 0 0 0 ;
+    color: #00aeef;
+  }
+  
+  #container #header #user-tools .userlinks,
+  #container #header #user-tools .userlinks a {
+    color: #000000;
+  }
+  
+  #container #header .nav {
+    display: block !important;
+    height: 50px;
+    margin: 30px 0 20px 0;
+    padding: 0 5px 0 5px;
+    background-color: #000000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    line-height: 50px;
+  }
+    
+    #container #header ul.nav li {
+      display: inline;
+      margin: 0;
+      padding: 0 15px 0 15px;
+      border-right: solid 1px #ffffff;
+      list-style-type: none;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    
+    /*#container #header ul.nav li:last-child,
+    #container #header ul.nav li.last {
+      border-style: none;
+    }*/
+
+
+#container .breadcrumbs {
+  margin: 0;
+  padding: 20px 20px 15px 20px;
+  background-color: #ffffff;
+  background-image: none;
+  border-style: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  color: #000000;
+}
+  
+  #container .breadcrumbs a {
+    color: #000000;
+  }
+  
+  #container .breadcrumbs .active {
+    color: #00aeef;
+  }
+
+
+#container .messagelist {
+  margin: 0;
+  padding: 0 20px 0 20px;
+  background-color: #ffffff;
+}
+  
+  #container ul.messagelist li {
+    height: 40px;
+    margin: 0;
+    padding: 0 0 0 45px;
+    background-color: #c7e0c4;
+    background-image: url("../images/busaraadmin/icon_success.gif");
+    background-position: 20px center;
+    border-top: solid 1px #575555;
+    color: #000000;
+    line-height: 40px;
+  }
+
+
+#container #content {
+  margin: 0;
+  padding: 0 20px 20px 20px;
+  background-color: #ffffff;
+  border-style: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+  
+  /*#container #content h1 {
+    display: none;
+  }*/
+  
+  #container #content fieldset,
+  #container #content .inline-group {
+    margin: 0 0 2px 0;
+    background-color: #e5e5e5;
+    border-style: none;
+  }
+    
+    #container #content h1,
+    #container #content fieldset h2,
+    #container #content .inline-group h2 {
+      margin: 0;
+      padding: 0 20px 0 20px;
+      height: 30px;
+      background-color: #000000;
+      background-image: none;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+    
+    #container #content fieldset .form-row {
+      border-style: none;
+    }
+
+    #container #content fieldset label {
+      text-align: right;
+      text-transform: capitalize;
+    }
+    
+    #container #content fieldset input[type="text"] {
+      height: 28px;
+      border: solid 1px #b3b3b3;
+      font-size: 16px;
+      line-height: 28px;
+    }
+    
+    #container #content .submit-row {
+      margin: 20px 0 20px 0;
+      padding: 15px 20px;
+      background-color: #e5e5e5;
+      background-image: none;
+      border-style: none;
+    }
+      
+      #container #content .submit-row .deletelink-box,
+      #container #content .submit-row input {
+        margin: 0 0 0 20px;
+        padding: 0 15px 0 15px;
+        height: 30px;
+        background-color: #9f9f9f;
+        background-image: none;
+        border-style: none;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        color: #ffffff;
+        line-height: 30px;
+        cursor: pointer;
+      }
+      
+      #container #content .submit-row .deletelink-box {
+        background-color: #ff0000;
+        margin: 0;
+        padding: 0;
+      }
+        
+        #container #content .submit-row .deletelink-box a {
+          padding: 0 10px 0 30px;
+          background-image: url("../images/busaraadmin/icon_deletelink.gif");
+          background-position: 10px center;
+          color: #ffffff;
+        }
+      
+      #container #content .submit-row input.default {
+        padding: 0 30px 0 30px;
+        background-color: #00aeef;
+        text-transform: uppercase;
+      }
+
+
+ul.object-tools {
+  display: none;
+}
+
+

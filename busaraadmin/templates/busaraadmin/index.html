@@ -1,0 +1,14 @@
+{% extends "admin/index.html" %}
+{% load i18n %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link href="{{ MEDIA_URL }}stylesheets/busaraadmin.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block userlinks %}{% include "busaraadmin/_userlinks.html" %}{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs"><span class="active">{% trans "Home" %}</span></div>
+{% endblock %}
+

@@ -1,0 +1,26 @@
+{% extends "admin/change_list.html" %}
+{% load adminmedia admin_list i18n %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link href="{{ MEDIA_URL }}stylesheets/busaraadmin.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block userlinks %}{% include "busaraadmin/_userlinks.html" %}{% endblock %}
+
+{% block breadcrumbs %}{% if not is_popup %}
+<div class="breadcrumbs">
+  <a href="../../">
+    {% trans "Home" %}
+  </a>
+  {% comment %}
+   &gt; 
+   <a href="../">
+     {{ app_label|capfirst }}
+  </a>
+  {% endcomment %}
+  &gt; 
+  <span class="active">{{ cl.opts.verbose_name_plural|capfirst }}</span>
+</div>
+{% endif %}{% endblock %}
+
