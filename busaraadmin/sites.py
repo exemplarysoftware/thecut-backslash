@@ -1,9 +1,12 @@
 from busara.busaraadmin.options import ModelAdmin
 from django.contrib.admin import sites
 
+
 class AdminSite(sites.AdminSite):
     actions = []
     index_template = 'busaraadmin/index.html'
+    login_template = 'busaraadmin/login.html'
+    app_index_template = 'busaraadmin/app_index.html'
     
     def register(self, model_or_iterable, admin_class=None, **options):
         if admin_class is None:

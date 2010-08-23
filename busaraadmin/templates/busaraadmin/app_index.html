@@ -1,0 +1,17 @@
+{% extends "admin/app_index.html" %} 
+{% load i18n %} 
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link href="{{ MEDIA_URL }}stylesheets/busaraadmin.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block userlinks %}{% include "busaraadmin/_userlinks.html" %}{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">{% if not is_popup %}<a href="../">
+{% trans "Home" %}</a> &rsaquo; 
+{% for app in app_list %}
+{% blocktrans with app.name as name %}{{ name }}{% endblocktrans %}
+{% endfor %}{% endif %}</div>{% endblock %}
+

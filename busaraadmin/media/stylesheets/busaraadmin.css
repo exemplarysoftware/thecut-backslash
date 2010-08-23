@@ -164,11 +164,16 @@ html, body {
       text-transform: capitalize;
     }
     
+    #container #content fieldset select,
     #container #content fieldset input[type="text"] {
       height: 28px;
       border: solid 1px #b3b3b3;
       font-size: 16px;
       line-height: 28px;
+    }
+    
+    #container #content fieldset select[multiple="multiple"] {
+      height: 200px;
     }
     
     #container #content .submit-row {
