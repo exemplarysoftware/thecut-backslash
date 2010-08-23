@@ -31,6 +31,10 @@ html, body {
     text-transform: uppercase;
   }
   
+    #container #header #branding #site-name a {
+      color: #000000;
+    }
+  
   #container #header #user-tools {
     margin: 40px 0 0 0 ;
     color: #00aeef;
@@ -211,8 +215,40 @@ html, body {
       }
 
 
+/* General */
+form input[type="submit"] {
+  margin: 0;
+  padding: 0 15px 0 15px;
+  height: 30px;
+  background-color: #9f9f9f;
+  background-image: none;
+  border-style: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #ffffff;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+/**/
 ul.object-tools {
   display: none;
 }
 
+
+/* Change List */
+body.change-list ul.object-tools {
+  display: block;
+}
+
+/* Dashboard */
+body.dashboard #content-related {
+  display: none;
+}
+
+body.dashboard #content {
+  width: auto;
+  margin: 0 !important;
+}
 
