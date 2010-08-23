@@ -10,8 +10,8 @@
 
 {% block breadcrumbs %}
 <div class="breadcrumbs">{% if not is_popup %}<a href="../">
-{% trans "Home" %}</a> &rsaquo; 
+{% trans "Home" %}</a> &gt; 
 {% for app in app_list %}
-{% blocktrans with app.name as name %}{{ name }}{% endblocktrans %}
+<span class="active">{% blocktrans with app.name as name %}{{ name }}{% endblocktrans %}</span>
 {% endfor %}{% endif %}</div>{% endblock %}
 
