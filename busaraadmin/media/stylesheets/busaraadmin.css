@@ -221,6 +221,15 @@ html, body {
 
 
 /* General */
+form .form-row input.vTextField {
+  width: 700px;
+}
+
+form .form-row textarea {
+  height: 300px;
+  width: 700px;
+}
+
 form input[type="submit"] {
   margin: 0;
   padding: 0 15px 0 15px;
@@ -236,16 +245,117 @@ form input[type="submit"] {
   cursor: pointer;
 }
 
-/**/
+.row1 {
+  background-color: #f2fbfe;
+}
+
+a:link, a:visited {
+  color: #00b1f3;
+}
+
 ul.object-tools {
   display: none;
 }
 
 
 /* Change List */
+body.change-list #content-main {
+  position: relative;
+}
+
 body.change-list ul.object-tools {
   display: block;
+  float: none;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  margin: 0;
+  z-index: 999;
 }
+  
+  body.change-list ul.object-tools li,
+  body.change-list ul.object-tools li a,
+  body.change-list ul.object-tools li a:hover {
+    background-image: none;
+  }
+  
+  body.change-list ul.object-tools li a,
+  body.change-list ul.object-tools li a:hover {
+    margin: 0 0 0 20px;
+    padding: 0 15px 0 15px;
+    height: 25px;
+    background-color: #00b1f3;
+    background-image: none;
+    border-style: none;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #ffffff;
+    line-height: 25px;
+    cursor: pointer;
+  }
+
+body.change-list #changelist {
+  border-style: none;
+}
+  
+  body.change-list #changelist form {
+    margin: 57px 0 0 0;
+    border: solid 1px #cfcfcf;
+  }
+  
+  body.change-list #changelist #toolbar {
+    background-color: #ffffff;
+    background-image: none;
+    border-style: none;
+  }
+    
+    body.change-list #changelist #toolbar form {
+      position: absolute;
+      top: 15px;
+      margin: 0;
+      border-style: none;
+    }
+      
+      body.change-list #changelist #toolbar form input[type="text"] {
+        margin: 0;
+        height: 19px;
+        width: 240px;
+      }
+      
+      body.change-list #changelist #toolbar form input[type="submit"] {
+        margin: 0 0 0 6px;
+        height: 25px;
+        width: 60px;
+      }
+    
+    body.change-list #changelist #toolbar #changelist-search label {
+      display: none;
+    }
+  
+  body.change-list #changelist form table th,
+  body.change-list #changelist form table td {
+    padding: 9px 19px 9px 19px;
+    border-bottom: solid 1px #cfcfcf;
+  }
+  
+  body.change-list #changelist form table thead th {
+    background-color: #e7e7e7;
+    background-image: none;
+    border-left: solid 1px #cfcfcf;
+    color: #000000;
+    text-align: left;
+  }
+  
+  body.change-list #changelist form table thead th a {
+    color: #000000;
+  }
+  
+  body.change-list #changelist p.paginator {
+    background-color: #fafafa;
+    background-image: none;
+  }
+
 
 /* Dashboard */
 body.dashboard #content-related {
