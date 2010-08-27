@@ -261,6 +261,7 @@ ul.object-tools {
 /* Change List */
 body.change-list #content-main {
   position: relative;
+  padding: 57px 0 0 0;
 }
 
 body.change-list ul.object-tools {
@@ -296,11 +297,11 @@ body.change-list ul.object-tools {
   }
 
 body.change-list #changelist {
+  background-image: none !important;
   border-style: none;
 }
   
   body.change-list #changelist form {
-    margin: 57px 0 0 0;
     border: solid 1px #cfcfcf;
   }
   
@@ -312,7 +313,7 @@ body.change-list #changelist {
     
     body.change-list #changelist #toolbar form {
       position: absolute;
-      top: 15px;
+      top: -42px;
       margin: 0;
       border-style: none;
     }
@@ -333,10 +334,64 @@ body.change-list #changelist {
       display: none;
     }
   
+  body.change-list #changelist .xfull {
+    width: 100% !important;
+  }
+  
+  body.change-list #changelist .toplinks {
+    height: 29px;
+    margin: 0 !important;
+    background-color: #ffffff;
+    background-image: none;
+    border-bottom-style: none !important;
+    border-top: solid 1px #cfcfcf;
+  }
+
+    body.change-list #changelist .toplinks li {
+      padding: 0 0 0 20px;
+      line-height: 29px;
+    }
+  
+  body.change-list #changelist #changelist-filter {
+    position: relative;
+    float: right;
+    width: 220px;
+    background-color: #ffffff;
+    border: 1px solid #cfcfcf;
+  }
+  
+    body.change-list #changelist #changelist-filter h2 {
+      padding: 0 12px;
+      background-image: none;
+      background-color: #e7e7e7;
+      border-bottom: 1px solid #cfcfcf;
+      color: #000000;
+      line-height: 29px;
+    }
+    
+    body.change-list #changelist #changelist-filter h3 {
+      color: #000000;
+    }
+    
+    body.change-list #changelist #changelist-filter .selected a {
+      color: #00b1f3 !important;
+    }
+  
+  body.change-list #changelist.filtered form {
+    width: 703px;
+  }
+  
+  body.change-list #changelist form table {
+    width: 100% !important;
+    margin: 0 !important;
+    border-style: none !important;
+  }
+  
   body.change-list #changelist form table th,
   body.change-list #changelist form table td {
     padding: 9px 19px 9px 19px;
     border-bottom: solid 1px #cfcfcf;
+    border-left: solid 1px #cfcfcf;
   }
   
   body.change-list #changelist form table thead th {
@@ -352,8 +407,12 @@ body.change-list #changelist {
   }
   
   body.change-list #changelist p.paginator {
+    margin: 0 !important;
+    padding: 0 20px;
     background-color: #fafafa;
     background-image: none;
+    border-style: none;
+    line-height: 50px;
   }
 
 
