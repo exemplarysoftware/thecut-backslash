@@ -161,7 +161,7 @@ html, body {
 
     #container #content fieldset label {
       text-align: right;
-      text-transform: capitalize;
+      /*text-transform: capitalize;*/
     }
     
     #container #content fieldset select,
