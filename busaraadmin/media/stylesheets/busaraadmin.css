@@ -394,6 +394,11 @@ body.change-list #changelist {
     border-left: solid 1px #cfcfcf;
   }
   
+  body.change-list #changelist form table th:first-child,
+  body.change-list #changelist form table td:first-child {
+    min-width: 250px;
+  }
+  
   body.change-list #changelist form table thead th {
     background-color: #e7e7e7;
     background-image: none;
