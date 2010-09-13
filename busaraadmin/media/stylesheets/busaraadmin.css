@@ -176,6 +176,32 @@ html, body {
       height: 200px;
     }
     
+    
+    /* Inline */
+    
+    #container #content .inline-group .inline-related h3 {
+      padding: 0 20px;
+      background-color: #ffffff;
+      background-image: none;
+      line-height: 40px;
+    }
+    
+    #container #content .inline-group fieldset .form-row {
+      margin: 20px;
+      border-bottom: solid 1px #b7b7b7;
+    }
+      
+      #container #content .inline-group fieldset .form-row label {
+        margin-left: -20px;
+      }
+      
+      #container #content .inline-group fieldset .form-row:last-child {
+        border-bottom-style: none;
+      }
+    
+    
+    /* Submit */
+    
     #container #content .submit-row {
       margin: 20px 0 20px 0;
       padding: 15px 20px;
