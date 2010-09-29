@@ -96,7 +96,7 @@ class AbstractSiteResourceWithSlug(AbstractSiteResource):
             self.slug = generate_unique_slug(self.title,
                 self.__class__, queryset=self.__class__.objects.filter(
                 site=self.site))
-        super(self.__class__, self).save(*args, **kwargs)
+        super(AbstractSiteResourceWithSlug, self).save(*args, **kwargs)
 
 
 class AbstractSitesResource(AbstractResource):
@@ -128,5 +128,5 @@ class AbstractSitesResourceWithSlug(AbstractSitesResource):
         if not self.slug:
             self.slug = generate_unique_slug(self.title,
                 self.__class__)
-        super(self.__class__, self).save(*args, **kwargs)
+        super(AbstractSitesResourceWithSlug, self).save(*args, **kwargs)
 
