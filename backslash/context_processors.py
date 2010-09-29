@@ -1,10 +1,10 @@
 from django.conf import settings
 from django.utils.safestring import mark_safe
 from django.utils.text import capfirst
-from busara import busaraadmin
+from thecut import backslash
 
 
-site = busaraadmin.site
+site = backslash.site
 
 def applist(request):
     # http://djangosnippets.org/snippets/1921/
