@@ -1,12 +1,12 @@
-from busara.busaraadmin.options import ModelAdmin
+from thecut.backslash.options import ModelAdmin
 from django.contrib.admin import sites
 
 
 class AdminSite(sites.AdminSite):
     actions = []
-    index_template = 'busaraadmin/index.html'
-    login_template = 'busaraadmin/login.html'
-    app_index_template = 'busaraadmin/app_index.html'
+    index_template = 'backslash/index.html'
+    login_template = 'backslash/login.html'
+    app_index_template = 'backslash/app_index.html'
     
     def register(self, model_or_iterable, admin_class=None, **options):
         if admin_class is None:
@@ -14,5 +14,5 @@ class AdminSite(sites.AdminSite):
         super(AdminSite, self).register(model_or_iterable,
             admin_class=admin_class, **options)
 
-site = AdminSite(name='busaraadmin')
+site = AdminSite(name='backslash')
 
