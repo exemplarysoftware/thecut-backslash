@@ -2,7 +2,7 @@ from django.contrib.admin.helpers import ACTION_CHECKBOX_NAME
 from django.contrib.admin.options import ModelAdmin, HORIZONTAL, VERTICAL
 from django.contrib.admin.options import StackedInline, TabularInline
 #from django.contrib.admin.sites import AdminSite, site
-from busara.busaraadmin.sites import site
+from thecut.backslash.sites import site
 from django.utils.importlib import import_module
 
 # A flag to tell us if autodiscover is running.  autodiscover will set this to
@@ -48,13 +48,13 @@ def autodiscover():
         # but doesn't actually try to import the module. So skip this app if
         # its admin.py doesn't exist
         try:
-            imp.find_module('busaraadmin', app_path)
+            imp.find_module('backslash', app_path)
         except ImportError:
             continue
 
         # Step 3: import the app's admin file. If this has errors we want them
         # to bubble up.
-        import_module("%s.busaraadmin" % app)
+        import_module("%s.backslash" % app)
     # autodiscover was successful, reset loading flag.
     LOADING = False
 
