@@ -2,26 +2,36 @@ from datetime import datetime
 from django.contrib.auth.models import User
 from django.contrib.sites.models import Site
 from django.db import models
+from tagging.fields import TagField
+from thecut.decorators import attach_call_to_actions, attach_mediaset
 from thecut.managers import QuerySetManager
 from thecut.utils import generate_unique_slug
 
 
+@attach_call_to_actions
+@attach_mediaset
 class AbstractResource(models.Model):
     """Abstract resource model."""
     title = models.CharField(max_length=200)
     headline = models.CharField(max_length=200, null=True, blank=True)
     content = models.TextField(null=True, blank=True)
     
-    publish_at = models.DateTimeField('publish date & time',
-        help_text='This page will only be viewable on the website \
-            if it is enabled, and this date and time has past.')
     is_enabled = models.BooleanField('enabled', default=True)
     is_indexable = models.BooleanField('indexable', default=True,
         help_text='Should this page be indexed by search engines?')
     is_featured = models.BooleanField('featured', default=False)
+    
     meta_description = models.CharField(max_length=200, null=True,
         blank=True, help_text='Optional short description for use by \
             search engines.')
+    tags = TagField(null=True, blank=True, help_text='Separate tags \
+        with spaces, put quotes around multiple-word tags.')
+    
+    publish_at = models.DateTimeField('publish date & time',
+        help_text='This item will only be viewable on the website \
+            if it is enabled, and this date and time has past.')
+    publish_by = models.ForeignKey(User,
+        related_name='%(class)s_publish_by_user', null=True, blank=True)
     
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
     created_by = models.ForeignKey(User, editable=False,
@@ -30,6 +40,9 @@ class AbstractResource(models.Model):
     updated_at = models.DateTimeField(auto_now=True, editable=False)
     updated_by = models.ForeignKey(User, editable=False,
         related_name='%(class)s_updated_by_user')
+    
+    template = models.CharField(max_length=100, null=True, blank=True,
+        help_text='Example: "app/model_detail.html".')    
     
     objects = QuerySetManager()
     
