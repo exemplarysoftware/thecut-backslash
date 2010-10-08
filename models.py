@@ -8,24 +8,10 @@ from thecut.managers import QuerySetManager
 from thecut.utils import generate_unique_slug
 
 
-@attach_call_to_actions
-@attach_mediaset
-class AbstractResource(models.Model):
-    """Abstract resource model."""
-    title = models.CharField(max_length=200)
-    headline = models.CharField(max_length=200, null=True, blank=True)
-    content = models.TextField(null=True, blank=True)
-    
+class AbstractBaseResource(models.Model):
+    """Abstract base resource model."""
     is_enabled = models.BooleanField('enabled', default=True)
-    is_indexable = models.BooleanField('indexable', default=True,
-        help_text='Should this page be indexed by search engines?')
     is_featured = models.BooleanField('featured', default=False)
-    
-    meta_description = models.CharField(max_length=200, null=True,
-        blank=True, help_text='Optional short description for use by \
-            search engines.')
-    tags = TagField(null=True, blank=True, help_text='Separate tags \
-        with spaces, put quotes around multiple-word tags.')
     
     publish_at = models.DateTimeField('publish date & time',
         help_text='This item will only be viewable on the website \
@@ -41,15 +27,12 @@ class AbstractResource(models.Model):
     updated_by = models.ForeignKey(User, editable=False,
         related_name='%(class)s_updated_by_user')
     
-    template = models.CharField(max_length=100, null=True, blank=True,
-        help_text='Example: "app/model_detail.html".')    
-    
     objects = QuerySetManager()
     
     class Meta:
         abstract = True
         get_latest_by = 'publish_at'
-        ordering = ['title']
+        ordering = ['-created_at']
     
     class QuerySet(models.query.QuerySet):
         def active(self):
@@ -60,18 +43,45 @@ class AbstractResource(models.Model):
         def featured(self):
             """Return featured objects."""
             return self.filter(is_featured=True)
-        
+    
+    @property
+    def is_active(self):
+        return self in self.__class__.objects.active().filter(
+            pk=self.pk)
+
+
+@attach_call_to_actions
+@attach_mediaset
+class AbstractResource(AbstractBaseResource):
+    """Abstract resource model."""
+    title = models.CharField(max_length=200)
+    headline = models.CharField(max_length=200, null=True, blank=True)
+    content = models.TextField(null=True, blank=True)
+    
+    is_indexable = models.BooleanField('indexable', default=True,
+        help_text='Should this page be indexed by search engines?')
+    meta_description = models.CharField(max_length=200, null=True,
+        blank=True, help_text='Optional short description for use by \
+            search engines.')
+    tags = TagField(null=True, blank=True, help_text='Separate tags \
+        with spaces, put quotes around multiple-word tags.')
+    
+    template = models.CharField(max_length=100, null=True, blank=True,
+        help_text='Example: "app/model_detail.html".')    
+    
+    objects = QuerySetManager()
+    
+    class Meta(AbstractBaseResource.Meta):
+        abstract = True
+        ordering = ['title']
+    
+    class QuerySet(AbstractBaseResource.QuerySet):
         def indexable(self):
             """Return active, indexable objects."""
             return self.active().filter(is_indexable=True)
     
     def __unicode__(self):
         return self.title
-   
-    @property
-    def is_active(self):
-        return self in self.__class__.objects.active().filter(
-            pk=self.pk)
     
     @property
     def heading(self):
