@@ -108,7 +108,7 @@ html, body {
     margin: 0;
     padding: 0 0 0 45px;
     background-color: #c7e0c4;
-    background-image: url("../images/backslash/icon_success.gif");
+    background-image: url("icon_success.gif");
     background-position: 20px center;
     border-top: solid 1px #575555;
     color: #000000;
@@ -234,7 +234,7 @@ html, body {
         
         #container #content .submit-row .deletelink-box a {
           padding: 0 10px 0 30px;
-          background-image: url("../images/backslash/icon_deletelink.gif");
+          background-image: url("icon_deletelink.gif");
           background-position: 10px center;
           color: #ffffff;
         }
