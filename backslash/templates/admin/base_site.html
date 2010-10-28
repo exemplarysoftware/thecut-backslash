@@ -1,0 +1,19 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ site.name }} - Backslash{% endblock %}
+
+{% block branding %}
+  <h1 id="site-name"><a href="/admin/">{{ site.name }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}
+  <ul class="nav" style="display: none;">
+    {% for app in adm_app_list %}
+    {% for model in app.models %}
+    <li><a href="{{ model.admin_url }}">{{ model.name }}</a></li>
+    {% endfor %}
+    {% endfor %}
+  </ul>
+{% endblock %}
+
