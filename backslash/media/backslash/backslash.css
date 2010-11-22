@@ -60,7 +60,7 @@ html, body {
     #container #header ul.nav li {
       display: inline;
       margin: 0;
-      padding: 0 10px 0 10px;
+      padding: 0 8px 0 8px;
       border-right: solid 1px #ffffff;
       list-style-type: none;
       font-size: 10px;
