@@ -16,6 +16,11 @@ class AbstractBaseResource(models.Model):
     publish_at = models.DateTimeField('publish date & time',
         help_text='This item will only be viewable on the website \
             if it is enabled, and this date and time has past.')
+    expire_at = models.DateTimeField('expiry date & time',
+        null=True, blank=True,
+        help_text='This item will no longer be viewable on the \
+            website if this date and time has past. Leave blank if \
+            you do not wish this item to expire.')
     publish_by = models.ForeignKey(User,
         related_name='%(class)s_publish_by_user', null=True, blank=True)
     
@@ -37,8 +42,11 @@ class AbstractBaseResource(models.Model):
     class QuerySet(models.query.QuerySet):
         def active(self):
             """Return active (enabled, published) objects."""
+            now = datetime.now()
             return self.filter(is_enabled=True).filter(
-                publish_at__lte=datetime.now())
+                models.Q(publish_at__lte=now),
+                models.Q(expire_at__isnull=True) |
+                models.Q(expire_at__gte=now))
         
         def featured(self):
             """Return featured objects."""
