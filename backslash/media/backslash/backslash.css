@@ -445,7 +445,14 @@ body.change-list #changelist {
     border-style: none;
     line-height: 50px;
   }
-
+  
+  body.change-list #changelist p.paginator input[type="submit"] {
+    margin: 10px 0 0 20px;
+    background-color: #00aeef;
+    background-image: none;
+    border-style: none;
+    cursor: pointer;
+  }
 
 /* Dashboard */
 body.dashboard #content-related {
