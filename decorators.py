@@ -10,7 +10,7 @@ if 'thecut.ctas' in settings.INSTALLED_APPS:
     except ImportError:
         pass
 # Compatibility for version 0.01 of ctas app.
-elif: 'ctas' in settings.INSTALLED_APPS:
+elif 'ctas' in settings.INSTALLED_APPS:
     try:
         from ctas.decorators import attach_call_to_actions
     except ImportError:
@@ -26,7 +26,7 @@ if 'thecut.media' in settings.INSTALLED_APPS:
     except ImportError:
         pass
 # Compatibility for version 0.01 of media app.
-elif: 'media' in settings.INSTALLED_APPS:
+elif 'media' in settings.INSTALLED_APPS:
     try:
         from media.decorators import attach_mediaset
     except ImportError:
