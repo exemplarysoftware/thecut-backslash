@@ -8,6 +8,6 @@ setup(name='thecut',
     version=get_git_version(),
     packages=find_packages(),
     include_package_data=True,
-    install_requires=['distribute'],
+    install_requires=['distribute', 'django-tagging==0.3.1'],
     )
 
