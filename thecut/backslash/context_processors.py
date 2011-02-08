@@ -49,10 +49,9 @@ def model_list(request):
                 'model_name': model_name,
                 'name': capfirst(model._meta.verbose_name_plural),
                 'url': reverse('backslash:%(app_label)s_%(model_name)s_changelist' %({'app_label': app_label, 'model_name': model_name}))}]
-    model_list.sort(lambda x, y: cmp(x['name'], y['name']))
     
     order = getattr(settings, 'BACKSLASH_MODEL_ORDER', [])
-    order.reverse()
+    
     for item in order:
         app_label, model_name = item.lower().split('.')
         for model_dict in model_list:
@@ -61,5 +60,6 @@ def model_list(request):
                 model_list.remove(model_dict)
                 model_list.insert(0, model_dict)
     
+    model_list.reverse()
     return {'backslash_model_list': model_list}
 
