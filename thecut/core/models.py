@@ -5,6 +5,7 @@ from django.db import models
 from tagging.fields import TagField
 from thecut.core.decorators import attach_call_to_actions, attach_mediaset
 from thecut.core.managers import QuerySetManager
+from thecut.core.signals import set_publish_at, set_site
 from thecut.core.utils import generate_unique_slug
 
 
@@ -56,6 +57,8 @@ class AbstractBaseResource(models.Model):
     def is_active(self):
         return self in self.__class__.objects.active().filter(
             pk=self.pk)
+
+models.signals.post_init.connect(set_publish_at)
 
 
 @attach_call_to_actions
@@ -110,6 +113,8 @@ class AbstractSiteResource(AbstractResource):
             """Return objects for the current site."""
             site = Site.objects.get_current()
             return self.filter(site=site)
+
+models.signals.post_init.connect(set_site)
 
 
 class AbstractSiteResourceWithSlug(AbstractSiteResource):
