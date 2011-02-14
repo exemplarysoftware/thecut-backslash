@@ -1,2 +1,24 @@
 The Cut Django App: Backslash and Core
 
+
+
+===========
+thecut.core
+===========
+
+To install this application (whilst in the project's activated
+virtualenv)::
+    pip install git+ssh://git@git.thecut.net.au/thecut-core@0.03#egg=thecut
+
+
+Optionally, add the ``current_site`` context processor to the
+project's ``TEMPLATE_CONTEXT_PROCESSORS`` setting::
+
+    TEMPLATE_CONTEXT_PROCESSORS = (
+        ...
+        'thecut.core.context_processors.current_site',
+    )
+
+There is no need to add ``thecut.core`` to your project's
+``INSTALLED_APPS`` setting, as it provides only abstract models.
+
