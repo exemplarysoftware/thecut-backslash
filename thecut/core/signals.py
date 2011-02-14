@@ -1,5 +1,4 @@
 from datetime import datetime
-from django import dispatch
 from django.contrib.sites.models import Site
 
 
