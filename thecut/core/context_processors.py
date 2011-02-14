@@ -7,5 +7,5 @@ def current_site(request):
         site = Site.objects.get_current()
     except Site.DoesNotExist:
         site = None
-    return {'site': site}
+    return {'current_site': site, 'site': site}
 
