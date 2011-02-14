@@ -1,5 +1,6 @@
 from datetime import datetime
 from django import forms
+from django.db.models import Max
 from django.contrib.sites.models import Site
 
 
@@ -12,4 +13,7 @@ class ModelAdminForm(forms.ModelForm):
             self.fields['site'].initial = Site.objects.get_current()
         if self.fields.get('sites', False):
             self.fields['sites'].initial = [Site.objects.get_current()]
+        if self.fields.get('order', False):
+            self.fields['order'].initial = self.Meta.model.objects.aggregate(
+                order=Max('order')).get('order', 0) + 1
 
