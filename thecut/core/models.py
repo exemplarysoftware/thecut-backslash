@@ -5,7 +5,22 @@ from django.db import models
 from tagging.fields import TagField
 from thecut.core.decorators import attach_call_to_actions, attach_mediaset
 from thecut.core.managers import QuerySetManager
+from thecut.core.signals import set_order, set_publish_at, set_site
 from thecut.core.utils import generate_unique_slug
+
+
+class OrderMixin(models.Model):
+    order = models.PositiveIntegerField(default=0)
+    
+    class Meta:
+        abstract = True
+    
+    def __init__(self, *args, **kwargs):
+        super(OrderMixin, self).__init__(*args, **kwargs)
+        ordering = getattr(self.__class__.Meta, 'ordering', [])
+        self.__class__.Meta.ordering = ['order'] + ordering
+
+models.signals.post_init.connect(set_order)
 
 
 class AbstractBaseResource(models.Model):
@@ -56,6 +71,8 @@ class AbstractBaseResource(models.Model):
     def is_active(self):
         return self in self.__class__.objects.active().filter(
             pk=self.pk)
+
+models.signals.post_init.connect(set_publish_at)
 
 
 @attach_call_to_actions
@@ -110,6 +127,8 @@ class AbstractSiteResource(AbstractResource):
             """Return objects for the current site."""
             site = Site.objects.get_current()
             return self.filter(site=site)
+
+models.signals.post_init.connect(set_site)
 
 
 class AbstractSiteResourceWithSlug(AbstractSiteResource):
