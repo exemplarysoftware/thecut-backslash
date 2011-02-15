@@ -23,8 +23,9 @@ def set_publish_at(sender, instance, **kwargs):
 def set_order(sender, instance, **kwargs):
     """If not set, set the instance's order value."""
     from thecut.core.models import OrderMixin
-    if issubclass(instance.__class__, OrderMixin) and not instance.pk:
-        instance.order = instance.order \
-            or instance.__class__.objects.aggregate(
-                order=Max('order')).get('order', 0) + 1
+    if issubclass(instance.__class__, OrderMixin) and not instance.pk \
+        and not instance.order:
+        order = instance.__class__.objects.aggregate(
+                order=Max('order')).get('order', 0)
+        instance.order = order and order + 1 or 0
 

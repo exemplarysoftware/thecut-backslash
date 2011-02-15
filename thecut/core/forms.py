@@ -14,6 +14,7 @@ class ModelAdminForm(forms.ModelForm):
         if self.fields.get('sites', False):
             self.fields['sites'].initial = [Site.objects.get_current()]
         if self.fields.get('order', False):
-            self.fields['order'].initial = self.Meta.model.objects.aggregate(
-                order=Max('order')).get('order', 0) + 1
+            order = self.Meta.model.objects.aggregate(
+                order=Max('order')).get('order', 0)
+            self.fields['order'].initial = order and order + 1 or 0
 
