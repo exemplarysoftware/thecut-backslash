@@ -27,5 +27,5 @@ def set_order(sender, instance, **kwargs):
         and not instance.order:
         order = instance.__class__.objects.aggregate(
                 order=Max('order')).get('order', 0)
-        instance.order = order and order + 1 or 0
+        instance.order = order + 1
 
