@@ -14,11 +14,7 @@ class OrderMixin(models.Model):
     
     class Meta:
         abstract = True
-    
-    def __init__(self, *args, **kwargs):
-        super(OrderMixin, self).__init__(*args, **kwargs)
-        ordering = getattr(self.__class__.Meta, 'ordering', [])
-        self.__class__.Meta.ordering = ['order'] + ordering
+        ordering = ['order']
 
 models.signals.post_init.connect(set_order)
 
