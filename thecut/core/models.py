@@ -78,6 +78,7 @@ class AbstractResource(AbstractBaseResource):
     title = models.CharField(max_length=200)
     headline = models.CharField(max_length=200, null=True, blank=True)
     content = models.TextField(null=True, blank=True)
+    featured_content = models.TextField(null=True, blank=True)
     
     is_indexable = models.BooleanField('indexable', default=True,
         help_text='Should this page be indexed by search engines?')
