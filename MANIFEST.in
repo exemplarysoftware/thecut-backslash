@@ -2,5 +2,3 @@ include RELEASE-VERSION
 include AUTHORS COPYING README INSTALL LICENCE
 graft thecut/backslash/static
 graft thecut/backslash/templates
-graft thecut/core/static
-graft thecut/core/templates

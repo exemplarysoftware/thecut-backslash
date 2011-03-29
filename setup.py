@@ -3,7 +3,7 @@ from version import get_git_version
 
 setup(name='thecut',
     author='The Cut', author_email='development@thecut.net.au',
-    url='http://projects.thecut.net.au/projects/thecut-core',
+    url='http://projects.thecut.net.au/projects/thecut-backslash',
     namespace_packages=['thecut'],
     version=get_git_version(),
     packages=find_packages(),
