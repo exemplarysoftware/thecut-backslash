@@ -1,0 +1,20 @@
+{% for name, menu in backslash_menu %}
+  {% if forloop.first %}<ul class="nav sf-menu">{% endif %}
+{% if request.user.is_authenticated %}
+    <li>
+      <a href="#">{{ name }}</a>
+      {% for name, link in menu %}
+        {% if forloop.first %}<ul class="menu">{% endif %}
+          <li><a href="{{ link }}">{{ name }}</a></li>
+        {% if forloop.last %}</ul>{% endif %}
+      {% endfor %}
+    </li>
+{% endif %}
+  {% if forloop.last %}</ul>{% endif %}
+{% empty %}
+  <ul class="nav" style="display: none;">
+    {% for model in backslash_model_list %}
+    <li><a href="{{ model.url }}">{{ model.name }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}

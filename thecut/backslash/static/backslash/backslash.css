@@ -1,4 +1,5 @@
 /*@import url(reset.css);*/
+@import url(superfish.css);
 
 html, body {
   background-color: #cfcfcf;
@@ -20,6 +21,8 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: transparent;
+  height: 129px;
+  overflow: visible;
 }
 
   #container #header #branding #site-name {
@@ -36,7 +39,7 @@ html, body {
     }
   
   #container #header #user-tools {
-    margin: 40px 0 0 0 ;
+    margin: 0;
     color: #00aeef;
   }
   
@@ -59,9 +62,9 @@ html, body {
     
     #container #header ul.nav li {
       display: inline;
-      margin: 0;
-      padding: 0 8px 0 8px;
-      border-right: solid 1px #ffffff;
+      /*margin: 10px 0;*/
+      padding: 0 8px;
+      border-right: solid 1px #333333;
       list-style-type: none;
       font-size: 10px;
       text-transform: uppercase;

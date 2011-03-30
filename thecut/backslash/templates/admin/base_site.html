@@ -8,10 +8,7 @@
 {% endblock %}
 
 {% block nav-global %}
-  <ul class="nav" style="display: none;">
-    {% for model in backslash_model_list %}
-    <li><a href="{{ model.url }}">{{ model.name }}</a></li>
-    {% endfor %}
-  </ul>
+{% load backslash_tags %}
+{% backslash_menu %}
 {% endblock %}
 
