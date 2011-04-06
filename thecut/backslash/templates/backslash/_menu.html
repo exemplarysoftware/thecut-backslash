@@ -1,5 +1,5 @@
 {% for name, menu in backslash_menu %}
-  {% if forloop.first %}<ul class="nav sf-menu">{% endif %}
+  {% if forloop.first %}<ul class="nav sf-menu" style="display: none;">{% endif %}
 {% if request.user.is_authenticated %}
     <li>
       <a href="#">{{ name }}</a>
