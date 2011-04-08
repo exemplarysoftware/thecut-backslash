@@ -6,7 +6,6 @@ register = template.Library()
 
 @register.inclusion_tag('backslash/_menu.html', takes_context=True)
 def backslash_menu(context):
-    print 'hello'
     backslash_menu_setting = getattr(settings, 'BACKSLASH_MENU', False)
     if backslash_menu_setting:
         module_string = '.'.join(backslash_menu_setting.split('.')[:-1])
