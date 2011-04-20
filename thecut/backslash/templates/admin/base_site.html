@@ -8,7 +8,8 @@
 {% endblock %}
 
 {% block nav-global %}
-{% load backslash_tags %}
-{% backslash_menu %}
+<div class="nav" style="display: none;">
+{% include "backslash/_menu.html" %}
+</div>
 {% endblock %}
 
