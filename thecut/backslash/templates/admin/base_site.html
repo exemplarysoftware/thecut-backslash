@@ -3,6 +3,11 @@
 
 {% block title %}{{ site.name }} - Backslash{% endblock %}
 
+{% block extrahead %}
+{{ block.super }}
+<!--[if lt IE 8]><script src="{{ MEDIA_URL }}backslash/browser-warning.js"></script><![endif]-->
+{% endblock %}
+
 {% block branding %}
   <h1 id="site-name"><a href="{% url admin:index %}">{{ site.name }}</a></h1>
 {% endblock %}
