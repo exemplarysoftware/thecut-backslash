@@ -1,0 +1,10 @@
+{% extends "registration/logged_out.html" %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link href="{{ MEDIA_URL }}backslash/backslash.css" type="text/css" rel="stylesheet" />
+  <link href="{{ MEDIA_URL }}stylesheets/backslash.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block breadcrumbs %}<div class="breadcrumbs"></div>{% endblock %}
+
