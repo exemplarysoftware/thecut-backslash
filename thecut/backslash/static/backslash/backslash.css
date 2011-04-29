@@ -105,19 +105,18 @@ html, body {
 
 
 #container .messagelist {
-  margin: 0;
-  padding: 0 20px 0 20px;
-  background-color: #ffffff;
+  margin: 0 -20px;
+  padding: 0 20px;
 }
   
   #container ul.messagelist li {
     height: 40px;
     margin: 0;
     padding: 0 0 0 45px;
-    background-color: #c7e0c4;
+    background-color: #e4ede1;
     background-image: url("icon_success.gif");
     background-position: 20px center;
-    border-top: solid 1px #575555;
+    border-top-style: none;
     color: #000000;
     line-height: 40px;
   }
@@ -158,6 +157,7 @@ html, body {
     }
     
     #container #content fieldset .form-row {
+      position: relative;
       padding: 0;
       border-style: none;
     }
@@ -169,11 +169,6 @@ html, body {
       margin: 10px 0 5px 0;
       padding: 0;
     }
-      
-      #container #content fieldset label.vCheckboxLabel.inline {
-        display: inline;
-        margin: 0 0 0 5px;
-      }
     
     #container #content fieldset input[type="text"],
     #container #content fieldset select,
@@ -197,6 +192,14 @@ html, body {
     
     #container #content fieldset select[multiple="multiple"] {
       height: 200px;
+    }
+    
+    #container #content fieldset select {
+      max-width: 400px;
+    }
+    
+    #container #content fieldset a.add-another {
+      display: none;
     }
     
     #container #content fieldset ul,
@@ -224,7 +227,6 @@ html, body {
     }
     
     /* Stacked Inline */
-    
     #container #content .inline-group .inline-related h3 {
       padding: 0;
       background-color: #ffffff;
@@ -236,6 +238,40 @@ html, body {
       margin: 0 0 20px 0;
     }
     
+    #container #content .inline-group .add-row {
+      background-color: transparent;
+      background-image: none;
+      border-style: none;
+    }
+    
+    /* Tabular Inline */
+    #container #content .inline-group .inline-related.tabular table {
+      margin: 15px 0 0 0;
+      border-style: none;
+    }
+    
+    #container #content .inline-group .inline-related.tabular table thead tr th,
+    #container #content .inline-group .inline-related.tabular table tbody tr.add-row td {
+      background-color: transparent;
+      background-image: none;
+      border-style: none;
+    }
+    
+    #container #content .inline-group .inline-related.tabular table td {
+      border-style: none !important;
+    }
+    
+    #container #content .inline-group .inline-related.tabular table tr.has_original td {
+      padding-top: 5px;
+    }
+    
+    #container #content .inline-group .inline-related.tabular .original p {
+      display: none;
+    }
+    
+    #container #content .inline-group .inline-related.tabular td.delete a {
+      float: left;
+    }
     
     /* Submit */
     
@@ -304,12 +340,6 @@ html, body {
         background-position: 10px center;
         background-position: 10px center, 0 0;
         margin: 0;
-      }
-      
-      #container #content .submit-row input.default {
-        padding: 0 30px 0 30px;
-        background-color: #00aeef;
-        text-transform: uppercase;
       }
 
 
@@ -573,7 +603,6 @@ body.change-list #changelist {
   body.change-list #changelist form table thead th {
     background-color: #ffffff;
     background-image: none;
-    /*border-left: solid 1px #cfcfcf;*/
     color: #00acf0;
     font-size: 14px;
     font-weight: normal;
@@ -613,11 +642,77 @@ body.change-list #changelist {
   
   body.change-list #changelist p.paginator input[type="submit"] {
     margin: 10px 0 0 20px;
-    background-color: #00aeef;
+    padding: 0 18px;
+    height: 29px;
+    background-color: #e4ede1;
     background-image: none;
-    border-style: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #e4ede1));
+    background-image: -moz-linear-gradient(center top, #ffffff 0%, #e4ede1 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ffffff', endColorstr='#e4ede1')";
+    border: solid 1px #cdcdcd;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    color: #505050;
+    font-size: 10px;
+    line-height: 27px;
     cursor: pointer;
+    text-transform: uppercase;
   }
+  
+  body.change-list #changelist p.paginator input[type="submit"]:hover {
+    border-color: #acf000;
+  }
+
+/* Checkbox */
+#container #content fieldset input[type="checkbox"] {
+  margin: 25px 0 5px 0;
+}
+  
+  #container #content fieldset li input[type="checkbox"],
+  #container #content fieldset table td.delete input,
+  #container #content fieldset input[type="checkbox"].clearableimagewidget {
+    margin: 0;
+  }
+
+#container #content fieldset label.vCheckboxLabel {
+  display: inline;
+  position: relative;
+  top: 10px;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 4px;
+}
+
+/* Errors */
+#container #content fieldset .form-row.errors {
+  padding: 20px;
+  margin: 0 -20px;
+  background-color: #ede1e4;
+}
+
+#container #content fieldset .form-row.errors ul.errorlist li {
+  display: block;
+  margin: 0;
+  width: auto;
+  padding: 4px 5px 4px 25px;
+  background-color: #a40000;
+  background-image: url("icon_alert.png");
+  border-style: none;
+  line-height: 14px;
+}
+
+p.errornote {
+  margin: 20px 0;
+  background-color: #ede1e4;
+  background-image: url("icon_error.png");
+  border-color: #a40000;
+  color: #a40000;
+}
+
+/* Date Time */
+p.datetime {
+  line-height: 30px;
+}
 
 /* Dashboard */
 body.dashboard #content-related {
