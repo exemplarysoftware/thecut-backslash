@@ -2,8 +2,43 @@ from django.contrib import admin
 
 
 class ModelAdmin(admin.ModelAdmin):
-    change_form_template = 'backslash/change_form.html'
-    change_list_template = 'backslash/change_list.html'
-    delete_confirmation_template = 'backslash/delete_confirmation.html'
-    object_history_template = 'backslash/object_history.html'
+    def __init__(self, *args, **kwargs):
+        super (ModelAdmin, self).__init__(*args, **kwargs)
+        self.add_form_template = self.add_form_template or [
+            'backslash/%s/%s/change_form.html' %(app_label,
+                opts.object_name.lower()),
+            'backslash/%s/change_form.html' %(app_label),
+            'backslash/change_form.html']
+        
+        self.change_form_template = self.change_form_template or [
+            'backslash/%s/%s/change_form.html' %(app_label,
+                opts.object_name.lower()),
+            'backslash/%s/change_form.html' %(app_label),
+            'backslash/change_form.html']
+        
+        self.change_list_template = self.change_list_template or [
+            'backslash/%s/%s/change_list.html' %(app_label,
+                opts.object_name.lower()),
+            'backslash/%s/change_list.html' %(app_label),
+            'backslash/change_list.html']
+        
+        self.delete_confirmation_template = \
+            self.delete_confirmation_template or [
+            'backslash/%s/%s/delete_confirmation.html' %(app_label,
+                opts.object_name.lower()),
+            'backslash/%s/delete_confirmation.html' %(app_label),
+            'backslash/delete_confirmation.html']
+        
+        self.delete_selected_confirmation_template = \
+            self.delete_selected_confirmation_template or [
+            'backslash/%s/%s/delete_selected_confirmation.html' %(app_label,
+                opts.object_name.lower()),
+            'backslash/%s/delete_selected_confirmation.html' %(app_label),
+            'backslash/delete_selected_confirmation.html']
+        
+        self.object_history_template = self.object_history_template or [
+            'backslash/%s/%s/object_history.html' %(app_label,
+                opts.object_name.lower()),
+            'backslash/%s/object_history.html' %(app_label),
+            'backslash/object_history.html']
 
