@@ -1,5 +1,6 @@
-from thecut.backslash.options import ModelAdmin
+# -*- coding: utf-8 -*-
 from django.contrib.admin import sites
+from thecut.backslash.options import ModelAdmin
 
 
 class AdminSite(sites.AdminSite):

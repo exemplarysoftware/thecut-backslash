@@ -1,9 +1,11 @@
+# -*- coding: utf-8 -*-
 from django.contrib.admin.helpers import ACTION_CHECKBOX_NAME
 from django.contrib.admin.options import ModelAdmin, HORIZONTAL, VERTICAL
 from django.contrib.admin.options import StackedInline, TabularInline
 #from django.contrib.admin.sites import AdminSite, site
-from thecut.backslash.sites import site
 from django.utils.importlib import import_module
+from thecut.backslash.sites import site
+
 
 # A flag to tell us if autodiscover is running.  autodiscover will set this to
 # True while running, and False when it finishes.
