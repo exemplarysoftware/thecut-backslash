@@ -5,7 +5,7 @@
 
 {% block extrahead %}
 {{ block.super }}
-<!--[if lt IE 8]><script src="{{ MEDIA_URL }}backslash/browser-warning.js"></script><![endif]-->
+<!--[if lt IE 8]><script src="{{ STATIC_URL|default:MEDIA_URL }}backslash/browser-warning.js"></script><![endif]-->
 {% endblock %}
 
 {% block branding %}
