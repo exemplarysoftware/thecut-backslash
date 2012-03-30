@@ -690,7 +690,13 @@ body.change-list #changelist {
   background-color: #ede1e4;
 }
 
-#container #content fieldset .form-row.errors ul.errorlist li {
+#container #content fieldset .field-box.errors {
+  padding: 5px;
+  background-color: #ede1e4;
+}
+
+#container #content fieldset .form-row.errors ul.errorlist li,
+#container #content fieldset .field-box.errors ul.errorlist li {
   display: block;
   margin: 0;
   width: auto;

@@ -6,14 +6,13 @@ The Cut Django App: Backslash
 thecut.backslash
 ================
 
-To install this application (whilst in the project's activated
-virtualenv)::
-    pip install git+ssh://git@git.thecut.net.au/thecut-backslash@0.035#egg=backslash
+To install this application (whilst in the project's activated virtualenv)::
+    pip install git+ssh://git@git.thecut.net.au/thecut-backslash
 
 
 Add the ``thecut.backslash`` to the project's ``INSTALLED_APPS`` setting::
 
-    INSTALLED_PAGES = (
+    INSTALLED_APPS = (
         'thecut.backslash',
         ...
     )
