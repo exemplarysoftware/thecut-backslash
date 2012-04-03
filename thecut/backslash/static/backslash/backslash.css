@@ -583,6 +583,9 @@ body.change-list #changelist {
     width: 683px;
   }
   
+  body.change-list .filtered .results,
+  body.change-list .filtered .paginator,
+  .filtered #toolbar, .filtered div.xfull,
   body.change-list #changelist form table {
     width: 100% !important;
     margin: 0 !important;
