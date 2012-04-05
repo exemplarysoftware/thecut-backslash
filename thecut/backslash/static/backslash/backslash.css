@@ -592,6 +592,10 @@ body.change-list #changelist {
     border-style: none !important;
   }
   
+  table thead th .text span {
+    padding: 0 5px 0 0;
+  }
+  
   body.change-list #changelist form table th,
   body.change-list #changelist form table td {
     padding: 0 5px 0 0;
