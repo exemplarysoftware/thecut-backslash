@@ -230,6 +230,12 @@ html, body {
       padding: 0;
     }
     
+    #container #content fieldset .clearable-file-input input[type="checkbox"],
+    #container #content fieldset .clearable-file-input label {
+      display: inline;
+      margin: 0;
+    }
+    
     /* Stacked Inline */
     #container #content .inline-group .inline-related h3 {
       padding: 0;
