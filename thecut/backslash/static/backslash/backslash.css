@@ -1,5 +1,9 @@
 @import url(superfish.css);
 
+html {
+  overflow-y: scroll;
+}
+
 html, body {
   background-color: #222222;
   color: #ffffff;
@@ -224,6 +228,12 @@ html, body {
     #container #content fieldset p {
       margin: 2px 0 0 0;
       padding: 0;
+    }
+    
+    #container #content fieldset .clearable-file-input input[type="checkbox"],
+    #container #content fieldset .clearable-file-input label {
+      display: inline;
+      margin: 0;
     }
     
     /* Stacked Inline */
@@ -579,10 +589,17 @@ body.change-list #changelist {
     width: 683px;
   }
   
+  body.change-list .filtered .results,
+  body.change-list .filtered .paginator,
+  .filtered #toolbar, .filtered div.xfull,
   body.change-list #changelist form table {
     width: 100% !important;
     margin: 0 !important;
     border-style: none !important;
+  }
+  
+  table thead th .text span {
+    padding: 0 5px 0 0;
   }
   
   body.change-list #changelist form table th,
