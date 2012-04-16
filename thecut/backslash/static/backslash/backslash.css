@@ -589,6 +589,7 @@ body.change-list #changelist {
     width: 683px;
   }
   
+  body.change-list .filtered .actions,
   body.change-list .filtered .results,
   body.change-list .filtered .paginator,
   .filtered #toolbar, .filtered div.xfull,
@@ -598,6 +599,7 @@ body.change-list #changelist {
     border-style: none !important;
   }
   
+  table thead th .text a,
   table thead th .text span {
     padding: 0 5px 0 0;
   }
@@ -612,9 +614,19 @@ body.change-list #changelist {
     color: #666666;
   }
   
-  body.change-list #changelist form table th:first-child,
-  body.change-list #changelist form table td:first-child {
+  /*body.change-list #changelist form table th:first-child,*/
+  body.change-list #changelist form table tbody th {
     min-width: 250px;
+  }
+  
+  body.change-list #changelist form table thead th.action-checkbox-column,
+  body.change-list #changelist form table tbody td.action-checkbox {
+    width: 25px;
+    text-align: center;
+  }
+  
+  body.change-list #changelist form table thead th.action-checkbox-column span {
+    padding: 0;
   }
   
   body.change-list #changelist form table thead th {
