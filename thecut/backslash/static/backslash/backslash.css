@@ -1,9 +1,5 @@
 @import url(superfish.css);
 
-html {
-  overflow-y: scroll;
-}
-
 html, body {
   background-color: #222222;
   color: #ffffff;
