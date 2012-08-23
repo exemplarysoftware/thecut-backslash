@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 # ACTION_CHECKBOX_NAME is unused, but should stay since its import from here
 # has been referenced in documentation.
+from __future__ import absolute_import, unicode_literals
 from django.contrib.admin.helpers import ACTION_CHECKBOX_NAME
-from django.contrib.admin.options import ModelAdmin, HORIZONTAL, VERTICAL
+from django.contrib.admin.options import HORIZONTAL, VERTICAL
 from django.contrib.admin.options import StackedInline, TabularInline
+from thecut.backslash.options import ModelAdmin
 from thecut.backslash.sites import site
 
 

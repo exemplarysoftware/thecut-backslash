@@ -113,12 +113,20 @@ html, body {
     height: 40px;
     margin: 0;
     padding: 0 0 0 45px;
-    background-color: #e4ede1;
-    background-image: url("icon_success.png");
     background-position: 20px center;
     border-top-style: none;
     color: #000000;
     line-height: 40px;
+  }
+  
+  #container ul.messagelist .success {
+    background-color: #e4ede1;
+    background-image: url("icon_success.png");
+  }
+  
+  #container ul.messagelist .error {
+    background-color: #ede1e4;
+    background-image: url("icon_error.png");
   }
 
 
