@@ -1,4 +1,5 @@
 {% extends "admin/base.html" %}
+{% load url from future %}
 {% load i18n %}
 
 {% block title %}{{ current_site.name }} - Backslash{% endblock %}
@@ -9,7 +10,7 @@
 {% endblock %}
 
 {% block branding %}
-  <h1 id="site-name"><a href="{% url admin:index %}">{{ current_site.name }}</a></h1>
+  <h1 id="site-name"><a href="{% url "admin:index" %}">{{ current_site.name }}</a></h1>
 {% endblock %}
 
 {% block nav-global %}

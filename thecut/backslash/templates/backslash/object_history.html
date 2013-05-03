@@ -11,11 +11,10 @@
 
 {% block breadcrumbs %}
 <div class="breadcrumbs">
-    <a href="../../../../">{% trans 'Home' %}</a> &gt; 
+    <a href="../../../../">{% trans 'Home' %}</a> &gt;
     {% comment %}<a href="../../../">{{ app_label|capfirst }}</a> &gt; {% endcomment %}
-    <a href="../../">{{ module_name }}</a> &gt; 
-    <a href="../">{{ object|truncatewords:"18" }}</a> &gt; 
+    <a href="../../">{{ module_name }}</a> &gt;
+    <a href="../">{{ object|truncatewords:"18" }}</a> &gt;
     <span class="active">{% trans 'History' %}</span>
 </div>
 {% endblock %}
-
