@@ -1,4 +1,4 @@
 include RELEASE-VERSION
-include AUTHORS COPYING README INSTALL LICENCE
+include README
 graft thecut/backslash/static
 graft thecut/backslash/templates

@@ -1,10 +1,9 @@
 The Cut Django App: Backslash
 
-
-
 ================
 thecut.backslash
 ================
+
 
 To install this application (whilst in the project's activated virtualenv)::
     pip install git+ssh://git@git.thecut.net.au/thecut-backslash
@@ -20,13 +19,12 @@ Add the ``thecut.backslash`` to the project's ``INSTALLED_APPS`` setting::
 
 Add ``backslash.autodiscover()`` to the project's urls.py file, and
 ``backslash.site.urls`` to the project's urlpatterns::
-    
+
     from thecut import backslash
     backslash.autodiscover()
-    
+
     urlpatterns = patterns('',
         ...
-        # Backslash (The Cut Admin)
+        # Backslash
         (r'^admin/', include(backslash.site.urls)),
     )
-

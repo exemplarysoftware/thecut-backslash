@@ -26,7 +26,7 @@ def autodiscover():
         # Attempt to import the app's admin module.
         try:
             before_import_registry = copy.copy(site._registry)
-            import_module('%s.backslash' % app)
+            import_module('{app}.backslash'.format(app=app))
         except:
             # Reset the model registry to the state before the last import as
             # this import will have to reoccur on the next request and this
@@ -39,4 +39,3 @@ def autodiscover():
             # attempting to import it, otherwise we want it to bubble up.
             if module_has_submodule(mod, 'backslash'):
                 raise
-
