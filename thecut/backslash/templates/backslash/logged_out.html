@@ -1,4 +1,5 @@
 {% extends "registration/logged_out.html" %}
+{% load url from future %}
 
 {% block extrastyle %}
   {{ block.super }}
@@ -11,8 +12,7 @@
 {% block content %}
   <br />
   <ul>
-    <li><a href="{% url admin:index %}">Backslash log in</a></li>
+    <li><a href="{% url "admin:index" %}">Backslash log in</a></li>
     <li><a href="/">Website homepage</a></li>
   </ul>
 {% endblock %}
-

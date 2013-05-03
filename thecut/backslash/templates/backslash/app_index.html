@@ -1,5 +1,5 @@
-{% extends "admin/app_index.html" %} 
-{% load i18n %} 
+{% extends "admin/app_index.html" %}
+{% load i18n %}
 
 {% block extrastyle %}
   {{ block.super }}
@@ -11,8 +11,7 @@
 
 {% block breadcrumbs %}
 <div class="breadcrumbs">{% if not is_popup %}<a href="../">
-{% trans "Home" %}</a> &gt; 
+{% trans "Home" %}</a> &gt;
 {% for app in app_list %}
 <span class="active">{% blocktrans with app.name as name %}{{ name }}{% endblocktrans %}</span>
 {% endfor %}{% endif %}</div>{% endblock %}
-
