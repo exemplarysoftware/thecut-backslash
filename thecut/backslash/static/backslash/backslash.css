@@ -179,6 +179,9 @@ html, body {
     }
     
     #container #content fieldset input[type="text"],
+    #container #content fieldset input[type="email"],
+    #container #content fieldset input[type="url"],
+    #container #content fieldset input[type="number"],
     #container #content fieldset select,
     #container #content fieldset textarea {
       /*height: 14px;*/
@@ -464,7 +467,10 @@ body.change-list #changelist {
       border-style: none;
     }
       
-      body.change-list #changelist #toolbar form input[type="text"] {
+      body.change-list #changelist #toolbar form input[type="text"],
+      body.change-list #changelist #toolbar form input[type="email"],
+      body.change-list #changelist #toolbar form input[type="url"],
+      body.change-list #changelist #toolbar form input[type="number"] {
         position: absolute;
         top: 0;
         left: 0;
