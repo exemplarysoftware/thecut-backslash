@@ -1,5 +1,7 @@
+/*
+ * Generic Styles
+ */
 
-/* Generic Styles */
 html, body {
   background-color: #ffffff;
   color: #2e3e4d;
@@ -29,8 +31,11 @@ li {
   padding: 0;
 }
 
+
+
+
 /*
- ** Typography
+ * Typography
  */
 
 h1, h2, h3, h4, h5, h6 {
