@@ -17,3 +17,14 @@ body#tinymce.mceContentBody {
   padding: 10px;
 }
 
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
