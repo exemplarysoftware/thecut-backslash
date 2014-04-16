@@ -33,6 +33,13 @@
       </div>
       <div class="site-navigation">
         {% include "backslash/_menu.html" %}
+
+        {% if user.is_active and user.is_staff %}
+        {% block userlinks %}
+          {% include "backslash/_userlinks.html" %}
+        {% endblock %}
+        {% endif %}
+
       </div>
     </div>
 
