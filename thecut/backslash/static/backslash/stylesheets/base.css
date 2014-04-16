@@ -445,3 +445,20 @@ a:focus {
 .content-panel {
   margin-left: 260px;
 }
+
+/*
+ ** Page Header
+ */
+
+.page-header {
+  min-height: 100px;
+  padding-top: 34px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
