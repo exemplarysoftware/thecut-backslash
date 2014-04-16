@@ -1,24 +1,22 @@
 {% load url from future %}
 {% load i18n %}
-<span class="userlinks"> |
-{% comment %}
-{% url "django-admindocs-docroot" as docsroot %}
-{% if docsroot %}
-    <a href="{{ docsroot }}">{% trans 'Documentation' %}</a> |
-{% endif %}
-{% endcomment %}
-{% url "admin:password_change" as password_change_url %}
-{% if password_change_url %}
+<ul class="nav secondary">
+  <li>
+  {% url "admin:password_change" as password_change_url %}
+  {% if password_change_url %}
     <a href="{{ password_change_url }}">
-{% else %}
+  {% else %}
     <a href="{{ root_path }}password_change/">
-{% endif %}
-{% trans 'Change password' %}</a> |
-{% url "admin:logout" as logout_url %}
-{% if logout_url %}
+  {% endif %}
+  {% trans 'Change password' %}</a>
+  </li>
+  <li>
+  {% url "admin:logout" as logout_url %}
+  {% if logout_url %}
     <a href="{{ logout_url }}">
-{% else %}
+  {% else %}
     <a href="{{ root_path }}logout/">
-{% endif %}
-{% trans 'Log out' %}</a>
-</span>
+  {% endif %}
+  {% trans 'Log out' %}</a>
+  </li>
+</ul>
