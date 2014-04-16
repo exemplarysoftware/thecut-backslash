@@ -49,10 +49,10 @@
       {% block page_header %}
 
         {% block breadcrumbs %}
-          <div class="breadcrumbs">
-            <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
-            {% if title %} &rsaquo; {{ title }}{% endif %}
-          </div>
+          <ul class="breadcrumbs">
+            <li><a href="{% url 'admin:index' %}">{% trans 'Home' %}</a></li>
+            <li><h1>{% if title %}{{ title }}{% endif %}</h1></li>
+          </ul>
         {% endblock %}
 
         {% block object_toolbar %}{% endblock %}
