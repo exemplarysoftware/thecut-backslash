@@ -46,6 +46,14 @@
     <div class="content-panel">
 
       {% block page_heading %}
+
+        {% block breadcrumbs %}
+          <div class="breadcrumbs">
+            <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+            {% if title %} &rsaquo; {{ title }}{% endif %}
+          </div>
+        {% endblock %}
+
       {% endblock %}
 
       {% block page_content %}
