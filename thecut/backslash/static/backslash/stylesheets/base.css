@@ -154,3 +154,36 @@ a:focus {
     background-image: url(../images/logo.svg);
   }
 }
+
+.header .nav {
+  margin-top: 20px;
+}
+
+.header .nav li a {
+  padding: 10px 30px;
+  display: block;
+  color: #8a99a6;
+  font-size: 1.286em; /* 14/18 */
+  line-height: 1;
+  text-decoration: none;
+  border-bottom: none;
+  -webkit-transition: color 0.1s ease;
+     -moz-transition: color 0.1s ease;
+      -ms-transition: color 0.1s ease;
+       -o-transition: color 0.1s ease;
+          transition: color 0.1s ease;
+}
+
+.header .nav li a:hover,
+.header .nav li a:focus {
+  color: #b4c8d9;
+}
+
+.header .nav li a:focus {
+  text-decoration: underline;
+}
+
+.header .nav li a:active {
+  position: relative;
+  top: 1px;
+}
