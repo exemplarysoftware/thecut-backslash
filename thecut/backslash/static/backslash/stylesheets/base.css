@@ -196,3 +196,20 @@ a:focus {
   position: relative;
   top: 1px;
 }
+
+.header .nav.secondary {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header .nav.secondary li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #6A7680;
+  font-size: 1em; /* 14 */
+}
+
+.header .nav.secondary li a:hover,
+.header .nav.secondary li a:focus {
+  color: #b4c8d9;
+}
