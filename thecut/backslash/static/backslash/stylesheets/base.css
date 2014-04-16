@@ -101,3 +101,17 @@ a:hover,
 a:focus {
   border-color: #171f26;
 }
+
+
+
+
+/*
+ * Structure
+ */
+
+.header {
+  position: fixed;
+  width: 260px;
+  height: 100%;
+  background-color: #171f26;
+}
