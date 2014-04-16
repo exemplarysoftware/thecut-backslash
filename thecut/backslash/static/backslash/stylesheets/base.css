@@ -115,3 +115,42 @@ a:focus {
   height: 100%;
   background-color: #171f26;
 }
+
+.header .branding {
+  padding: 30px;
+  background-color: #cb0012;
+}
+
+.header .branding .logo {
+  position: relative;
+  width: 175px;
+  height: 31px;
+  background: url(../images/logo.png) no-repeat;
+}
+
+.header .branding .logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -21px;
+  width: 16px;
+  height: 31px;
+  background: url(../images/logo-slash.png) no-repeat;
+}
+
+.header .branding .logo > span {
+  display: none;
+  color: #fff;
+  font-size: 3em; /* 42/14 */
+  line-height: 1;
+}
+
+@media all and (min-width: 0) {
+  .header .branding .logo:after {
+    background-image: url(../images/logo-slash.svg);
+  }
+
+  .header .branding .logo {
+    background-image: url(../images/logo.svg);
+  }
+}
