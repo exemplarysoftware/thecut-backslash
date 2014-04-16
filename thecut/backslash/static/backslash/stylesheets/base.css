@@ -462,3 +462,29 @@ a:focus {
   display: table;
   clear: both;
 }
+
+/*
+ *** Breadcrumbs
+ */
+
+.page-header .breadcrumbs {
+  float: left;
+}
+
+.page-header .breadcrumbs > li {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 10px;
+}
+
+.page-header .breadcrumbs > li:first-child {
+  margin-left: 0;
+}
+
+.page-header .breadcrumbs > li > a {
+  display: block;
+  font-size: 2.286em; /* 32/14 */
+  color: #a1aab3;
+  line-height: 1.1;
+  border-bottom: 1px solid #a1aab3;
+}
