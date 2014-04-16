@@ -1,5 +1,11 @@
 <ul class="nav">
-  {% for model in backslash_model_list %}
-  <li><a href="{{ model.url }}">{{ model.name }}</a></li>
-  {% endfor %}
+  {% if perms.menus.change_menu %}<li><a href="{% url "backslash:menus_menu_changelist" %}">Navigation</a></li>{% endif %}
+  {% if perms.site.change_homepage %}<li><a href="{% url "backslash:site_homepage_changelist" %}">Homepage</a></li>{% endif %}
+  {% if perms.pages.change_page %}<li><a href="{% url "backslash:pages_page_changelist" %}">Pages</a></li>{% endif %}
+  {% if perms.mediasources.change_image %}<li><a href="{% url "backslash:mediasources_image_changelist" %}">Images</a></li>{% endif %}
+  {% if perms.mediasources.change_document %}<li><a href="{% url "backslash:mediasources_document_changelist" %}">Documents</a></li>{% endif %}
+</ul>
+
+<ul class="nav secondary">
+  <li><a href="https://www.google.com/analytics/">Website Statistics</a></li>
 </ul>
