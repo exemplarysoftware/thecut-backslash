@@ -213,3 +213,7 @@ a:focus {
 .header .nav.secondary li a:focus {
   color: #b4c8d9;
 }
+
+.content-panel {
+  margin-left: 260px;
+}
