@@ -109,6 +109,121 @@ a:focus {
  */
 
 /*
+ ** Forms
+ */
+
+label {
+  display: block;
+  color: #171f26;
+  font-size: 1em; /* 14 */
+  margin-bottom: 5px;
+}
+
+/* Text Fields */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="search"], /* add input types as needed */
+textarea {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+  background: #fcfcfc;
+  border: 1px solid #d9d9d9;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+}
+
+input[type="text"]:last-child,
+input[type="number"]:last-child,
+input[type="email"]:last-child,
+input[type="password"]:last-child,
+input[type="date"]:last-child,
+input[type="datetime"]:last-child,
+input[type="search"]:last-child, /* add input types as needed */
+textarea:last-child {
+  margin-bottom: 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="search"] {
+  height: 40px;
+}
+
+textarea {
+  min-height: 120px;
+  padding: 10px 15px;
+  line-height: 1.4;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  box-shadow: 0 0 3px rgba(77, 211, 241, 0.5);
+  border-color: #4dd3f1;
+  background-color: #fff;
+}
+
+input:disabled,
+input[type="text"]:disabled,
+input[type="number"]:disabled,
+input[type="email"]:disabled,
+input[type="password"]:disabled,
+input[type="date"]:disabled,
+input[type="datetime"]:disabled,
+input[type="search"]:disabled,
+textarea:disabled,
+select:disabled {
+  cursor: not-allowed;
+}
+
+input[type="text"]:disabled,
+input[type="number"]:disabled,
+input[type="email"]:disabled,
+input[type="password"]:disabled,
+input[type="date"]:disabled,
+input[type="datetime"]:disabled,
+input[type="search"]:disabled,
+textarea:disabled {
+  background-color: #f3f3f3;
+}
+
+select {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+select[multiple] option {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+select[multiple] {
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+
+/*
  *** Button - Base
  */
 
