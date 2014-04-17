@@ -490,6 +490,14 @@ a:focus {
   text-decoration: underline;
 }
 
+/*
+ ** Page Title
+ */
+
+.page-title {
+  float: left;
+}
+
   margin-left: 10px;
 }
 
