@@ -2,17 +2,7 @@
 {% load i18n %}
 
 {% block breadcrumbs %}{% if not is_popup %}
-<div class="breadcrumbs">
-  <a href="../../">
-    {% trans "Home" %}
-  </a>
-  {% comment %}
-   &gt;
-   <a href="../">
-     {{ app_label|capfirst }}
-  </a>
-  {% endcomment %}
-  &gt;
-  <span class="active">{{ cl.opts.verbose_name_plural|capfirst }}</span>
-</div>
+<ul class="breadcrumbs">
+  <li><a href="../../">{% trans "Home" %}</a> &bsol;</li>
+</ul>
 {% endif %}{% endblock %}
