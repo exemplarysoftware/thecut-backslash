@@ -53,9 +53,10 @@
         {% block breadcrumbs %}
           <ul class="breadcrumbs">
             <li><a href="{% url 'admin:index' %}">{% trans 'Home' %}</a></li>
-            <li><h1>{% if title %}{{ title }}{% endif %}</h1></li>
           </ul>
         {% endblock %}
+
+        <h1 class="page-title">{% if title %}{{ title }}{% endif %}</h1>
 
         {% block object_toolbar %}{% endblock %}
 
