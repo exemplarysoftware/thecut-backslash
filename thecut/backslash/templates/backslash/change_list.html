@@ -6,3 +6,5 @@
   <li><a href="../../">{% trans "Home" %}</a> &bsol;</li>
 </ul>
 {% endif %}{% endblock %}
+
+{% block page_title %}{{ cl.opts.verbose_name_plural|capfirst }}{% endblock %}
