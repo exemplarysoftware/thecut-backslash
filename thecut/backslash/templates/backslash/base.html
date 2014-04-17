@@ -1,7 +1,7 @@
 {% load admin_static i18n %}
 {% load firstof from future %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}">
 
   <head>
     <title>{% block title %}{% endblock %}</title>
