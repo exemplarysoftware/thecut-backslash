@@ -604,7 +604,7 @@ select[multiple] {
  */
 
 .page-header {
-  min-height: 100px;
+  min-height: 66px;
   padding-top: 34px;
   padding-left: 30px;
   padding-right: 30px;
