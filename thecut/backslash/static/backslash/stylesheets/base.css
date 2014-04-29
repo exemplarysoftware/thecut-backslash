@@ -652,9 +652,21 @@ select[multiple] {
   float: left;
 }
 
+/*
+ ** Object Toolbar
+ */
+
+.page-header .object-toolbar {
+  float: right;
+}
+
+.page-header .object-toolbar > li {
+  display: inline-block;
+  vertical-align: top;
   margin-left: 10px;
 }
 
+.page-header .object-toolbar > li:first-child {
   margin-left: 0;
 }
 
