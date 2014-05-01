@@ -746,6 +746,10 @@ select[multiple] {
   display: none;
 }
 
+.js-enabled .object-filters.open {
+  display: block;
+}
+
 .object-filters .search-bar,
 .object-filters .changelist-filters {
   display: inline-block;
