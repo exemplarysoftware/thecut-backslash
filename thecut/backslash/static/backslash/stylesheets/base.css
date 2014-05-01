@@ -109,7 +109,7 @@ a:focus {
  */
 
 /*
- ** Forms
+ *** Forms
  */
 
 label {
@@ -262,7 +262,11 @@ select[multiple] {
 
 
 /*
- *** Button - Base
+ *** Buttons
+ */
+
+/*
+ **** Button - Base
  */
 
 .button {
@@ -306,7 +310,7 @@ select[multiple] {
 }
 
 /*
- *** Button - Primary
+ **** Button - Primary
  */
 
 .button.primary {
@@ -335,7 +339,7 @@ select[multiple] {
 }
 
 /*
- *** Button - Success
+ **** Button - Success
  */
 
 .button.success {
@@ -364,7 +368,7 @@ select[multiple] {
 
 
 /*
- *** Button - Warning
+ **** Button - Warning
  */
 
 .button.warning {
@@ -392,7 +396,7 @@ select[multiple] {
 }
 
 /*
- *** Button - Danger
+ **** Button - Danger
  */
 
 .button.danger {
@@ -420,7 +424,7 @@ select[multiple] {
 }
 
 /*
- *** Button - Low Key
+ **** Button - Low Key
  */
 
 .button.low {
@@ -444,7 +448,7 @@ select[multiple] {
 }
 
 /*
- *** Button - Disabled
+ **** Button - Disabled
  */
 
 .button.disabled {
@@ -458,7 +462,7 @@ select[multiple] {
 }
 
 /*
- *** Button - Link Only
+ **** Button - Link Only
  */
 
 .button.link-only {
@@ -488,6 +492,11 @@ select[multiple] {
 
 /*
  * Structure
+ */
+
+
+/*
+ ** Header
  */
 
 .header {
@@ -595,13 +604,17 @@ select[multiple] {
   color: #b4c8d9;
 }
 
+/*
+ ** Content Panel
+ */
+
 .content-panel {
   margin-left: 260px;
 }
 
 
 /*
- ** Page Header
+ *** Page Header
  */
 
 .page-header {
@@ -618,7 +631,7 @@ select[multiple] {
 }
 
 /*
- *** Breadcrumbs
+ **** Breadcrumbs
  */
 
 .page-header .breadcrumbs {
@@ -644,16 +657,18 @@ select[multiple] {
   text-decoration: underline;
 }
 
+
 /*
- ** Page Title
+ **** Page Title
  */
 
 .page-title {
   float: left;
 }
 
+
 /*
- ** Object Toolbar
+ **** Object Toolbar
  */
 
 .page-header .object-toolbar {
