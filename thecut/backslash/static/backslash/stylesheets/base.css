@@ -742,6 +742,10 @@ select[multiple] {
   border-top: 1px solid #ccc;
 }
 
+.js-enabled .object-filters {
+  display: none;
+}
+
 .object-filters .search-bar,
 .object-filters .changelist-filters {
   display: inline-block;
