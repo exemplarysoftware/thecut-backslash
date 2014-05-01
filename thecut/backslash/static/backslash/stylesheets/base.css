@@ -490,6 +490,52 @@ select[multiple] {
 
 
 
+
+/*
+ * Components
+ */
+
+
+/*
+ ** Messages
+ */
+
+.messagelist {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
+.messagelist > li {
+  padding: 8px 15px;
+  font-size: 0.929em; /* 13/14 */
+  color: #42454D;
+  border: 1px solid #BDC1C8;
+  background-color: #F9F9FA;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  margin-top: 5px;
+}
+
+.messagelist > li:first-child {
+  margin-top: 0;
+}
+
+/* Green */
+.messagelist > .success {
+  color: #498C0E;
+  background-color: #EAF9DC;
+  border-color: #ACE878;
+}
+
+/* Blue */
+.messagelist > .success {
+  color: #3591A6;
+  background-color: #E4F6FA;
+  border-color: #94DAE9;
+}
+
+
 /*
  * Structure
  */
