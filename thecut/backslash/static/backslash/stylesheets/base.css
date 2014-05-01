@@ -731,4 +731,28 @@ select[multiple] {
   margin-left: 0;
 }
 
+
+/*
+ *** Page Content
+ */
+
+.object-filters {
+  padding: 20px 30px;
+  background: #f3f3f3;
+  border-top: 1px solid #ccc;
+}
+
+.object-filters .search-bar,
+.object-filters .changelist-filters {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.object-filters .search-bar {
+  width: 45%;
+  margin-right: 5%;
+}
+
+.object-filters .changelist-filters {
+  width: 45%;
 }
