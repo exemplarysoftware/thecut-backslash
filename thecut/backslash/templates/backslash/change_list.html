@@ -1,6 +1,10 @@
 {% extends "backslash/base.html" %}
 {% load i18n admin_urls admin_static admin_list backslash_list  %}
 
+{% block extrahead %}
+<script src="{{ STATIC_URL }}backslash/javascripts/change-list.js" type="text/javascript"></script>
+{% endblock %}
+
 {% block breadcrumbs %}{% if not is_popup %}
 <ul class="breadcrumbs">
   <li><a href="../../">{% trans "Home" %}</a> &#92;</li>
