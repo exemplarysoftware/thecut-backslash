@@ -16,6 +16,9 @@
       {% url cl.opts|admin_urlname:'add' as add_url %}
       <a href="{% add_preserved_filters add_url is_popup %}" class="button primary addlink">{% blocktrans with cl.opts.verbose_name as name %}Add {{ name }}{% endblocktrans %}</a>
     </li>
+    <li>
+      <a id="filter-panel-trigger" class="button" href="#">Show Filters</a>
+    </li>
   </ul>
   {% endif %}
 {% endblock %}
