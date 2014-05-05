@@ -30,48 +30,49 @@
   <body class="login">
 
     <div class="header">
-      <h1 class="logo">B\</h1>
+      <h1 class="logo"><span>B\</span></h1>
     </div>
 
-    {% if form.errors and not form.non_field_errors and not form.this_is_the_login_form.errors %}
-    <p class="errornote">
-    {% if form.errors.items|length == 1 %}{% trans "Please correct the error below." %}{% else %}{% trans "Please correct the errors below." %}{% endif %}
-    </p>
-    {% endif %}
-
-    {% if form.non_field_errors or form.this_is_the_login_form.errors %}
-    {% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
-    <p class="errornote">
-        {{ error }}
-    </p>
-    {% endfor %}
-    {% endif %}
-
     <div class="content">
+      <h2 class="login-msg">Login to {{ current_site.name }}</h2>
+
+      {% if form.errors and not form.non_field_errors and not form.this_is_the_login_form.errors %}
+      <p class="errornote">
+      {% if form.errors.items|length == 1 %}{% trans "Please correct the error below." %}{% else %}{% trans "Please correct the errors below." %}{% endif %}
+      </p>
+      {% endif %}
+
+      {% if form.non_field_errors or form.this_is_the_login_form.errors %}
+      {% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
+      <p class="errornote">
+          {{ error }}
+      </p>
+      {% endfor %}
+      {% endif %}
+
       <form action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
-        <p>Login to {{ current_site.name }}</p>
         <ul>
           <li class="username">
-            {% if not form.this_is_the_login_form.errors %}{{ form.username.errors }}{% endif %}
-            <label for="id_username" class="required">{{ form.username.label }}:</label>
+            <label for="id_username" class="required">{{ form.username.label }}</label>
             {{ form.username }}
+            {% if not form.this_is_the_login_form.errors %}{{ form.username.errors }}{% endif %}
           </li>
           <li class="password">
-            {% if not form.this_is_the_login_form.errors %}{{ form.password.errors }}{% endif %}
-            <label for="id_password" class="required">{% trans 'Password:' %}</label>
+            <label for="id_password" class="required">{% trans 'Password' %}</label>
             {{ form.password }}
             <input type="hidden" name="this_is_the_login_form" value="1" />
             <input type="hidden" name="next" value="{{ next }}" />
+            {% if not form.this_is_the_login_form.errors %}{{ form.password.errors }}{% endif %}
+          </li>
+          <li class="submit">
+            <input type="submit" value="{% trans 'Log In' %}" />
           </li>
           {% url 'admin_password_reset' as password_reset_url %}
           {% if password_reset_url %}
           <li class="password-reset-link">
-            <a href="{{ password_reset_url }}">{% trans 'Forgotten your password or username?' %}</a>
+            <a href="{{ password_reset_url }}">{% trans 'Forgotten your username or password?' %}</a>
           </li>
           {% endif %}
-          <li class="submit">
-            <input type="submit" value="{% trans 'Log in' %}" />
-          </li>
         </ul>
       </form>
     </div>
