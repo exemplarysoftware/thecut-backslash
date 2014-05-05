@@ -1,10 +1,80 @@
-{% extends "admin/login.html" %}
+{% load i18n admin_static %}
 
-{% block extrastyle %}
-  {{ block.super }}
-  <link href="{{ STATIC_URL|default:MEDIA_URL }}backslash/backslash.css" type="text/css" rel="stylesheet" />
-  <link href="{{ STATIC_URL|default:MEDIA_URL }}backslash/login.css" type="text/css" rel="stylesheet" />
-  <link href="{{ STATIC_URL|default:MEDIA_URL }}stylesheets/backslash.css" type="text/css" rel="stylesheet" />
-{% endblock %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}">
 
-{% block bodyclass %}{% endblock %}
+  <head>
+    <title>Login - {{ current_site.name }} - Backslash</title>
+    {% block meta %}
+    <meta charset="utf-8" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    {% endblock %}
+
+    <link href="{{ STATIC_URL }}backslash/stylesheets/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}backslash/stylesheets/login.css" type="text/css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}images/favicon.ico" type="image/vnd.microsoft.icon" rel="shortcut icon" sizes="16x16" title="favicon" />
+    <link href="{{ STATIC_URL }}images/touch-icon-114.png" type="image/png" rel="apple-touch-icon" sizes="114x114" />
+    <link href="{{ STATIC_URL }}images/touch-icon-72.png" type="image/png" rel="apple-touch-icon" sizes="72x72" />
+    <link href="{{ STATIC_URL }}images/touch-icon-57.png" type="image/png" rel="apple-touch-icon" />
+    <link href="{{ STATIC_URL }}images/icon.svg" type="image/svg+xml" rel="icon" sizes="all" />
+
+    <script src="{{ STATIC_URL }}javascripts/jquery.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}javascripts/default.js" type="text/javascript"></script>
+
+    {% block extrahead %}{% endblock %}
+  </head>
+
+  <body class="login">
+
+    <div class="header">
+      <h1 class="logo">B\</h1>
+    </div>
+
+    {% if form.errors and not form.non_field_errors and not form.this_is_the_login_form.errors %}
+    <p class="errornote">
+    {% if form.errors.items|length == 1 %}{% trans "Please correct the error below." %}{% else %}{% trans "Please correct the errors below." %}{% endif %}
+    </p>
+    {% endif %}
+
+    {% if form.non_field_errors or form.this_is_the_login_form.errors %}
+    {% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
+    <p class="errornote">
+        {{ error }}
+    </p>
+    {% endfor %}
+    {% endif %}
+
+    <div class="content">
+      <form action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
+        <p>Login to {{ current_site.name }}</p>
+        <ul>
+          <li class="username">
+            {% if not form.this_is_the_login_form.errors %}{{ form.username.errors }}{% endif %}
+            <label for="id_username" class="required">{{ form.username.label }}:</label>
+            {{ form.username }}
+          </li>
+          <li class="password">
+            {% if not form.this_is_the_login_form.errors %}{{ form.password.errors }}{% endif %}
+            <label for="id_password" class="required">{% trans 'Password:' %}</label>
+            {{ form.password }}
+            <input type="hidden" name="this_is_the_login_form" value="1" />
+            <input type="hidden" name="next" value="{{ next }}" />
+          </li>
+          {% url 'admin_password_reset' as password_reset_url %}
+          {% if password_reset_url %}
+          <li class="password-reset-link">
+            <a href="{{ password_reset_url }}">{% trans 'Forgotten your password or username?' %}</a>
+          </li>
+          {% endif %}
+          <li class="submit">
+            <input type="submit" value="{% trans 'Log in' %}" />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+
+</html>
