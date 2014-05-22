@@ -4,6 +4,8 @@
 
 {% block extrahead %}
   {{ block.super }}
+
+  <script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
 {% endblock %}
 
 {% block userlinks %}{% include "backslash/_userlinks.html" %}{% endblock %}
