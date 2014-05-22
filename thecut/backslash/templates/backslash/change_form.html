@@ -20,3 +20,5 @@
   <li>{% if has_change_permission %}<a href="../">{{ opts.verbose_name_plural|capfirst }}</a>{% else %}{{ opts.verbose_name_plural|capfirst }}{% endif %} &#92;</li>
 </ul>
 {% endif %}{% endblock %}
+
+{% block page_title %}{% if add %}{% trans "Add" %} {{ opts.verbose_name }}{% else %}{{ original|truncatewords:"18" }}{% endif %}{% endblock %}
