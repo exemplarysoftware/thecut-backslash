@@ -10,11 +10,13 @@
 {{ media.js }}
 {% endblock %}
 
+{% comment %}
 {% block breadcrumbs %}{% if not is_popup %}
 <ul class="breadcrumbs">
   <li><a href="../../">{% trans "Home" %}</a> &#92;</li>
 </ul>
 {% endif %}{% endblock %}
+{% endcomment %}
 
 {% block object_toolbar %}
   {% if has_add_permission %}
