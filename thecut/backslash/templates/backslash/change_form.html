@@ -22,3 +22,21 @@
 {% endif %}{% endblock %}
 
 {% block page_title %}{% if add %}{% trans "Add" %} {{ opts.verbose_name }}{% else %}{{ original|truncatewords:"18" }}{% endif %}{% endblock %}
+
+{% block object_toolbar %}
+  {% if change %}{% if not is_popup %}
+  <ul class="object-toolbar">
+    {% block object-tools-items %}
+    <li>
+      {% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+      <a href="{% add_preserved_filters history_url %}" class="historylink button">{% trans "History" %}</a>
+    </li>
+    {% if has_absolute_url %}
+    <li>
+      <a href="{% url 'admin:view_on_site' content_type_id original.pk %}" class="viewsitelink button">{% trans "View On Site" %}</a>
+    </li>
+    {% endif%}
+    {% endblock %}
+  </ul>
+  {% endif %}{% endif %}
+{% endblock %}
