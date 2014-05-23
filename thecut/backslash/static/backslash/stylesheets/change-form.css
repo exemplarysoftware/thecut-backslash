@@ -1,3 +1,11 @@
 /*
  * Change Form Styles
  */
+
+/*
+ * Page Form
+ */
+
+ #page_form .module {
+  padding: 0 30px;
+ }
