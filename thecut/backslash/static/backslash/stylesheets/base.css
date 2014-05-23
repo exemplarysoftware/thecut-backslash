@@ -121,6 +121,8 @@ label {
 
 fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Text Fields */
