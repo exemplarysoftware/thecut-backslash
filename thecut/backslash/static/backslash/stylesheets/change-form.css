@@ -31,3 +31,19 @@
   color: #9099AB;
   font-size: 0.857em; /* 12/14 */
 }
+
+
+/* Collapsed Modules */
+
+#page_form .module.collapse {
+  height: auto;
+  background: #f3f3f3;
+  border-top: 1px solid #d8d8d8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#page_form .module.collapse.collapsed {
+  height: 18px;
+  overflow: hidden;
+}
