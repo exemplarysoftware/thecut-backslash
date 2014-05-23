@@ -19,6 +19,14 @@
   margin-top: 0;
 }
 
+#page_form .module .form-row .field-box {
+  margin-top: 15px;
+}
+
+#page_form .module .form-row .field-box:first-child {
+  margin-top: 0;
+}
+
 #page_form .module .form-row .help {
   color: #9099AB;
   font-size: 0.857em; /* 12/14 */
