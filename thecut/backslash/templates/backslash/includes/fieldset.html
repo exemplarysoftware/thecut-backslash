@@ -7,7 +7,8 @@
   {% endif %}
 
   {% for line in fieldset %}
-    <div class="form-row{% if line.fields|length_is:'1' and line.errors %} errors{% endif %}{% for field in line %}{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% endfor %}">
+    {% if forloop.first %}<ul>{% endif %}
+    <li class="form-row{% if line.fields|length_is:'1' and line.errors %} errors{% endif %}{% for field in line %}{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% endfor %}">
       {% if line.fields|length_is:'1' %}{{ line.errors }}{% endif %}
       {% for field in line %}
         <div{% if not line.fields|length_is:'1' %} class="field-box{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}"{% elif field.is_checkbox %} class="checkbox-row"{% endif %}>
@@ -27,7 +28,8 @@
           {% endif %}
         </div>
       {% endfor %}
-    </div>
+    </li>
+    {% if forloop.last %}</ul>{% endif %}
   {% endfor %}
 
 </fieldset>
