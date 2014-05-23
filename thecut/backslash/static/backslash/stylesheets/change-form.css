@@ -56,3 +56,30 @@
 #page_form .form-row.field-featured_content textarea {
   height: 120px;
 }
+
+#page_form .form-row .datetime {
+  margin-bottom: 3px;
+}
+
+#page_form .form-row .datetime label {
+  display: block;
+}
+
+#page_form .form-row .datetime input[type=text],
+#page_form .form-row .datetime .datetimeshortcuts {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#page_form .form-row .datetime input[type=text] {
+  width: auto;
+  margin-right: 10px;
+}
+
+#page_form .form-row .datetime br {
+  display: none;
+}
+
+#page_form .form-row .datetime .datetimeshortcuts {
+  margin-right: 40px;
+}
