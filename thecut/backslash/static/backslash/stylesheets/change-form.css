@@ -18,3 +18,8 @@
 #page_form .module .form-row:first-child {
   margin-top: 0;
 }
+
+#page_form .module .form-row .help {
+  color: #9099AB;
+  font-size: 0.857em; /* 12/14 */
+}
