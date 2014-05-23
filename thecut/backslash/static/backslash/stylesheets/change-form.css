@@ -47,3 +47,12 @@
   height: 18px;
   overflow: hidden;
 }
+
+
+/*
+ ** Page Form Items
+ */
+
+#page_form .form-row.field-featured_content textarea {
+  height: 120px;
+}
