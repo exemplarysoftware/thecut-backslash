@@ -83,3 +83,17 @@
 #page_form .form-row .datetime .datetimeshortcuts {
   margin-right: 40px;
 }
+
+#page_form .form-row .checkbox-row input[type=checkbox],
+#page_form .form-row .checkbox-row label {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+#page_form .form-row .checkbox-row input[type=checkbox] {
+  margin-right: 5px;
+}
+
+#page_form .form-row .checkbox-row label {
+  margin-bottom: 0;
+}
