@@ -10,3 +10,11 @@
   padding: 0 30px;
   margin-bottom: 80px;
  }
+
+#page_form .module .form-row {
+  margin-top: 40px;
+}
+
+#page_form .module .form-row:first-child {
+  margin-top: 0;
+}
