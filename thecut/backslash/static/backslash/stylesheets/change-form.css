@@ -6,28 +6,28 @@
  * Page Form
  */
 
- #page_form .module {
+ .change-form .module {
   padding: 0 30px;
   margin-bottom: 80px;
  }
 
-#page_form .module .form-row {
+.change-form .module .form-row {
   margin-top: 40px;
 }
 
-#page_form .module .form-row:first-child {
+.change-form .module .form-row:first-child {
   margin-top: 0;
 }
 
-#page_form .module .form-row .field-box {
+.change-form .module .form-row .field-box {
   margin-top: 15px;
 }
 
-#page_form .module .form-row .field-box:first-child {
+.change-form .module .form-row .field-box:first-child {
   margin-top: 0;
 }
 
-#page_form .module .form-row .help {
+.change-form .module .form-row .help {
   color: #9099AB;
   font-size: 0.857em; /* 12/14 */
 }
@@ -35,7 +35,7 @@
 
 /* Collapsed Modules */
 
-#page_form .module.collapse {
+.change-form .module.collapse {
   height: auto;
   background: #f3f3f3;
   border-top: 1px solid #d8d8d8;
@@ -43,7 +43,7 @@
   padding-bottom: 30px;
 }
 
-#page_form .module.collapse.collapsed {
+.change-form .module.collapse.collapsed {
   height: 18px;
   overflow: hidden;
 }
@@ -53,47 +53,47 @@
  ** Page Form Items
  */
 
-#page_form .form-row.field-featured_content textarea {
+.change-form .form-row.field-featured_content textarea {
   height: 120px;
 }
 
-#page_form .form-row .datetime {
+.change-form .form-row .datetime {
   margin-bottom: 3px;
 }
 
-#page_form .form-row .datetime label {
+.change-form .form-row .datetime label {
   display: block;
 }
 
-#page_form .form-row .datetime input[type=text],
-#page_form .form-row .datetime .datetimeshortcuts {
+.change-form .form-row .datetime input[type=text],
+.change-form .form-row .datetime .datetimeshortcuts {
   display: inline-block;
   vertical-align: middle;
 }
 
-#page_form .form-row .datetime input[type=text] {
+.change-form .form-row .datetime input[type=text] {
   width: auto;
   margin-right: 10px;
 }
 
-#page_form .form-row .datetime br {
+.change-form .form-row .datetime br {
   display: none;
 }
 
-#page_form .form-row .datetime .datetimeshortcuts {
+.change-form .form-row .datetime .datetimeshortcuts {
   margin-right: 40px;
 }
 
-#page_form .form-row .checkbox-row input[type=checkbox],
-#page_form .form-row .checkbox-row label {
+.change-form .form-row .checkbox-row input[type=checkbox],
+.change-form .form-row .checkbox-row label {
   display: inline-block;
   vertical-align: baseline;
 }
 
-#page_form .form-row .checkbox-row input[type=checkbox] {
+.change-form .form-row .checkbox-row input[type=checkbox] {
   margin-right: 5px;
 }
 
-#page_form .form-row .checkbox-row label {
+.change-form .form-row .checkbox-row label {
   margin-bottom: 0;
 }
