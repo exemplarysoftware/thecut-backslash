@@ -14,7 +14,7 @@
 
 {% block userlinks %}{% include "backslash/_userlinks.html" %}{% endblock %}
 
-{% block pageclass %}change-form{% endblock %}
+{% block pageclass %}{{ opts.model_name }}-form-page{% endblock %}
 
 {% block breadcrumbs %}{% if not is_popup %}
 <ul class="breadcrumbs">
