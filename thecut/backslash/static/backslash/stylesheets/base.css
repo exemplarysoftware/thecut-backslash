@@ -777,22 +777,20 @@ input[type="checkbox"] {
  */
 
 .content-panel {
-  width: 1020px;
+  background: #fff;
   margin-left: 260px;
 }
 
 .js-enabled .content-panel {
   margin-left: 100px;
-  width: 1180px;
-  -webkit-transition: width 0.3s ease-out, margin-left 0.3s ease-out;
-     -moz-transition: width 0.3s ease-out, margin-left 0.3s ease-out;
-       -o-transition: width 0.3s ease-out, margin-left 0.3s ease-out;
-          transition: width 0.3s ease-out, margin-left 0.3s ease-out;
+  -webkit-transition: margin-left 0.3s ease-out;
+     -moz-transition: margin-left 0.3s ease-out;
+       -o-transition: margin-left 0.3s ease-out;
+          transition: margin-left 0.3s ease-out;
 }
 
 .js-enabled.nav-open .content-panel {
   margin-left: 260px;
-  width: 1020px;
 }
 
 
