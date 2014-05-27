@@ -716,6 +716,7 @@ input[type="checkbox"] {
  */
 
 .content-panel {
+  width: 1020px;
   margin-left: 260px;
 }
 
