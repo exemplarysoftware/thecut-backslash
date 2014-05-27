@@ -192,15 +192,6 @@ textarea:focus {
 }
 
 input:disabled,
-input[type="text"]:disabled,
-input[type="number"]:disabled,
-input[type="email"]:disabled,
-input[type="password"]:disabled,
-input[type="date"]:disabled,
-input[type="datetime"]:disabled,
-input[type="search"]:disabled,
-input[type="url"]:disabled,
-textarea:disabled,
 select:disabled {
   cursor: not-allowed;
 }
@@ -215,6 +206,7 @@ input[type="search"]:disabled,
 input[type="url"]:disabled,
 textarea:disabled {
   background-color: #f3f3f3;
+  cursor: not-allowed;
 }
 
 select {
