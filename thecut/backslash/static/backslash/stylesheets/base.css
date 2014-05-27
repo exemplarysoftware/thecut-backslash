@@ -668,6 +668,7 @@ input[type="checkbox"] {
   padding-top: 10px;
   padding-bottom: 10px;
   display: block;
+  white-space: nowrap;
   color: #8a99a6;
   font-size: 1.286em; /* 14/18 */
   line-height: 1;
