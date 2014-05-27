@@ -543,10 +543,57 @@ select[multiple] {
 
 
 /*
+ *** Paginator
+ */
 
+.paginator {
+  padding: 0 30px;
 }
 
+.paginator > a,
+.paginator > span {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 5px;
+  color: #636773;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #CED1D9;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
 
+.paginator > a:first-child,
+.paginator > span:first-child {
+  margin-left: 0;
+}
+
+.paginator > a:hover,
+.paginator > a:focus,
+.paginator > span:hover,
+.paginator > span:focus {
+  border-color: #636773;
+}
+
+.paginator > a:active,
+.paginator > span:active {
+  background-color: #E3E5E8;
+  background-color: rgba(121, 127, 140, 0.2);
+}
+
+.paginator > .this-page {
+  color: #fff;
+  background-color: #636773;
+  border-color: #636773;
+}
 
 /*
  * Structure
