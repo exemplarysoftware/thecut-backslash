@@ -622,6 +622,10 @@ input[type="checkbox"] {
           transition: width 0.3s ease-out;
 }
 
+.js-enabled.nav-open .header {
+  width: 260px;
+}
+
 .js-enabled .header:after {
   content: "";
   position: absolute;
@@ -639,6 +643,10 @@ input[type="checkbox"] {
        -o-transition: width 0.3s ease-out;
           transition: width 0.3s ease-out;
   pointer-events: none;
+}
+
+.js-enabled.nav-open .header:after {
+  width: 0;
 }
 
 .header .branding {
@@ -659,6 +667,10 @@ input[type="checkbox"] {
      -moz-transition: width 0.35s ease-out;
        -o-transition: width 0.35s ease-out;
           transition: width 0.35s ease-out;
+}
+
+.js-enabled.nav-open .header .branding .logo {
+  width: 175px;
 }
 
 .header .branding .logo:after {
@@ -702,6 +714,10 @@ input[type="checkbox"] {
      -moz-transition: border-color 0.3s ease-out;
        -o-transition: border-color 0.3s ease-out;
           transition: border-color 0.3s ease-out;
+}
+
+.js-enabled.nav-open .header .nav {
+  border-color: #3F474D;
 }
 
 .header .nav:last-child {
@@ -772,6 +788,11 @@ input[type="checkbox"] {
      -moz-transition: width 0.3s ease-out, margin-left 0.3s ease-out;
        -o-transition: width 0.3s ease-out, margin-left 0.3s ease-out;
           transition: width 0.3s ease-out, margin-left 0.3s ease-out;
+}
+
+.js-enabled.nav-open .content-panel {
+  margin-left: 260px;
+  width: 1020px;
 }
 
 
