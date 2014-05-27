@@ -38,5 +38,12 @@ jQuery(document).ready(function($) {
         }
     });
 
+    $('body > .header').on('mouseover', function(){
+      $('body').addClass('nav-open');
+    });
+
+    $('body > .header').on('mouseout', function(){
+      $('body').removeClass('nav-open');
+    });
 });
 
