@@ -10,6 +10,11 @@ html, body {
   line-height: 1.5;
 }
 
+/* experimental */
+body {
+  max-width: 1440px;
+}
+
 body.ajax-loading, body.ajax-loading * {
   cursor: wait !important;
 }
