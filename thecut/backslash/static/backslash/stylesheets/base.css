@@ -611,6 +611,34 @@ input[type="checkbox"] {
   width: 260px;
   height: 100%;
   background-color: #171f26;
+  overflow: hidden;
+}
+
+.js-enabled .header {
+  width: 100px;
+  -webkit-transition: width 0.3s ease-out;
+     -moz-transition: width 0.3s ease-out;
+       -o-transition: width 0.3s ease-out;
+          transition: width 0.3s ease-out;
+}
+
+.js-enabled .header:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  background: transparent;
+  background-image: -webkit-linear-gradient(90deg, rgba(23,31,38,0), rgba(23,31,38,1));
+  background-image:    -moz-linear-gradient(90deg, rgba(23,31,38,0), rgba(23,31,38,1));
+  background-image:         linear-gradient(90deg, rgba(23,31,38,0), rgba(23,31,38,1));
+  top: 100px;
+  right: 0;
+  z-index: 2;
+  -webkit-transition: width 0.3s ease-out;
+     -moz-transition: width 0.3s ease-out;
+       -o-transition: width 0.3s ease-out;
+          transition: width 0.3s ease-out;
+  pointer-events: none;
 }
 
 .header .branding {
@@ -623,6 +651,14 @@ input[type="checkbox"] {
   width: 175px;
   height: 32px;
   background: url(../images/logo.png) no-repeat;
+}
+
+.js-enabled .header .branding .logo {
+  width: 24px;
+  -webkit-transition: width 0.35s ease-out;
+     -moz-transition: width 0.35s ease-out;
+       -o-transition: width 0.35s ease-out;
+          transition: width 0.35s ease-out;
 }
 
 .header .branding .logo:after {
@@ -658,6 +694,14 @@ input[type="checkbox"] {
   margin-left: 30px;
   margin-right: 30px;
   border-bottom: 1px solid #3F474D;
+}
+
+.js-enabled .header .nav {
+  border-color: #2C343B;
+  -webkit-transition: border-color 0.3s ease-out;
+     -moz-transition: border-color 0.3s ease-out;
+       -o-transition: border-color 0.3s ease-out;
+          transition: border-color 0.3s ease-out;
 }
 
 .header .nav:last-child {
@@ -720,6 +764,16 @@ input[type="checkbox"] {
   width: 1020px;
   margin-left: 260px;
 }
+
+.js-enabled .content-panel {
+  margin-left: 100px;
+  width: 1180px;
+  -webkit-transition: width 0.3s ease-out, margin-left 0.3s ease-out;
+     -moz-transition: width 0.3s ease-out, margin-left 0.3s ease-out;
+       -o-transition: width 0.3s ease-out, margin-left 0.3s ease-out;
+          transition: width 0.3s ease-out, margin-left 0.3s ease-out;
+}
+
 
 
 /*
