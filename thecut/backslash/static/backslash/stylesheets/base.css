@@ -226,6 +226,10 @@ select[multiple] {
           border-radius: 2px;
 }
 
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
 /*
  *** Inline Search Form
  */
