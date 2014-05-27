@@ -1,14 +1,14 @@
 jQuery(document).ready(function($) {
-    
+
     var has_logger = !!(window.console && window.console.log);
-    
+
     $.ajaxSetup({traditional: true});
     $('body').addClass('js-enabled').ajaxStart(function() {
         $(this).addClass('ajax-loading');
     }).ajaxStop(function() {
         $(this).removeClass('ajax-loading');
     });
-    
+
     // Email link generation
     $('span.mailto').each(function(){
         exp = $(this).text().search(/\((.*?)\)/) != -1 ? new RegExp(/(.*?) \((.*?)\)/) : new RegExp(/.*/);
@@ -19,12 +19,12 @@ jQuery(document).ready(function($) {
         $(this).after('<a href="mailto:'+addr+subject+'">'+ emaillink + '</a>');
         $(this).remove();
     });
-    
+
     // Disable 'fake' links
     $('a[href="#"]').click(function(event) {
         event.preventDefault();
     });
-    
+
     // Email link click tracking
     $('a[href ^="mailto:"]').on('click', function(event) {
         var href = $(this).attr('href');
@@ -37,6 +37,6 @@ jQuery(document).ready(function($) {
             } catch(error) {}
         }
     });
-    
+
 });
 
