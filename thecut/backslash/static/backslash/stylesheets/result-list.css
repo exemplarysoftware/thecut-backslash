@@ -1,4 +1,117 @@
 /*
+ * Changelist Tools
+ */
+
+.changelist {
+  position: relative;
+  overflow: hidden;
+}
+
+.changelist-form {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 290px;
+  border-right: 1px solid #ECECEC;
+}
+
+.js-enabled .changelist-form {
+  margin-right: 0;
+  border-right: none;
+  -webkit-transition: margin-right 0.25s ease-out;
+     -moz-transition: margin-right 0.25s ease-out;
+          transition: margin-right 0.25s ease-out;
+}
+
+.js-enabled .changelist.tools-open .changelist-form {
+  margin-right: 290px;
+  border-right: 1px solid #ECECEC;
+}
+
+.changelist-tools {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 290px;
+  padding: 15px 30px;
+  border-top: 1px solid #ccc;
+}
+
+.js-enabled .changelist-tools {
+  right: -290px;
+  -webkit-transition: right 0.25s ease-out;
+     -moz-transition: right 0.25s ease-out;
+          transition: right 0.25s ease-out;
+}
+
+.js-enabled .changelist.tools-open .changelist-tools {
+  right: 0;
+}
+
+.changelist-tools .search-bar {
+  margin-bottom: 40px;
+}
+
+.changelist-tools .search-bar label {
+  color: #777777;
+  font-size: 0.714em;
+  height: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.changelist-tools .search-bar .inline-search-form input[type="text"],
+.changelist-tools .search-bar .inline-search-form input[type="search"] {
+  width: 160px;
+}
+
+.changelist-tools .search-bar .result-msg {
+  clear: left;
+  display: block;
+  padding-top: 10px;
+}
+
+.changelist-tools .changelist-filters > h2 {
+  color: #777777;
+  font-size: 0.714em;
+  height: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.changelist-tools .changelist-filters > h3 {
+  margin-bottom: 5px;
+  font-size: 1em; /* 14/14 */
+  font-weight: bold;
+  color: #585C66;
+}
+
+.changelist-tools .changelist-filters > ul {
+  margin-bottom: 20px;
+}
+
+.changelist-tools .changelist-filters > ul a {
+  border-bottom: none;
+  font-size: 0.857em; /* 12/14 */
+}
+.changelist-tools .changelist-filters > ul a:hover,
+.changelist-tools .changelist-filters > ul a:focus {
+  color: #4BCEEC;
+}
+
+.changelist-tools .changelist-filters > ul .selected a {
+  border-bottom: 1px solid #4BCEEC;
+  color: #4BCEEC;
+}
+
+
+
+/*
  ** Result List
  */
 
