@@ -680,10 +680,10 @@ input[type="checkbox"] {
 
 .js-enabled .header .branding .logo {
   width: 24px;
-  -webkit-transition: width 0.35s ease-out;
-     -moz-transition: width 0.35s ease-out;
-       -o-transition: width 0.35s ease-out;
-          transition: width 0.35s ease-out;
+  -webkit-transition: width 0.375s ease-out;
+     -moz-transition: width 0.375s ease-out;
+       -o-transition: width 0.375s ease-out;
+          transition: width 0.375s ease-out;
 }
 
 .js-enabled.nav-open .header .branding .logo {
