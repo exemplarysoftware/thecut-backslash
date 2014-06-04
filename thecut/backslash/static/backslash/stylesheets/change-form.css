@@ -98,3 +98,111 @@
 .change-form .form-row .checkbox-row label {
   margin-bottom: 0;
 }
+
+/* Submit Row */
+
+.change-form .submit-row {
+  clear: both;
+  padding: 0 30px 30px;
+}
+
+.change-form .submit-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.change-form .submit-row input[type="submit"] {
+  float: right;
+  margin-left: 10px;
+}
+
+.change-form .submit-row .deletelink-box {
+  float: left;
+  margin-bottom: 0;
+}
+
+.change-form .submit-row input[type="submit"],
+.change-form .submit-row .deletelink {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  height: 36px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #797F8C;
+  background-image: -webkit-linear-gradient(#848A99, #797F8C);
+  background-image:    -moz-linear-gradient(#848A99, #797F8C);
+  background-image:         linear-gradient(#848A99, #797F8C);
+  border: 1px solid #636773;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  cursor: pointer;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.change-form .submit-row input[type="submit"]:hover,
+.change-form .submit-row input[type="submit"]:focus {
+  background-color: #696F7A;
+  background-image: -webkit-linear-gradient(#696F7A, #585C66);
+  background-image:    -moz-linear-gradient(#696F7A, #585C66);
+  background-image:         linear-gradient(#696F7A, #585C66);
+  border-color: #4D5059;
+}
+
+.change-form .submit-row input[type="submit"]:active {
+  background-color: #585C66;
+  background-image: -webkit-linear-gradient(#585C66, #696F7A);
+  background-image:    -moz-linear-gradient(#585C66, #696F7A);
+  background-image:         linear-gradient(#585C66, #696F7A);
+}
+
+.change-form .submit-row input[name="_save"] {
+  background-color: #70d715;
+  background-image: -webkit-linear-gradient(#71D916, #63BF13);
+  background-image:    -moz-linear-gradient(#71D916, #63BF13);
+  background-image:         linear-gradient(#71D916, #63BF13);
+  border-color: #56A611;
+}
+
+.change-form .submit-row input[name="_save"]:hover,
+.change-form .submit-row input[name="_save"]:focus {
+  background-color: #59AC10;
+  background-image: -webkit-linear-gradient(#59AC10, #4F980F);
+  background-image:    -moz-linear-gradient(#59AC10, #4F980F);
+  background-image:         linear-gradient(#59AC10, #4F980F);
+  border-color: #42800D;
+}
+
+.change-form .submit-row input[name="_save"]:active {
+  background-color: #4F980F;
+  background-image: -webkit-linear-gradient(#4F980F, #59AC10);
+  background-image:    -moz-linear-gradient(#4F980F, #59AC10);
+  background-image:         linear-gradient(#4F980F, #59AC10);
+}
+
+.change-form .submit-row .deletelink {
+  background-color: transparent;
+  background-image: none;
+  color: #636773;
+  line-height: 34px;
+  text-shadow: none;
+  border-width: 2px;
+  border-color: #CED1D9;
+}
+
+.change-form .submit-row .deletelink:hover,
+.change-form .submit-row .deletelink:focus {
+  border-color: #636773;
+}
+
+.change-form .submit-row .deletelink:active {
+  background-color: #E3E5E8;
+  background-color: rgba(121, 127, 140, 0.2);
+}
