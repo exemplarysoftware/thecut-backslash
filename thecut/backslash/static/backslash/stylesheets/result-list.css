@@ -32,9 +32,9 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
-  top: 0;
+  position: relative;
   right: 0;
+  float: right;
   width: 290px;
   padding: 15px 30px;
   border-top: 1px solid #ccc;
