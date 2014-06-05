@@ -30,9 +30,11 @@
   <body>
 
     <div class="header">
-      <div class="branding">
-        <div class="logo"><span>Backslash&nbsp;\</span></div>
-      </div>
+      <a href="{% url "backslash:index" %}">
+        <div class="branding">
+          <div class="logo"><span>Backslash&nbsp;\</span></div>
+        </div>
+      </a>
       <div class="site-navigation">
         {% include "backslash/_menu.html" %}
 
