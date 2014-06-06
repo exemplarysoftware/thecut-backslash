@@ -17,6 +17,7 @@
 </ul>
 {% endif %}{% endblock %}
 {% endcomment %}
+{% block pageclass %}{{ cl.opts.verbose_name_plural|slugify }}{% endblock %}
 
 {% block object_toolbar %}
   {% if has_add_permission %}
