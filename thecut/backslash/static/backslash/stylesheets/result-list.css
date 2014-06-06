@@ -112,36 +112,36 @@
 
 
 /*
- ** Result List
+ ** Results List
  */
 
-#result_list {
+.changelist .results table {
   width: 100%;
   max-width: 100%;
 }
 
-#result_list > thead {
+.changelist .results table > thead {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
 
-#result_list > thead > tr > th,
-#result_list > thead > tr > td,
-#result_list > tbody > tr > th,
-#result_list > tbody > tr > td {
+.changelist .results table > thead > tr > th,
+.changelist .results table > thead > tr > td,
+.changelist .results table > tbody > tr > th,
+.changelist .results table > tbody > tr > td {
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: left;
 }
 
-#result_list > thead > tr > th:first-child,
-#result_list > thead > tr > td:first-child,
-#result_list > tbody > tr > th:first-child,
-#result_list > tbody > tr > td:first-child {
+.changelist .results table > thead > tr > th:first-child,
+.changelist .results table > thead > tr > td:first-child,
+.changelist .results table > tbody > tr > th:first-child,
+.changelist .results table > tbody > tr > td:first-child {
   padding-left: 30px;
 }
 
-#result_list > thead > tr > th > .sortoptions {
+.changelist .results table > thead > tr > th > .sortoptions {
   float: left;
   position: relative;
   vertical-align: middle;
@@ -149,17 +149,17 @@
   margin-right: 10px;
 }
 
-#result_list > thead > tr > th > .sortoptions > a {
+.changelist .results table > thead > tr > th > .sortoptions > a {
   border-bottom: 0;
 }
 
-#result_list > thead > tr > th > .sortoptions > a,
-#result_list > thead > tr > th > .sortoptions > span {
+.changelist .results table > thead > tr > th > .sortoptions > a,
+.changelist .results table > thead > tr > th > .sortoptions > span {
   display: inline-block;
   vertical-align: top;
 }
 
-#result_list > thead > tr > th > .sortoptions > .sortremove {
+.changelist .results table > thead > tr > th > .sortoptions > .sortremove {
   position: absolute;
   top: 0;
   left: -16px;
@@ -170,17 +170,17 @@
   opacity: 0;
 }
 
-#result_list > thead > tr > th > .sortoptions:hover > .sortremove {
+.changelist .results table > thead > tr > th > .sortoptions:hover > .sortremove {
   opacity: 1;
 }
 
-#result_list > thead > tr > th > .sortoptions > .sortpriority {
+.changelist .results table > thead > tr > th > .sortoptions > .sortpriority {
   font-size: 0.714em; /* 10/14 */
   color: #898989;
 }
 
-#result_list > thead > tr > th > .sortoptions > .ascending,
-#result_list > thead > tr > th > .sortoptions > .descending {
+.changelist .results table > thead > tr > th > .sortoptions > .ascending,
+.changelist .results table > thead > tr > th > .sortoptions > .descending {
   position: relative;
   top: 2px;
   width: 8px;
@@ -189,27 +189,27 @@
   background-position: top;
 }
 
-#result_list > thead > tr > th > .sortoptions > .ascending {
+.changelist .results table > thead > tr > th > .sortoptions > .ascending {
   background-position: 0 0;
 }
 
-#result_list > thead > tr > th > .sortoptions > .descending {
+.changelist .results table > thead > tr > th > .sortoptions > .descending {
   background-position: -10px 0;
 }
 
 @media all and (min-width: 0) {
-  #result_list > thead > tr > th > .sortoptions > .sortremove,
-  #result_list > thead > tr > th > .sortoptions > .ascending,
-  #result_list > thead > tr > th > .sortoptions > .descending {
+  .changelist .results table > thead > tr > th > .sortoptions > .sortremove,
+  .changelist .results table > thead > tr > th > .sortoptions > .ascending,
+  .changelist .results table > thead > tr > th > .sortoptions > .descending {
     background-image: url(../images/result-list-sprites.svg);
   }
 }
 
-#result_list > thead > tr > th > .sortoptions > .clear {
+.changelist .results table > thead > tr > th > .sortoptions > .clear {
   clear: both;
 }
 
-#result_list > thead > tr > th > .text {
+.changelist .results table > thead > tr > th > .text {
   float: left;
   height: 12px;
   color: #777;
@@ -217,21 +217,21 @@
   text-transform: uppercase;
 }
 
-#result_list > thead > tr > th > .text > a {
+.changelist .results table > thead > tr > th > .text > a {
   border-bottom: 0;
 }
 
-#result_list > tbody > tr {
+.changelist .results table > tbody > tr {
   border-bottom: 1px solid #ececec;
 }
 
-#result_list > tbody > tr > th,
-#result_list > tbody > tr > td {
+.changelist .results table > tbody > tr > th,
+.changelist .results table > tbody > tr > td {
   color: #898989;
 }
 
-#result_list > tbody > tr > th:first-child > a,
-#result_list > tbody > tr > td:first-child > a {
+.changelist .results table > tbody > tr > th:first-child > a,
+.changelist .results table > tbody > tr > td:first-child > a {
   font-weight: normal;
   font-size: 1.286em; /* 18/14 */
   color: #171F26;
