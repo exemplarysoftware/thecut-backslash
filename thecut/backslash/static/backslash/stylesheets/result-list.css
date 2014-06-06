@@ -141,6 +141,13 @@
   padding-left: 30px;
 }
 
+.changelist .results table > thead > tr > th:last-child,
+.changelist .results table > thead > tr > td:last-child,
+.changelist .results table > tbody > tr > th:last-child,
+.changelist .results table > tbody > tr > td:last-child {
+  padding-right: 30px;
+}
+
 .changelist .results table > thead > tr > th > .sortoptions {
   float: left;
   position: relative;
