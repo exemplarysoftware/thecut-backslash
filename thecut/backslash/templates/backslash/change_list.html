@@ -17,6 +17,8 @@
 </ul>
 {% endif %}{% endblock %}
 {% endcomment %}
+{% block page_title %}{{ cl.opts.verbose_name_plural|capfirst }}{% endblock %}
+
 {% block pageclass %}{{ cl.opts.verbose_name_plural|slugify }}{% endblock %}
 
 {% block object_toolbar %}
