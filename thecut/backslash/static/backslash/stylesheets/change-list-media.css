@@ -1,3 +1,99 @@
 /*
  * (Media) Changelist Styles
  */
+
+ /*
+  ** List View
+  ** on the media list, the thumbnail is displayed first followed by
+  ** the title and other metadata.
+  */
+
+.media .changelist .results table > tbody > tr > th .image-preview {
+  display: block;
+  height: 100px;
+  line-height: 100px;
+}
+
+.media .changelist .results table > tbody > tr > th .image-preview > img {
+  max-width: 150px;
+  max-height: 100px;
+}
+
+/* title field */
+.media .changelist .results table > tbody > tr > td:first-of-type {
+  font-size: 1em; /* 14/14 */
+  font-weight: bold;
+  color: #171F26;
+}
+
+.media .changelist .results table > tbody > tr > th > a,
+.media .changelist .results table > tbody > tr > td > a {
+  border-bottom: none;
+}
+
+
+/*
+ ** Grid View
+ */
+
+.media .changelist .results.grid table > thead {
+  display: none;
+}
+
+.media .changelist .results.grid table > tbody > tr {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  width: 32.5%;
+  padding: 0 20px;
+  margin-bottom: 40px;
+  vertical-align: top;
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .media .changelist .results.grid table > tbody > tr {
+    width: 24%;
+  }
+}
+
+.media .changelist .results.grid table > tbody > tr > th,
+.media .changelist .results.grid table > tbody > tr > td {
+  display: block;
+  padding: 0;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.media .changelist .results.grid table > tbody > tr > th:first-child,
+.media .changelist .results.grid table > tbody > tr > td:first-child {
+  margin-bottom: 15px;
+}
+
+.media .changelist .results.grid table > tbody > tr > th:last-child,
+.media .changelist .results.grid table > tbody > tr > td:last-child {
+  margin-bottom: 0;
+}
+
+.media .changelist .results.grid table > tbody > tr > th .image-preview {
+  height: 240px;
+  margin-bottom: 15px;
+  line-height: 240px;
+  text-align: center;
+}
+
+.media .changelist .results.grid table > tbody > tr > th .image-preview > img {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: bottom;
+  max-width: 100%;
+  width: 240px;
+  max-height: 240px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
