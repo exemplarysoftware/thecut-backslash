@@ -1,1 +1,6 @@
 {% extends "backslash/change_list.html" %}
+
+{% block extrahead %}
+{{ block.super }}
+<link href="{{ STATIC_URL }}backslash/stylesheets/change-list-media.css" rel="stylesheet" type="text/css">
+{% endblock %}
