@@ -881,6 +881,10 @@ input[type="checkbox"] {
   margin-left: 10px;
 }
 
+.page-header .object-toolbar > li.hidden {
+  display: none;
+}
+
 .page-header .object-toolbar > li:first-child {
   margin-left: 0;
 }
