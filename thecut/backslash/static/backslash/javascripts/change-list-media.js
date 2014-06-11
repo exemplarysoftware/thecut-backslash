@@ -1,5 +1,8 @@
 jQuery(document).ready(function($){
 
+  // remove 'hidden' class from 'view-trigger' container.
+  $('.object-toolbar .hidden').removeClass('hidden');
+
     // add grid class on load
   $('.changelist .results').addClass('grid');
 
