@@ -6,3 +6,10 @@
 {% endblock %}
 
 {% block pageclass %}{{ block.super }} media{% endblock %}
+
+{% block extra_tools %}
+  {{ block.super }}
+  <li>
+    <a id="view-trigger" class="button" href="#">Switch to List View</a>
+  </li>
+{% endblock %}
