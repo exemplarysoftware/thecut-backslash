@@ -3,28 +3,30 @@
  */
 
 .changelist {
+  padding-right: 290px;
   position: relative;
-  overflow: hidden;
+}
+
+.js-enabled .changelist {
+  padding-right: 0;
+  -webkit-transition: padding-right 0.25s ease-out;
+     -moz-transition: padding-right 0.25s ease-out;
+          transition: padding-right 0.25s ease-out;
+}
+
+.js-enabled .changelist.tools-open {
+  padding-right: 290px;
 }
 
 .changelist-form {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-right: 290px;
   border-right: 1px solid #ECECEC;
 }
 
 .js-enabled .changelist-form {
-  margin-right: 0;
   border-right: none;
-  -webkit-transition: margin-right 0.25s ease-out;
-     -moz-transition: margin-right 0.25s ease-out;
-          transition: margin-right 0.25s ease-out;
 }
 
 .js-enabled .changelist.tools-open .changelist-form {
-  margin-right: 290px;
   border-right: 1px solid #ECECEC;
 }
 
@@ -32,26 +34,29 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  position: relative;
+  overflow: hidden;
+  position: absolute;
   right: 0;
-  float: right;
+  top: 0;
   width: 290px;
   padding: 15px 30px;
   border-top: 1px solid #ccc;
 }
 
 .js-enabled .changelist-tools {
-  right: -290px;
-  -webkit-transition: right 0.25s ease-out;
-     -moz-transition: right 0.25s ease-out;
-          transition: right 0.25s ease-out;
+  padding-left: 290px;
+  padding-right: 0;
+  -webkit-transition: padding-left 0.25s ease-out;
+     -moz-transition: padding-left 0.25s ease-out;
+          transition: padding-left 0.25s ease-out;
 }
 
 .js-enabled .changelist.tools-open .changelist-tools {
-  right: 0;
+  padding-left: 30px;
 }
 
 .changelist-tools .search-bar {
+  width: 240px;
   margin-bottom: 40px;
 }
 
@@ -73,6 +78,10 @@
   clear: left;
   display: block;
   padding-top: 10px;
+}
+
+.changelist-tools .changelist-filters {
+  width: 240px;
 }
 
 .changelist-tools .changelist-filters > h2 {
