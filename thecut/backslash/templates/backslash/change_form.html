@@ -9,7 +9,7 @@
 {% block extrahead %}
   {{ block.super }}
   <link href="{{ STATIC_URL }}backslash/stylesheets/change-form.css" type="text/css" rel="stylesheet" />
-  <script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+  <script type="text/javascript" src="{% url "admin:jsi18n" %}"></script>
   {{ media }}
 {% endblock %}
 
@@ -21,9 +21,9 @@
 
 
 {% block breadcrumbs %}{% if not is_popup %}
-<ul class="breadcrumbs">
-  <li>{% if has_change_permission %}<a href="../">{{ opts.verbose_name_plural|capfirst }}</a>{% else %}{{ opts.verbose_name_plural|capfirst }}{% endif %} &#92;</li>
-</ul>
+  <ul class="breadcrumbs">
+    <li>{% if has_change_permission %}<a href="../">{{ opts.verbose_name_plural|capfirst }}</a>{% else %}{{ opts.verbose_name_plural|capfirst }}{% endif %} &#92;</li>
+  </ul>
 {% endif %}{% endblock %}
 
 
@@ -35,12 +35,12 @@
   <ul class="object-toolbar">
     {% block object-tools-items %}
     <li>
-      {% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+      {% url opts|admin_urlname:"history" original.pk|admin_urlquote as history_url %}
       <a href="{% add_preserved_filters history_url %}" class="historylink button">{% trans "History" %}</a>
     </li>
     {% if has_absolute_url %}
     <li>
-      <a href="{% url 'admin:view_on_site' content_type_id original.pk %}" class="viewsitelink button">{% trans "View On Site" %}</a>
+      <a href="{% url "admin:view_on_site" content_type_id original.pk %}" class="viewsitelink button">{% trans "View On Site" %}</a>
     </li>
     {% endif%}
     {% endblock %}
@@ -88,5 +88,4 @@
 
     </div>
   </form>
-
 {% endblock %}

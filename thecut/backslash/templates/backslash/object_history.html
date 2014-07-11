@@ -1,20 +1,23 @@
 {% extends "admin/object_history.html" %}
 {% load i18n %}
 
+
 {% block extrastyle %}
   {{ block.super }}
   <link href="{{ STATIC_URL|default:MEDIA_URL }}backslash/backslash.css" type="text/css" rel="stylesheet" />
   <link href="{{ STATIC_URL|default:MEDIA_URL }}stylesheets/backslash.css" type="text/css" rel="stylesheet" />
 {% endblock %}
 
+
 {% block userlinks %}{% include "backslash/_userlinks.html" %}{% endblock %}
 
+
 {% block breadcrumbs %}
-<div class="breadcrumbs">
-    <a href="../../../../">{% trans 'Home' %}</a> &gt;
+  <div class="breadcrumbs">
+    <a href="../../../../">{% trans "Home" %}</a> &gt;
     {% comment %}<a href="../../../">{{ app_label|capfirst }}</a> &gt; {% endcomment %}
     <a href="../../">{{ module_name }}</a> &gt;
     <a href="../">{{ object|truncatewords:"18" }}</a> &gt;
-    <span class="active">{% trans 'History' %}</span>
-</div>
+    <span class="active">{% trans "History" %}</span>
+  </div>
 {% endblock %}

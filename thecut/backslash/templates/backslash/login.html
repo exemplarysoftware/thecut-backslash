@@ -36,19 +36,19 @@
         {% if not form.this_is_the_login_form.errors %}{{ form.username.errors }}{% endif %}
       </li>
       <li class="password">
-        <label for="id_password" class="required">{% trans 'Password' %}</label>
+        <label for="id_password" class="required">{% trans "Password" %}</label>
         {{ form.password }}
         <input type="hidden" name="this_is_the_login_form" value="1" />
         <input type="hidden" name="next" value="{{ next }}" />
         {% if not form.this_is_the_login_form.errors %}{{ form.password.errors }}{% endif %}
       </li>
       <li class="submit">
-        <input type="submit" value="{% trans 'Log In' %}" />
+        <input type="submit" value="{% trans "Log In" %}" />
       </li>
-      {% url 'admin_password_reset' as password_reset_url %}
+      {% url "admin_password_reset" as password_reset_url %}
       {% if password_reset_url %}
       <li class="password-reset-link">
-        <a href="{{ password_reset_url }}">{% trans 'Forgotten your username or password?' %}</a>
+        <a href="{{ password_reset_url }}">{% trans "Forgotten your username or password?" %}</a>
       </li>
       {% endif %}
     </ul>
