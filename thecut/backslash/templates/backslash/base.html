@@ -58,7 +58,7 @@
           </ul>
         {% endblock %}
 
-        <h1 class="page-title">{% block page_title %}{% if title %}{{ title }}{% endif %}{% endblock %}</h1>
+        <h1 class="page-title">{% block content_title %}{% if title %}{{ title }}{% endif %}{% endblock %}</h1>
 
         {% block object_toolbar %}{% endblock %}
 
@@ -76,8 +76,7 @@
       {% endblock %}
 
       <div class="page-content">
-      {% block page_content %}
-      {% endblock %}
+      {% block content %}{% endblock %}
       </div>
 
     </div>

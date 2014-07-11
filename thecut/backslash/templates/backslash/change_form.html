@@ -2,19 +2,23 @@
 {% load url from future %}
 {% load i18n admin_urls admin_static admin_modify %}
 
+
 {% block title %}{{ original }} - {% endblock %}
+
 
 {% block extrahead %}
   {{ block.super }}
   <link href="{{ STATIC_URL }}backslash/stylesheets/change-form.css" type="text/css" rel="stylesheet" />
-
   <script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
   {{ media }}
 {% endblock %}
 
+
 {% block userlinks %}{% include "backslash/_userlinks.html" %}{% endblock %}
 
+
 {% block pageclass %}{{ opts.model_name }}-form-page{% endblock %}
+
 
 {% block breadcrumbs %}{% if not is_popup %}
 <ul class="breadcrumbs">
@@ -22,7 +26,9 @@
 </ul>
 {% endif %}{% endblock %}
 
-{% block page_title %}{% if add %}{% trans "Add" %} {{ opts.verbose_name }}{% else %}{{ original|truncatewords:"18" }}{% endif %}{% endblock %}
+
+{% block content_title %}{% if add %}{% trans "Add" %} {{ opts.verbose_name }}{% else %}{{ original|truncatewords:"18" }}{% endif %}{% endblock %}
+
 
 {% block object_toolbar %}
   {% if change %}{% if not is_popup %}
@@ -42,7 +48,8 @@
   {% endif %}{% endif %}
 {% endblock %}
 
-{% block page_content %}
+
+{% block content %}
   <form {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post" id="{{ opts.model_name }}_form" class="change-form">{% csrf_token %}{% block form_top %}{% endblock %}
     <div>
     {% if is_popup %}<input type="hidden" name="_popup" value="1" />{% endif %}

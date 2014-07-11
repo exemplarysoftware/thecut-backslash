@@ -1,15 +1,17 @@
 {% extends "backslash/accounts_base.html" %}
 {% load i18n admin_static %}
 
+
 {% block title %}Login - {% endblock %}
 
-{% block extrahead %}
-{{ block.super }}
 
-<script type="text/javascript" src="{{ STATIC_URL }}backslash/javascripts/login.js"></script>
+{% block extrahead %}
+  {{ block.super }}
+  <script type="text/javascript" src="{{ STATIC_URL }}backslash/javascripts/login.js"></script>
 {% endblock %}
 
-{% block page_content %}
+
+{% block content %}
   <h2 class="login-msg">Login to {{ current_site.name }}</h2>
 
   {% if form.errors and not form.non_field_errors and not form.this_is_the_login_form.errors %}
