@@ -769,6 +769,18 @@ body.dashboard #content {
   margin: 0 !important;
 }
 
+
+/* Notices */
+
+body.dashboard ul#notices {
+    margin: 0;
+    padding: 0;
+}
+
+  body.dashboard #notices > li {
+      list-style-type: none;
+  }
+
 /* Footer */
 #footer {
     display: block !important;
