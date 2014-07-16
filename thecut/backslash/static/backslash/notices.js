@@ -3,9 +3,8 @@ django.jQuery(document).ready(function($) {
     var $noticesContainer = $('#notices');
     var server = $noticesContainer.attr('data-server');
     var domain = $noticesContainer.attr('data-domain');
-    //var url = 'https://notices.thecut.net.au/notices.xml' + '?tags=' + server + '&tags=' + domain;
-    var url = 'http://127.0.0.1:8000/notices.xml' + '?tags=' + server + '&tags=' + domain;
-    console.log(url);
+    var url = 'https://notices.thecut.net.au/notices.xml' + '?tags=' + server + '&tags=' + domain;
+
     $.ajax({
 	url: url,
 	dataType: 'xml',
