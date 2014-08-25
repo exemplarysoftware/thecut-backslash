@@ -1,20 +1,16 @@
-{% extends "admin/index.html" %}
+{% extends "backslash/base.html" %}
 {% load i18n %}
-
-
-{% block extrastyle %}
-  {{ block.super }}
-  <link href="{{ STATIC_URL|default:MEDIA_URL }}backslash/backslash.css" type="text/css" rel="stylesheet" />
-  <link href="{{ STATIC_URL|default:MEDIA_URL }}stylesheets/backslash.css" type="text/css" rel="stylesheet" />
-{% endblock %}
 
 
 {% block userlinks %}{% include "backslash/_userlinks.html" %}{% endblock %}
 
 
+{% comment %}
 {% block breadcrumbs %}
   <div class="breadcrumbs"><span class="active">{% trans "Home" %}</span></div>
 {% endblock %}
+{% endcomment %}
+
 
 {% block content %}
   <br />
