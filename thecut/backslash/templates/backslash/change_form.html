@@ -3,7 +3,7 @@
 {% load i18n admin_urls admin_static admin_modify %}
 
 
-{% block title %}{{ original }} - {% endblock %}
+{% block title %}{% if add %}{% trans "Add" %} {{ opts.verbose_name }}{% else %}{{ original }}{% endif %} - {{ block.super }}{% endblock %}
 
 
 {% block extrahead %}

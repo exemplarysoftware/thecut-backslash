@@ -2,7 +2,7 @@
 {% load i18n admin_urls admin_static admin_list backslash_list  %}
 
 
-{% block title %}{{ cl.opts.verbose_name_plural|capfirst }} - {% endblock %}
+{% block title %}{{ cl.opts.verbose_name_plural|capfirst }} - {{ block.super }}{% endblock %}
 
 
 {% block extrahead %}

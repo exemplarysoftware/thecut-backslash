@@ -3,7 +3,7 @@
 {% load url from future %}
 
 
-{% block title %}Logged out - {% endblock %}
+{% block title %}Logged out - {{ block.super }}{% endblock %}
 
 
 {% block content %}
