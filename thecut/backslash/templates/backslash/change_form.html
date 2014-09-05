@@ -9,12 +9,9 @@
 {% block extrahead %}
   {{ block.super }}
   <link href="{{ STATIC_URL }}backslash/stylesheets/change-form.css" type="text/css" rel="stylesheet" />
-  <script type="text/javascript" src="{% url "admin:jsi18n" %}"></script>
+  <script src="{% url "admin:jsi18n" %}" type="text/javascript"></script>
   {{ media }}
 {% endblock %}
-
-
-{% block userlinks %}{% include "backslash/_userlinks.html" %}{% endblock %}
 
 
 {% block pageclass %}{{ opts.model_name }}-form-page{% endblock %}
@@ -42,7 +39,7 @@
     <li>
       <a href="{% url "admin:view_on_site" content_type_id original.pk %}" class="viewsitelink button">{% trans "View On Site" %}</a>
     </li>
-    {% endif%}
+    {% endif %}
     {% endblock %}
   </ul>
   {% endif %}{% endif %}
