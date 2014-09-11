@@ -1,21 +1,5 @@
-{% extends "admin/app_index.html" %}
+{% extends "backslash/base.html" %}
 {% load i18n %}
 
 
-{% block extrastyle %}
-  {{ block.super }}
-  <link href="{{ STATIC_URL|default:MEDIA_URL }}backslash/backslash.css" type="text/css" rel="stylesheet" />
-  <link href="{{ STATIC_URL|default:MEDIA_URL }}stylesheets/backslash.css" type="text/css" rel="stylesheet" />
-{% endblock %}
-
-
-{% block userlinks %}{% include "backslash/_userlinks.html" %}{% endblock %}
-
-
-{% block breadcrumbs %}
-  <div class="breadcrumbs">{% if not is_popup %}<a href="../">
-  {% trans "Home" %}</a> &gt;
-  {% for app in app_list %}
-  <span class="active">{% blocktrans with app.name as name %}{{ name }}{% endblocktrans %}</span>
-  {% endfor %}{% endif %}</div>
-{% endblock %}
+{% block breadcrumbs %}{% if not is_popup %}{% endif %}{% endblock %}
