@@ -22,7 +22,7 @@
     <script src="{{ STATIC_URL }}backslash/lib/require.js" type="text/javascript"></script>
     <script src="{{ STATIC_URL }}backslash/backslash.js" type="text/javascript"></script>
 
-    {% if DEBUG %}
+    {% if debug %}
     {# This includes jQuery for Django Debug Toolbar, as we disabled it's automatic inclusion because of a race condition #}
     {# https://github.com/django-debug-toolbar/django-debug-toolbar/issues/605 #}
     <script src="{{ STATIC_URL }}backslash/lib/jquery.js" type="text/javascript"></script>

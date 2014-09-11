@@ -15,13 +15,7 @@
 {% endblock %}
 
 
-{% comment %}
-{% block breadcrumbs %}{% if not is_popup %}
-  <ul class="breadcrumbs">
-    <li><a href="../../">{% trans "Home" %}</a> &#92;</li>
-  </ul>
-{% endif %}{% endblock %}
-{% endcomment %}
+{% block breadcrumbs %}{% if not is_popup %}{% endif %}{% endblock %}
 
 
 {% block content_title %}{{ cl.opts.verbose_name_plural|capfirst }}{% endblock %}
