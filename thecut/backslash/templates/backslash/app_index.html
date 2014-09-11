@@ -2,4 +2,7 @@
 {% load i18n %}
 
 
+{% block title %}{{ title }} - {{ block.super }}{% endblock %}
+
+
 {% block breadcrumbs %}{% if not is_popup %}{% endif %}{% endblock %}
