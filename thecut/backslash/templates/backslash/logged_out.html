@@ -1,15 +1,17 @@
 {% extends "backslash/accounts_base.html" %}
 {% load i18n %}
-{% load url from future %}
 
 
 {% block title %}Logged out - {{ block.super }}{% endblock %}
 
 
 {% block content %}
+
   <h2>You have been logged out.</h2>
+
   <ul class="logout-options">
     <li><a href="{% url "admin:index" %}">Log back in to Backslash</a></li>
     <li><a href="/">Visit website homepage</a></li>
   </ul>
+
 {% endblock %}

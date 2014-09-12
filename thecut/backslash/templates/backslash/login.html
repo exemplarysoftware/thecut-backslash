@@ -12,6 +12,7 @@
 
 
 {% block content %}
+
   <h2 class="login-msg">Login to {{ current_site.name }}</h2>
 
   {% if form.errors and not form.non_field_errors and not form.this_is_the_login_form.errors %}
@@ -28,13 +29,18 @@
   {% endfor %}
   {% endif %}
 
-  <form action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
+  <form action="{{ app_path }}" method="post" id="login-form">
+
+    <div>{% csrf_token %}</div>
+
     <ul>
+
       <li class="username">
         <label for="id_username" class="required">{{ form.username.label }}</label>
         {{ form.username }}
         {% if not form.this_is_the_login_form.errors %}{{ form.username.errors }}{% endif %}
       </li>
+
       <li class="password">
         <label for="id_password" class="required">{% trans "Password" %}</label>
         {{ form.password }}
@@ -42,15 +48,20 @@
         <input type="hidden" name="next" value="{{ next }}" />
         {% if not form.this_is_the_login_form.errors %}{{ form.password.errors }}{% endif %}
       </li>
+
       <li class="submit">
         <input type="submit" value="{% trans "Log In" %}" />
       </li>
+
       {% url "admin_password_reset" as password_reset_url %}
       {% if password_reset_url %}
       <li class="password-reset-link">
         <a href="{{ password_reset_url }}">{% trans "Forgotten your username or password?" %}</a>
       </li>
       {% endif %}
+
     </ul>
+
   </form>
+
 {% endblock %}
