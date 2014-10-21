@@ -771,12 +771,15 @@ input[type="checkbox"] {
 
 /* nav headings */
 .header .nav > li > span {
-  padding: 0 25px;
+  display: block;
+  padding: 5px 25px;
   color: #6F7B85;
   font-size: 0.714em; /* 10/14 */
   text-transform: uppercase;
   font-weight: bold;
+  line-height: 1;
   letter-spacing: 0.5px;
+  text-shadow: 0 2px 1px #0F151A;
 }
 
 /*
