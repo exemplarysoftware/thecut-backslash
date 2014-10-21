@@ -631,7 +631,7 @@ input[type="checkbox"] {
   background-color: #171f26;
   overflow: hidden;
 }
-
+/*
 .js-enabled .header {
   width: 100px;
   -webkit-transition: width 0.3s ease-out;
@@ -666,7 +666,7 @@ input[type="checkbox"] {
 .js-enabled.nav-open .header:after {
   width: 0;
 }
-
+*/
 .header .branding {
   padding: 34px 30px;
   background-color: #cb0012;
@@ -678,7 +678,7 @@ input[type="checkbox"] {
   height: 32px;
   background: url(../images/logo.png) no-repeat;
 }
-
+/*
 .js-enabled .header .branding .logo {
   width: 24px;
   -webkit-transition: width 0.375s ease-out;
@@ -690,7 +690,7 @@ input[type="checkbox"] {
 .js-enabled.nav-open .header .branding .logo {
   width: 175px;
 }
-
+*/
 .header .branding .logo:after {
   content: "";
   position: absolute;
@@ -799,7 +799,7 @@ input[type="checkbox"] {
   margin-left: 260px;
 }
 
-.js-enabled .content-panel {
+/*.js-enabled .content-panel {
   margin-left: 100px;
   -webkit-transition: margin-left 0.3s ease-out;
      -moz-transition: margin-left 0.3s ease-out;
@@ -809,7 +809,7 @@ input[type="checkbox"] {
 
 .js-enabled.nav-open .content-panel {
   margin-left: 260px;
-}
+}*/
 
 
 
