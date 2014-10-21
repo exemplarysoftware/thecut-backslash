@@ -138,8 +138,8 @@
 .changelist .results table > thead > tr > td,
 .changelist .results table > tbody > tr > th,
 .changelist .results table > tbody > tr > td {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-align: left;
 }
 
@@ -246,10 +246,11 @@
   color: #898989;
 }
 
-.changelist .results table > tbody > tr > th:first-child > a,
-.changelist .results table > tbody > tr > td:first-child > a {
+.changelist .results table > tbody > tr > th > a,
+.changelist .results table > tbody > tr > td > a {
+  display: block;
   font-weight: normal;
-  font-size: 1.286em; /* 18/14 */
+  font-size: 1.143em; /* 16/14 */
   color: #171F26;
   border-bottom: none;
 }
