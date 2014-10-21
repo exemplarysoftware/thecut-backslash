@@ -669,15 +669,17 @@ input[type="checkbox"] {
 }
 */
 .header .branding {
-  padding: 34px 30px;
+  padding: 34px 25px;
   background-color: #cb0012;
 }
 
 .header .branding .logo {
   position: relative;
+  display: block;
   width: 175px;
   height: 32px;
   background: url(../images/logo.png) no-repeat;
+  border: none;
 }
 /*
 .js-enabled .header .branding .logo {
