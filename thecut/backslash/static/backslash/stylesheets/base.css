@@ -719,75 +719,61 @@ input[type="checkbox"] {
 }
 
 .header .nav {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
-  border-bottom: 1px solid #3F474D;
+  margin-top: 20px;
 }
 
-.js-enabled .header .nav {
-  border-color: #2C343B;
-  -webkit-transition: border-color 0.3s ease-out;
-     -moz-transition: border-color 0.3s ease-out;
-       -o-transition: border-color 0.3s ease-out;
-          transition: border-color 0.3s ease-out;
+.header .nav:first-child {
+  margin-top: 25px;
 }
 
-.js-enabled.nav-open .header .nav {
-  border-color: #3F474D;
-}
-
-.header .nav:last-child {
-  border-bottom: 0;
-}
-
-.header .nav li a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* nav links */
+.header .nav a {
   display: block;
-  white-space: nowrap;
-  color: #8a99a6;
-  font-size: 1.286em; /* 14/18 */
-  line-height: 1;
-  text-decoration: none;
+  padding: 7px 25px;
   border-bottom: none;
-  -webkit-transition: color 0.1s ease;
-     -moz-transition: color 0.1s ease;
-      -ms-transition: color 0.1s ease;
-       -o-transition: color 0.1s ease;
-          transition: color 0.1s ease;
+  background-color: transparent;
+  font-size: 1.143em; /* 16/14 */
+  line-height: 1.2;
+  text-decoration: none;
+  color: #99ADBF;
+  -webkit-transition: background-color 0.15s ease;
+     -moz-transition: background-color 0.15s ease;
+      -ms-transition: background-color 0.15s ease;
+       -o-transition: background-color 0.15s ease;
+          transition: background-color 0.15s ease;
 }
 
-.header .nav li a:hover,
-.header .nav li a:focus {
-  color: #b4c8d9;
+.header .nav a:hover,
+.header .nav a:focus {
+  color: #CFDBE6;
+  background-color: #263440;
 }
 
-.header .nav li a:focus {
+.header .nav a:focus {
   text-decoration: underline;
 }
 
-.header .nav li a:active {
+.header .nav a:active {
   position: relative;
   top: 1px;
 }
 
-.header .nav.secondary {
-  padding-top: 15px;
-  padding-bottom: 15px;
+.header .nav > li {
+  margin-top: 20px;
 }
 
-.header .nav.secondary li a {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #6A7680;
-  font-size: 1em; /* 14 */
+.header .nav > li:first-child {
+  margin-top: 0;
 }
 
-.header .nav.secondary li a:hover,
-.header .nav.secondary li a:focus {
-  color: #b4c8d9;
+/* nav headings */
+.header .nav > li > span {
+  padding: 0 25px;
+  color: #6F7B85;
+  font-size: 0.714em; /* 10/14 */
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 /*
