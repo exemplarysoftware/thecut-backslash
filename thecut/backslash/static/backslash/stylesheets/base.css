@@ -626,7 +626,7 @@ input[type="checkbox"] {
 
 .header {
   position: fixed;
-  width: 260px;
+  width: 220px;
   height: 100%;
   background-color: #171f26;
   overflow-y: scroll;
@@ -785,7 +785,7 @@ input[type="checkbox"] {
 
 .content-panel {
   background: #fff;
-  margin-left: 260px;
+  margin-left: 220px;
 }
 
 /*.js-enabled .content-panel {
