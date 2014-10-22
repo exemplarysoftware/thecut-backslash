@@ -748,6 +748,19 @@ input[type="checkbox"] {
           transition: background-color 0.15s ease;
 }
 
+/* reduce size of nav items if viewport height is < 660px */
+@media screen and (max-height: 660px) {
+  .header .nav {
+    margin-bottom: 15px;
+  }
+
+  .header .nav a {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 1em; /* 14px */
+  }
+}
+
 .header .nav a:hover,
 .header .nav a:focus {
   color: #CFDBE6;
