@@ -205,9 +205,12 @@ input[type="datetime"]:focus,
 input[type="search"]:focus,
 input[type="url"]:focus,
 textarea:focus {
-  box-shadow: 0 0 3px rgba(77, 211, 241, 0.5);
-  border-color: #4dd3f1;
+  color: #0A0B0D;
   background-color: #fff;
+  border-color: #959EA6;
+  -webkit-box-shadow: 0 2px 3px #E6E6E6;
+     -moz-box-shadow: 0 2px 3px #E6E6E6;
+          box-shadow: 0 2px 3px #E6E6E6;
 }
 
 input:disabled,
