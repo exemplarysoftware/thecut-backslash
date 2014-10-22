@@ -812,8 +812,8 @@ input[type="checkbox"] {
  */
 
 .page-header {
-  min-height: 66px;
-  padding-top: 34px;
+  min-height: 57px;
+  margin-top: 25px;
   padding-left: 30px;
   padding-right: 30px;
 }
