@@ -134,7 +134,8 @@ label {
   display: block;
   color: #171f26;
   font-size: 1em; /* 14 */
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+  letter-spacing: 0.1px;
 }
 
 fieldset {
