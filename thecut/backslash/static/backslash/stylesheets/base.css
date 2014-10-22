@@ -192,7 +192,7 @@ input[type="url"] {
 textarea {
   min-height: 120px;
   padding: 10px 12px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 input[type="text"]:focus,
