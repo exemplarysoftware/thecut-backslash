@@ -926,3 +926,17 @@ input[type="checkbox"] {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+
+/*
+ * Experimental
+ */
+
+/* optimize legibility */
+
+.header .nav a,
+.page-title,
+.page-header .breadcrumbs > li,
+.page-header .breadcrumbs > li > a {
+  -moz-osx-font-smoothing: grayscale;
+}
