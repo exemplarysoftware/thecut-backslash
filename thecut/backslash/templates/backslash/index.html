@@ -10,9 +10,12 @@
 {% block pageclass %}dashboard{% endblock %}
 
 {% block content %}
-  <br />
-  <p>Welcome to your website administration area.</p>
-  <p>Select an area to manage from the toolbar to begin.</p>
-  <br />
+
+  <div class="std-content">
+    <p>Welcome to your website administration area.</p>
+    <p>Select an area to manage from the toolbar to begin.</p>
+  </div>
+
   <ul id="notices" data-domain="{{ current_site.domain }}" data-server="{{ request.META.SERVER_NAME }}"></ul>
+
 {% endblock %}
