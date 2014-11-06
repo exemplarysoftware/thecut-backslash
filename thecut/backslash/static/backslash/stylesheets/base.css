@@ -913,3 +913,13 @@ input[type="checkbox"] {
 .page-header .object-toolbar > li:first-child {
   margin-left: 0;
 }
+
+
+/*
+ * Dashboard
+ */
+
+.dashboard .std-content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
