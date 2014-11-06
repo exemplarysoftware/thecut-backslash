@@ -751,10 +751,6 @@ input[type="checkbox"] {
   margin-bottom: 25px;
 }
 
-.header .nav:first-child {
-  margin-top: 25px;
-}
-
 /* nav links */
 .header .nav a {
   display: block;
