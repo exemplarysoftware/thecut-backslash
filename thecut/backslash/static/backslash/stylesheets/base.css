@@ -891,6 +891,7 @@ input[type="checkbox"] {
 
 .page-title {
   float: left;
+  letter-spacing: -0.4px;
 }
 
 
