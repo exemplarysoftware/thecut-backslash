@@ -807,8 +807,8 @@ input[type="checkbox"] {
 .header .nav > li > span {
   display: block;
   padding: 5px 25px;
-  color: #6F7B85;
-  font-size: 0.714em; /* 10/14 */
+  color: #CFDBE6;
+  font-size: 0.786em; /* 11/14 */
   text-transform: uppercase;
   font-weight: bold;
   line-height: 1;
