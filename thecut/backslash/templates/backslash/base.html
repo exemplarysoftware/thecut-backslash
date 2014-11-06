@@ -40,6 +40,11 @@
   <body>
 
     <div class="header">
+      <a class="site-id" href="{% url 'admin:index' %}">
+        <h2 class="site-name">{{ current_site.name }}</h2>
+        <span>Admin</span>
+      </a>
+
       <div class="site-navigation">
         {% include "backslash/_menu.html" %}
 
