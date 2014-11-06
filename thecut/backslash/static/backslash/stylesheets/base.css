@@ -876,6 +876,7 @@ input[type="checkbox"] {
 .page-header .breadcrumbs > li > a {
   display: inline-block;
   border-bottom: 0;
+  letter-spacing: -0.4px;
 }
 
 .page-header .breadcrumbs > li > a:hover,
