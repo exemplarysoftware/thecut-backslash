@@ -128,6 +128,15 @@ ul > li:first-child {
 }
 
 /*
+ * Change Password Form
+ */
+
+#password-change-form {
+  max-width: 480px;
+}
+
+
+/*
  ** Form Inputs
  */
 
