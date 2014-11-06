@@ -224,3 +224,25 @@
   background-color: #E3E5E8;
   background-color: rgba(121, 127, 140, 0.2);
 }
+
+
+/*
+ * Experimental
+ */
+
+@media all and (min-width: 1280px) {
+  .field-title,
+  .field-headline,
+  .field-link,
+  .field-meta_description,
+  .field-tags {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+  }
+
+  .field-title,
+  .field-meta_description {
+    margin-right: 3.4%;
+  }
+}
