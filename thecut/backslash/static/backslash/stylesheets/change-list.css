@@ -253,3 +253,15 @@
   color: #171F26;
   border-bottom: none;
 }
+
+.changelist .results table > tbody > tr:hover,
+.changelist .results table > tbody > tr:focus {
+  background-color: #FCFCFC;
+}
+
+.changelist .results table > tbody > tr > th > a:hover,
+.changelist .results table > tbody > tr > td > a:hover,
+.changelist .results table > tbody > tr > th > a:focus,
+.changelist .results table > tbody > tr > td > a:focus {
+  text-decoration: underline;
+}
