@@ -234,6 +234,7 @@
   .field-title,
   .field-headline,
   .field-link,
+  .field-slug,
   .field-meta_description,
   .field-tags {
     display: inline-block;
