@@ -816,6 +816,32 @@ input[type="checkbox"] {
   letter-spacing: 0.5px;
 }
 
+.header .backslash-branding {
+  display: block;
+  padding: 20px 25px;
+  margin-top: 40px;
+}
+
+.header .backslash-branding > span {
+  display: block;
+  text-transform: uppercase;
+  color: #6F7B85;
+  font-size: 0.786em; /* 11/14 */
+  letter-spacing: 1px;
+}
+
+.header .backslash-branding .logo {
+  margin-bottom: 0;
+  font-size: 1.714em; /* 24/14 */
+  font-size: 24px;
+  color: #fff;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header .backslash-branding .logo span {
+  color: #CB0012;
+}
+
 /*
  ** Content Panel
  */
