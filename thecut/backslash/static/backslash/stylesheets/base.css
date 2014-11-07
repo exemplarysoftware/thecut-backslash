@@ -762,19 +762,6 @@ input[type="checkbox"] {
   margin-left: 220px;
 }
 
-/*.js-enabled .content-panel {
-  margin-left: 100px;
-  -webkit-transition: margin-left 0.3s ease-out;
-     -moz-transition: margin-left 0.3s ease-out;
-       -o-transition: margin-left 0.3s ease-out;
-          transition: margin-left 0.3s ease-out;
-}
-
-.js-enabled.nav-open .content-panel {
-  margin-left: 260px;
-}*/
-
-
 
 /*
  *** Page Header
