@@ -638,42 +638,6 @@ input[type="checkbox"] {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
-/*
-.js-enabled .header {
-  width: 100px;
-  -webkit-transition: width 0.3s ease-out;
-     -moz-transition: width 0.3s ease-out;
-       -o-transition: width 0.3s ease-out;
-          transition: width 0.3s ease-out;
-}
-
-.js-enabled.nav-open .header {
-  width: 260px;
-}
-
-.js-enabled .header:after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 100%;
-  background: transparent;
-  background-image: -webkit-linear-gradient(90deg, rgba(23,31,38,0), rgba(23,31,38,1));
-  background-image:    -moz-linear-gradient(90deg, rgba(23,31,38,0), rgba(23,31,38,1));
-  background-image:         linear-gradient(90deg, rgba(23,31,38,0), rgba(23,31,38,1));
-  top: 100px;
-  right: 0;
-  z-index: 2;
-  -webkit-transition: width 0.3s ease-out;
-     -moz-transition: width 0.3s ease-out;
-       -o-transition: width 0.3s ease-out;
-          transition: width 0.3s ease-out;
-  pointer-events: none;
-}
-
-.js-enabled.nav-open .header:after {
-  width: 0;
-}
-*/
 
 .header .site-id {
   display: block;
@@ -691,59 +655,6 @@ input[type="checkbox"] {
   font-size: 0.857em; /* 12/14 */
   color: #6F7B85;
   letter-spacing: 1px;
-}
-
-.header .branding {
-  padding: 25px;
-  background-color: #cb0012;
-}
-
-.header .branding .logo {
-  position: relative;
-  display: block;
-  width: 24px;
-  height: 32px;
-  background: url(../images/logo.png) no-repeat;
-  border: none;
-}
-/*
-.js-enabled .header .branding .logo {
-  width: 24px;
-  -webkit-transition: width 0.375s ease-out;
-     -moz-transition: width 0.375s ease-out;
-       -o-transition: width 0.375s ease-out;
-          transition: width 0.375s ease-out;
-}
-
-.js-enabled.nav-open .header .branding .logo {
-  width: 175px;
-}
-*/
-.header .branding .logo:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -21px;
-  width: 16px;
-  height: 31px;
-  background: url(../images/logo-slash.png) no-repeat;
-}
-
-.header .branding .logo > span {
-  display: none;
-  color: #fff;
-  font-size: 3em; /* 42/14 */
-  line-height: 1;
-}
-
-@media all and (min-width: 0) {
-  .header .branding .logo:after {
-    background-image: url(../images/logo-slash.svg);
-  }
-
-  .header .branding .logo {
-    background-image: url(../images/logo.svg);
-  }
 }
 
 .header .nav {
