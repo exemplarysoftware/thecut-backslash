@@ -2,7 +2,7 @@
 <html lang="{{ LANGUAGE_CODE|default:"en-au" }}">
 
   <head>
-    <title>{% block title %}{{ current_site.name }} - Backslash{% endblock %}</title>
+    <title>{% block title %}{{ request.site.name }} - Backslash{% endblock %}</title>
     {% block meta %}
     <meta charset="utf-8" />
     <meta name="robots" content="none,noarchive,nofollow,noindex" />
@@ -41,7 +41,7 @@
 
     <div class="header">
       <a class="site-id" href="{% url 'admin:index' %}">
-        <h2 class="site-name">{{ current_site.name }}</h2>
+        <h2 class="site-name">{{ request.site.name }}</h2>
         <span>Admin</span>
       </a>
 
