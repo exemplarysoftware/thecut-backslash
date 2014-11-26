@@ -2,7 +2,7 @@
 {% load url from future %}
 {% load i18n %}
 
-{% block title %}{{ request.site.name|default:current_site.name }} - Backslash{% endblock %}
+{% block title %}{% if request.site %}{{ request.site.name }}{% elif current_site %}{{ current_site.name }}{% endif %} - Backslash{% endblock %}
 
 {% block extrahead %}
 {{ block.super }}
@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block branding %}
-  <h1 id="site-name"><a href="{% url "admin:index" %}">{{ request.site.name|default:current_site.name }}</a></h1>
+  <h1 id="site-name"><a href="{% url "admin:index" %}">{% if request.site %}{{ request.site.name }}{% elif current_site %}{{ current_site.name }}{% endif %}</a></h1>
 {% endblock %}
 
 {% block nav-global %}
