@@ -1,6 +1,6 @@
 var backslashRequire = requirejs.config({
 
-    baseUrl: '/static/backslash',
+    baseUrl: document.querySelector('script[src$="/backslash/lib/require.js"][data-main][data-baseUrl]').getAttribute('data-baseUrl'),
 
     context: 'backslash',
 
