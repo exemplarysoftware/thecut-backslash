@@ -204,37 +204,27 @@ input[type="submit"] {
           box-sizing: border-box;
   display: inline-block;
   height: 36px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: #fff;
   font-size: 14px;
-  line-height: 36px;
+  line-height: 38px;
   text-align: center;
   text-decoration: none;
-  background-color: #4dd3f1;
-  background-image: -webkit-linear-gradient(#4ed4f2, #45bed9);
-  background-image:    -moz-linear-gradient(#4ed4f2, #45bed9);
-  background-image:         linear-gradient(#4ed4f2, #45bed9);
+  background-color: #00AEEE;
   border: none;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   cursor: pointer;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-  background-color: #42b4ce;
-  background-image: -webkit-linear-gradient(#42b4ce, #3ba1b8);
-  background-image:    -moz-linear-gradient(#42b4ce, #3ba1b8);
-  background-image:         linear-gradient(#42b4ce, #3ba1b8);
+  background-color: #009BD4;
 }
 
 input[type="submit"]:active {
-  background-color: #3ba1b8;
-  background-image: -webkit-linear-gradient(#3ba1b8, #42b4ce);
-  background-image:    -moz-linear-gradient(#3ba1b8, #42b4ce);
-  background-image:         linear-gradient(#3ba1b8, #42b4ce);
+  background-color: #0089BA;
 }
 
 /*
