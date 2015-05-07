@@ -32,7 +32,7 @@
 
   </head>
 
-  <body>
+  <body class="{% block bodyclass %}{% endblock %}">
 
     <div class="header">
       <a class="site-id" href="{% url "admin:index" %}">

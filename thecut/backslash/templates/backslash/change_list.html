@@ -15,6 +15,9 @@
 {% endblock %}
 
 
+{% block bodyclass %}{{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} change-list{% endblock %}
+
+
 {% block breadcrumbs %}{% if not is_popup %}{% endif %}{% endblock %}
 
 
