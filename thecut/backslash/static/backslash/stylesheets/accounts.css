@@ -67,24 +67,16 @@ ul > li:first-child {
 }
 
 .header .logo {
-  position: relative;
-  margin: 0;
-  width: 175px;
-  height: 32px;
-  background: url(../images/login-logo.png) no-repeat;
+  font-size: 32px;
+  color: #fff;
+  font-weight: lighter;
 }
 
 .header .logo > span {
-  display: none;
-  color: #fff;
-  font-size: 3em; /* 42/14 */
-  line-height: 1;
-}
-
-@media all and (min-width: 0) {
-  .header .logo {
-    background-image: url(../images/login-logo.svg);
-  }
+  color: #CB0012;
+  font-size: 30px;
+  position: relative;
+  top: -2px;
 }
 
 .login-msg {
