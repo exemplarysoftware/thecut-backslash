@@ -12,6 +12,13 @@ body {
   padding: 34px 0 0 30px;
 }
 
+h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 1.429em; /* 20/14 */
+  font-weight: normal;
+}
+
 h2 {
   font-weight: normal;
   margin-top: 0;
