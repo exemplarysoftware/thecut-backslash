@@ -150,24 +150,20 @@ input[type="password"] {
           box-sizing: border-box;
   display: block;
   width: 100%;
-  padding-left: 12px;
+  height: 45px;
+  padding-left: 15px;
   margin-bottom: 5px;
+  font-size: 18px;
   background: #fcfcfc;
   border: none;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
 }
 
 input[type="text"]:last-child,
 input[type="email"]:last-child,
 input[type="password"]:last-child {
   margin-bottom: 0;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  height: 40px;
 }
 
 input[type="text"]:focus,
