@@ -86,14 +86,6 @@ ul > li:first-child {
   top: -2px;
 }
 
-.login-msg {
-  color: #fff;
-  margin-bottom: 40px;
-  font-size: 1.429em; /* 20/14 */
-  font-weight: normal;
-}
-
-
 /*
  * Login Form
  */
