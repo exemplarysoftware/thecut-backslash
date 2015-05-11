@@ -110,3 +110,66 @@
 .calendarbox .calendar-cancel a:focus {
   text-decoration: underline;
 }
+
+
+/*
+ ** Clockbox
+ */
+
+.clockbox {
+  overflow: hidden;
+  margin-left: 10px;
+  background: #fff;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.clockbox h2 {
+  padding: 10px 20px 7px;
+  margin-bottom: 0;
+  background: #171F26;
+  color: #fff;
+  font-size: 1em; /* 14 */
+  line-height: 1;
+  text-align: center;
+}
+
+.clockbox .timelist {
+  text-align: center;
+}
+
+.clockbox .timelist li {
+  border-bottom: 1px solid #e3e3e3;
+  /*padding: 1px;*/
+}
+
+.clockbox .timelist a {
+  display: block;
+  padding: 6px 0 4px;
+  font-size: 0.857em; /* 12/14 */
+  font-weight: bold;
+}
+
+.clockbox .timelist a:hover {
+  background: #9099AB;
+  color: #fff;
+}
+
+.clockbox .calendar-cancel {
+  text-align: center;
+}
+
+.clockbox .calendar-cancel a {
+  display: block;
+  font-size: 0.857em; /* 12/14 */
+  padding-top: 6px;
+  padding-bottom: 4px;
+}
+
+.clockbox .calendar-shortcuts a:hover,
+.clockbox .calendar-shortcuts a:focus,
+.clockbox .calendar-cancel a:hover,
+.clockbox .calendar-cancel a:focus {
+  text-decoration: underline;
+}
