@@ -50,11 +50,12 @@
 
 .change-form .collapse {
   height: auto;
-  background: #f3f3f3;
+  width: 100%;
+  padding: 30px;
+  margin-left: -30px;
   border-top: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  background: #f3f3f3;
 }
 
 .change-form .collapsed * {
