@@ -6,15 +6,6 @@
  * Page Form
  */
 
-.change-form .module {
-  padding: 0 30px;
-  margin-bottom: 80px;
-}
-
-.change-form .module:last-child {
-  margin-bottom: 0;
-}
-
 .change-form .module .form-row {
   margin-bottom: 25px;
 }
