@@ -195,6 +195,23 @@
 
 
 /*
+ * Apps
+ */
+
+/*
+ ** Media App
+ */
+
+.change-form .attachedmediaitem.manager,
+.change-form .attachedmediaitem.manager .contenttypes {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: -30px;
+}
+
+
+/*
  * Experimental
  */
 
