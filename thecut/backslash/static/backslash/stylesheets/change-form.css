@@ -20,27 +20,27 @@
   margin-bottom: 0;
 }
 
-.change-form .module .form-row {
+.change-form .form-row {
   margin-bottom: 25px;
 }
 
-.change-form .module .form-row:last-child {
+.change-form .form-row:last-child {
   margin-bottom: 0;
 }
 
-.change-form .module .form-row:first-child {
+.change-form .form-row:first-child {
   margin-top: 0;
 }
 
-.change-form .module .form-row .field-box {
+.change-form .form-row .field-box {
   margin-top: 15px;
 }
 
-.change-form .module .form-row .field-box:first-child {
+.change-form .form-row .field-box:first-child {
   margin-top: 0;
 }
 
-.change-form .module .form-row .help {
+.change-form .form-row .help {
   color: #9099AB;
   font-size: 0.857em; /* 12/14 */
 }
