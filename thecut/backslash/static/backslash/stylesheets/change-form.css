@@ -48,7 +48,7 @@
 
 /* Collapsed Modules */
 
-.change-form .module.collapse {
+.change-form .collapse {
   height: auto;
   background: #f3f3f3;
   border-top: 1px solid #d8d8d8;
@@ -57,11 +57,18 @@
   padding-bottom: 30px;
 }
 
-.change-form .module.collapse.collapsed {
-  height: 18px;
-  overflow: hidden;
+.change-form .collapsed * {
+  display: none;
 }
 
+.change-form .collapsed h2 {
+  display: block;
+  margin-bottom: 0;
+}
+
+.change-form .collapsed h2 .collapse-toggle {
+  display: inline;
+}
 
 /*
  ** Page Form Items
