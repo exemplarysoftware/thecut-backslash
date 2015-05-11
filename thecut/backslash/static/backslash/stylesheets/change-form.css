@@ -10,6 +10,16 @@
   padding: 0 30px;
 }
 
+.change-form .page-content fieldset,
+.change-form .page-content .inline-group {
+  margin-bottom: 40px;
+}
+
+.change-form .page-content fieldset:last-child,
+.change-form .page-content .inline-group:last-child {
+  margin-bottom: 0;
+}
+
 .change-form .module .form-row {
   margin-bottom: 25px;
 }
