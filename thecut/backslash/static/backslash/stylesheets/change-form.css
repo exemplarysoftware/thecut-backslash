@@ -6,6 +6,10 @@
  * Page Form
  */
 
+.change-form .page-content {
+  padding: 0 30px;
+}
+
 .change-form .module .form-row {
   margin-bottom: 25px;
 }
