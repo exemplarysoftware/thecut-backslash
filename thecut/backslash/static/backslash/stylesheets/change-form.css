@@ -32,6 +32,32 @@
   margin-top: 0;
 }
 
+.change-form .form-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.change-form .form-row .field-box {
+  float: left;
+  width: 47.5%;
+  margin-right: 2.5%;
+  margin-bottom: 20px;
+}
+
+.change-form .form-row .field-box:nth-child(n) {
+  width: 49%;
+  margin-right: 2%;
+}
+
+.change-form .form-row .field-box:nth-child(2n) {
+  margin-right: 0;
+}
+
+.change-form .form-row .field-box:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+
 .change-form .form-row .help {
   color: #9099AB;
   font-size: 0.857em; /* 12/14 */
