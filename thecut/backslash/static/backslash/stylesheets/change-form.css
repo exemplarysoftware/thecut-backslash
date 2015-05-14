@@ -227,3 +227,40 @@
   padding-right: 30px;
   margin-left: -30px;
 }
+
+
+/*
+ * Inlines
+ */
+
+
+/*
+ ** Base/Stacked Inlines
+ */
+
+.inline-group .inline-related {
+  padding: 20px 18px;
+  margin-bottom: 20px;
+  border: 1px solid #D8D8D8;
+  background: #FFF;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.inline-group .inline-related .form-row {
+  margin-bottom: 10px;
+}
+
+.inline-group .inline-related .form-row:last-child {
+  margin-bottom: 0;
+}
+
+.inline-group .inline-related fieldset {
+  margin-bottom: 0;
+}
+
+.inline-group .empty-form {
+  display: none;
+}
