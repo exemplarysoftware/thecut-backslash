@@ -173,7 +173,14 @@
 }
 
 .change-form .submit-row input[name="_save"] {
-  background-color: #70BF1B;
+  padding-left: 34px;
+  background: #70BF1B url(../images/check-icon.png) 12px 13px no-repeat;
+}
+
+@media screen and (min-width: 0) {
+  .change-form .submit-row input[name="_save"] {
+    background-image: url(../images/check-icon.svg);
+  }
 }
 
 .change-form .submit-row input[name="_save"]:hover,
