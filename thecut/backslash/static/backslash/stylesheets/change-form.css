@@ -264,3 +264,56 @@
 .inline-group .empty-form {
   display: none;
 }
+
+
+/*
+ * Tabular Inlines
+ */
+
+.inline-group .inline-related.tabular {
+  padding: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.inline-group .inline-related.tabular table {
+  width: 100%;
+}
+
+.inline-group .inline-related.tabular table thead {
+  border-bottom: 1px solid #CCC;
+}
+
+.inline-group .inline-related.tabular table thead th {
+  text-align: left;
+  color: #777;
+  font-size: 0.714em;
+  text-transform: uppercase;
+}
+
+.inline-group .inline-related.tabular table .form-row {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.inline-group .inline-related.tabular table thead th,
+.inline-group .inline-related.tabular table .form-row td {
+  padding: 10px;
+}
+
+.inline-group .inline-related.tabular table .form-row td {
+  vertical-align: top;
+}
+
+.inline-group .inline-related.tabular table .form-row td.original {
+  padding: 0;
+}
+
+.inline-group .inline-related.tabular table .form-row.has_original td.original p {
+  display: none;
+}
+
+.inline-group .inline-related.tabular table .add-row a {
+  margin-top: 20px;
+}
