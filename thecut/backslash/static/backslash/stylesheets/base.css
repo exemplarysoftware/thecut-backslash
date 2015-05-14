@@ -490,7 +490,16 @@ input[type="submit"]:active {
   top: 1px;
 }
 
+/*
+ ***** Misc
+ */
 
+.button.addlink {
+  padding-left: 34px;
+  background-image: url(../images/add-icon.png);
+  background-position: 12px 11px;
+  background-repeat: no-repeat;
+}
 
 
 /*
