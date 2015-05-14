@@ -235,6 +235,112 @@
 
 
 /*
+ ** Inlines - Buttons
+ */
+
+.inline-group .add-row a,
+.inline-group .inline-deletelink {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  padding: 10px 15px 8px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.286;
+  background-repeat: no-repeat;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/* Add-new button */
+
+.inline-group .add-row a {
+  padding-left: 34px;
+  background-color: #00AEEE;
+  background-image: url(../images/add-icon.png);
+  background-position: 12px 11px;
+}
+
+.inline-group .add-row a:hover,
+.inline-group .add-row a:focus {
+  background-color: #009BD4;
+}
+
+.inline-group .add-row a:active {
+  background-color: #0089BA;
+}
+
+/* Remove button */
+
+.inline-group .inline-deletelink {
+  padding-left: 32px;
+  background-color: #fe6565;
+  background-image: url(../images/delete-icon.png);
+  background-position: 12px 12px;
+}
+
+.inline-group .inline-deletelink:hover,
+.inline-group .inline-deletelink:focus {
+  background-color: #CC5151;
+}
+
+.inline-group .inline-deletelink:active {
+  background-color: #B84949;
+}
+
+@media screen and (min-width: 0) {
+  .inline-group .add-row a {
+    background-image: url(../images/add-icon.svg);
+  }
+
+  .inline-group .inline-deletelink {
+    background-image: url(../images/delete-icon.svg);
+  }
+}
+
+/* Delete button */
+
+.inline-group .inline-related span.delete {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #CED1D9;
+  font-size: 14px;
+  line-height: 1.286;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.inline-group .inline-related span.delete:hover {
+  border-color: #fe6565;
+}
+
+.inline-group .inline-related span.delete input[type="checkbox"] {
+  position: absolute;
+  top: 9px;
+  left: 8px;
+  margin-right: 0;
+}
+
+.inline-group .inline-related span.delete label {
+  display: inline-block;
+  padding: 8px 15px 6px 30px;
+  margin-bottom: 0;
+  color: #fe6565;
+  cursor: pointer;
+}
+
+
+/*
  ** Base/Stacked Inlines
  */
 
@@ -259,6 +365,11 @@
 
 .inline-group .inline-related fieldset {
   margin-bottom: 0;
+}
+
+.inline-group .inline-related .inline-deletelink,
+.inline-group .inline-related span.delete {
+  float: right;
 }
 
 .inline-group .empty-form {
