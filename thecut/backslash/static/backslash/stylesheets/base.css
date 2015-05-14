@@ -137,6 +137,10 @@ label {
   letter-spacing: 0.1px;
 }
 
+label.inline {
+  display: inline;
+}
+
 fieldset {
   border: none;
   margin: 0;
