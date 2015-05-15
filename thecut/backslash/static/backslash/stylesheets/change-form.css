@@ -224,7 +224,8 @@
 
 .change-form .submit-row .deletelink:hover,
 .change-form .submit-row .deletelink:focus {
-  border-color: #636773;
+  border-color: #FE6565;
+  color: #FE6565;
 }
 
 .change-form .submit-row .deletelink:active {
