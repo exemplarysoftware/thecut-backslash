@@ -132,35 +132,33 @@
  ** Results List
  */
 
-.changelist .results table {
-  width: 100%;
-  max-width: 100%;
+.changelist .results table > thead > tr > th {
+  height: 12px;
+  color: #777;
+  font-size: 0.714em; /* 10/14 */
+  text-transform: uppercase;
 }
 
-.changelist .results table > thead {
-  border-bottom: 1px solid #ccc;
+.action-list table > thead > tr > th {
+  height: 12px;
+  color: #777;
+  font-size: 0.714em; /* 10/14 */
+  text-transform: uppercase;
 }
 
-.changelist .results table > thead > tr > th,
-.changelist .results table > thead > tr > td,
-.changelist .results table > tbody > tr > th,
-.changelist .results table > tbody > tr > td {
+.changelist .results table tr > th,
+.changelist .results table tr > td {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
 }
 
-.changelist .results table > thead > tr > th:first-child,
-.changelist .results table > thead > tr > td:first-child,
-.changelist .results table > tbody > tr > th:first-child,
-.changelist .results table > tbody > tr > td:first-child {
+.changelist .results table tr > th:first-child,
+.changelist .results table tr > td:first-child {
   padding-left: 30px;
 }
 
-.changelist .results table > thead > tr > th:last-child,
-.changelist .results table > thead > tr > td:last-child,
-.changelist .results table > tbody > tr > th:last-child,
-.changelist .results table > tbody > tr > td:last-child {
+.changelist .results table tr > th:last-child,
+.changelist .results table tr > td:last-child {
   padding-right: 30px;
 }
 
@@ -230,22 +228,6 @@
 
 .changelist .results table > thead > tr > th > .sortoptions > .clear {
   clear: both;
-}
-
-.changelist .results table > thead > tr > th > .text {
-  float: left;
-  height: 12px;
-  color: #777;
-  font-size: 0.714em; /* 10/14 */
-  text-transform: uppercase;
-}
-
-.changelist .results table > thead > tr > th > .text > a {
-  border-bottom: 0;
-}
-
-.changelist .results table > tbody > tr {
-  border-bottom: 1px solid #ececec;
 }
 
 .changelist .results table > tbody > tr > th,
