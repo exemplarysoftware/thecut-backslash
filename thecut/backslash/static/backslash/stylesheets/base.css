@@ -763,9 +763,9 @@ input[type="submit"]:active {
 }
 
 .header .backslash-branding {
-  display: block;
   padding: 20px 25px;
   margin-top: 40px;
+  cursor: default;
 }
 
 .header .backslash-branding > span {
