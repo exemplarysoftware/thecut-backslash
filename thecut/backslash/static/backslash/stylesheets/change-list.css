@@ -1,4 +1,13 @@
 /*
+ * Base
+ */
+
+.change-list .page-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*
  * Changelist Tools
  */
 
