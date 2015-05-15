@@ -137,12 +137,17 @@
   margin-bottom: 0;
 }
 
-.change-form .form-row .url > a {
-  color: #4BCEEC;
-  border-color: #4BCEEC;
+.change-form .form-row.field-link > a {
+  color: #00AEEE;
+  text-decoration: underline;
 }
 
-.change-form .form-row .url > br {
+.change-form .form-row.field-link > a:hover,
+.change-form .form-row.field-link > a:focus {
+  color: #009BD4;
+}
+
+.change-form .form-row.field-link > br {
   margin-bottom: 10px;
 }
 
