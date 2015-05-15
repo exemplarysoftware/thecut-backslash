@@ -678,6 +678,7 @@ input[type="submit"]:active {
 .header .site-id .site-name {
   margin-bottom: 0;
   font-size: 1.429em; /* 20/14 */
+  line-height: 1.2;
   color: #fff;
 }
 
