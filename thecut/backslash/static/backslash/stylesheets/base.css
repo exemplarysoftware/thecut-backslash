@@ -382,8 +382,8 @@ input[type="submit"]:active {
   width: 20%;
   min-width: 70px;
   height: 40px;
-  -webkit-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
+  -webkit-border-radius: 0 2px 2px 0;
+          border-radius: 0 2px 2px 0;
 }
 
 
