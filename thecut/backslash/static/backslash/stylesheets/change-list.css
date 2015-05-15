@@ -93,12 +93,12 @@
 }
 .changelist-tools .changelist-filters > ul a:hover,
 .changelist-tools .changelist-filters > ul a:focus {
-  color: #4BCEEC;
+  color: #009BD4;
 }
 
 .changelist-tools .changelist-filters > ul .selected a {
-  border-bottom: 1px solid #4BCEEC;
-  color: #4BCEEC;
+  text-decoration: underline;
+  color: #00AEEE;
 }
 
 
