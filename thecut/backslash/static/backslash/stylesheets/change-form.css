@@ -377,6 +377,18 @@
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+.inline-group .inline-related h3 > a {
+  font-size: 0.7em; /* 14/20 */
+  text-decoration: underline;
+  color: #00AEEE;
+  margin-left: 10px;
+}
+
+.inline-group .inline-related h3 > a:hover,
+.inline-group .inline-related h3 > a:focus {
+  color: #009BD4;
+}
+
 .inline-group .inline-related .form-row {
   margin-bottom: 10px;
 }
