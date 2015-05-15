@@ -715,6 +715,7 @@ input[type="submit"]:active {
       -ms-transition: background-color 0.15s ease;
        -o-transition: background-color 0.15s ease;
           transition: background-color 0.15s ease;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* reduce size of nav items if viewport height is < 660px */
@@ -852,6 +853,7 @@ input[type="submit"]:active {
   float: left;
   margin-bottom: 0;
   letter-spacing: -0.4px;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -884,18 +886,4 @@ input[type="submit"]:active {
 
 .page-content {
   padding: 0 30px;
-}
-
-
-/*
- * Experimental
- */
-
-/* optimize legibility */
-
-.header .nav a,
-.page-title,
-.page-header .breadcrumbs > li,
-.page-header .breadcrumbs > li > a {
-  -moz-osx-font-smoothing: grayscale;
 }
