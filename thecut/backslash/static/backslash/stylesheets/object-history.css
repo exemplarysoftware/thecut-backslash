@@ -1,0 +1,29 @@
+/*
+ * Object History Styles
+ */
+
+table.change-history > thead > tr > th {
+  height: 12px;
+  color: #777;
+  font-size: 0.714em; /* 10/14 */
+  text-transform: uppercase;
+}
+
+table.change-history tr > th,
+table.change-history tr > td {
+  padding: 12px;
+}
+
+table.change-history > tbody > tr:hover,
+table.change-history > tbody > tr:focus {
+  background-color: #FCFCFC;
+}
+
+table.change-history > tbody > tr > th,
+table.change-history > tbody > tr > td {
+  color: #171F26;
+}
+
+table.change-history > tbody > tr > th {
+  font-weight: normal;
+}
