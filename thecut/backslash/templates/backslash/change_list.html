@@ -54,7 +54,7 @@
 
 
 {% block content %}
-  <div class="changelist">
+  <div class="changelist{% if cl.has_filters %} filtered{% endif %}" id="changelist">
     <div class="changelist-tools">
       {% block search %}{% search_form cl %}{% endblock %}
 
