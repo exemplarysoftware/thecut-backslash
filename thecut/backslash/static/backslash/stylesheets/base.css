@@ -729,10 +729,6 @@ input[type="submit"]:active {
   background-color: #263440;
 }
 
-.header .nav a:focus {
-  text-decoration: underline;
-}
-
 .header .nav a:active {
   position: relative;
   top: 1px;
