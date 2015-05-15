@@ -151,6 +151,16 @@
   margin-bottom: 10px;
 }
 
+.change-form .form-row.field-thumbnail a {
+  color: #00AEEE;
+  text-decoration: underline;
+}
+
+.change-form .form-row.field-thumbnail a:hover,
+.change-form .form-row.field-thumbnail a:focus {
+  color: #009BD4;
+}
+
 
 /* Submit Row */
 
