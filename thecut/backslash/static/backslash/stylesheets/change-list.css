@@ -53,6 +53,16 @@
   padding-top: 10px;
 }
 
+.changelist-tools .search-bar .result-msg a {
+  text-decoration: underline;
+  color: #00AEEE;
+}
+
+.inline-group .inline-related h3 > a:hover,
+.inline-group .inline-related h3 > a:focus {
+  color: #009BD4;
+}
+
 .changelist-tools .changelist-filters {
   width: 240px;
 }
