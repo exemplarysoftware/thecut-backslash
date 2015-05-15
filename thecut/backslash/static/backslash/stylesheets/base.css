@@ -119,6 +119,52 @@ a:focus {
   border-color: #171f26;
 }
 
+.std-content a {
+  text-decoration: underline;
+  color: #00AEEE;
+}
+
+.std-content a:hover,
+.std-content a:focus {
+  color: #009BD4;
+}
+
+.std-content ul,
+.std-content ol {
+  margin-bottom: 20px;
+  list-style-position: inside;
+}
+
+.std-content ul {
+  list-style-type: disc;
+}
+
+.std-content li {
+  margin-top: 5px;
+}
+
+.std-content li:first-child {
+  margin-top: 0;
+}
+
+.std-content ol {
+  counter-reset: section;
+}
+
+.std-content ol li:before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+}
+
+.std-content li ul,
+.std-content li ol {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.std-content li ul {
+  list-style-type: circle;
+}
 
 
 /*
