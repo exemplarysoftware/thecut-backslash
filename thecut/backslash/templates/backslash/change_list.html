@@ -58,7 +58,9 @@
     <div class="changelist-tools">
       {% block search %}{% search_form cl %}{% endblock %}
 
+      {% comment %}
       {% block date_hierarchy %}{% date_hierarchy cl %}{% endblock %}
+      {% endcomment %}
 
       {% block filters %}
         {% if cl.has_filters %}
