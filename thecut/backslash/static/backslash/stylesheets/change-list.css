@@ -7,60 +7,25 @@
   padding-right: 0;
 }
 
-/*
- * Changelist Tools
- */
-
-.changelist {
-  padding-right: 290px;
-  position: relative;
-}
-
-.js-enabled .changelist {
-  padding-right: 0;
-  -webkit-transition: padding-right 0.25s ease-out;
-     -moz-transition: padding-right 0.25s ease-out;
-          transition: padding-right 0.25s ease-out;
-}
-
-.js-enabled .changelist.tools-open {
+.changelist.filtered .changelist-form {
   padding-right: 290px;
 }
 
-.changelist-form {
-  border-right: 1px solid #ECECEC;
-}
-
-.js-enabled .changelist-form {
-  border-right: none;
-}
-
-.js-enabled .changelist.tools-open .changelist-form {
-  border-right: 1px solid #ECECEC;
+.changelist.filtered .changelist-form .results,
+.changelist.filtered .changelist-form .paginator {
+  border-right: 1px solid #ececec;
 }
 
 .changelist-tools {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
+  float: right;
+  position: relative;
+  left: -1px;
   width: 290px;
-  padding: 15px 30px;
-}
-
-.js-enabled .changelist-tools {
-  padding-left: 290px;
-  padding-right: 0;
-  -webkit-transition: padding-left 0.25s ease-out;
-     -moz-transition: padding-left 0.25s ease-out;
-          transition: padding-left 0.25s ease-out;
-}
-
-.js-enabled .changelist.tools-open .changelist-tools {
-  padding-left: 30px;
+  padding: 0 0 0 30px;
+  border-left: 1px solid #ececec;
 }
 
 .changelist-tools .search-bar {
