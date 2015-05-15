@@ -436,3 +436,31 @@
 .inline-group .inline-related.tabular table .add-row a {
   margin-top: 20px;
 }
+
+
+/*
+ * Errors
+ */
+
+.change-form .errornote {
+  padding: 8px 15px;
+  color: #FE6565;
+  background-color: #FFF0F0;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  margin-top: 5px;
+}
+
+.change-form .form-row.errors,
+.change-form .form-row .field-box.errors {
+  padding: 10px;
+  background: #FFF0F0;
+  background: rgba(254, 101, 101,0.1);
+  border-radius: 4px;
+}
+
+.change-form .form-row.errors .errorlist,
+.change-form .form-row .field-box.errors .errorlist {
+  color: #FE6565;
+  margin-bottom: 5px;
+}
