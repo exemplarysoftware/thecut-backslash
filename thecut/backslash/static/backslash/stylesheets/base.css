@@ -870,6 +870,15 @@ input[type="submit"]:active {
 
 
 /*
+ *** Page Content
+ */
+
+.page-content {
+  padding: 0 30px;
+}
+
+
+/*
  * Experimental
  */
 
