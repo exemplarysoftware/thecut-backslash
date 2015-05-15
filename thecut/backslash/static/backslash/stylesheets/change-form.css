@@ -6,10 +6,6 @@
  * Page Form
  */
 
-.change-form .page-content {
-  padding: 0 30px;
-}
-
 .change-form .page-content fieldset,
 .change-form .page-content .inline-group {
   margin-bottom: 40px;
