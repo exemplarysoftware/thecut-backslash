@@ -17,7 +17,18 @@
 }
 
 .change-form .form-row {
-  margin-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #E1E1E1;
+}
+
+.change-form .form-row:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.change-form .form-row:last-child {
+  padding-bottom: 0;
 }
 
 .change-form .form-row:last-child {
@@ -73,6 +84,10 @@
   border-top: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
   background: #f3f3f3;
+}
+
+.change-form .collapse .form-row {
+  border-color: #E6E6E6;
 }
 
 .change-form .collapse h2 .collapse-toggle {
@@ -389,7 +404,16 @@
 }
 
 .inline-group .inline-related .form-row {
-  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.inline-group .inline-related .form-row:first-child {
+  padding-top: 0;
+}
+
+.inline-group .inline-related .form-row:last-child {
+  padding-bottom: 0;
 }
 
 .inline-group .inline-related .form-row:last-child {
