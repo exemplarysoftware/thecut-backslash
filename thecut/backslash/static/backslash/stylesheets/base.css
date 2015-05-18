@@ -23,6 +23,25 @@ body#tinymce.mceContentBody {
   padding: 10px;
 }
 
+
+/* limit width */
+
+body.limit-width {
+  max-width: 1440px;
+}
+
+body.limit-width:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 1440px;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAED;
+  z-index: -1;
+}
+
+
 ul,
 ol {
   list-style-type: none;
