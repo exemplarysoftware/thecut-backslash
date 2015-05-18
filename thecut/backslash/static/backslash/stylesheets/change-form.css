@@ -137,27 +137,27 @@
   margin-bottom: 0;
 }
 
-.change-form .form-row.field-link > a {
+.change-form .field-link a {
   color: #00AEEE;
   text-decoration: underline;
 }
 
-.change-form .form-row.field-link > a:hover,
-.change-form .form-row.field-link > a:focus {
+.change-form .field-link a:hover,
+.change-form .field-link a:focus {
   color: #009BD4;
 }
 
-.change-form .form-row.field-link > br {
+.change-form .field-link br {
   margin-bottom: 10px;
 }
 
-.change-form .form-row.field-thumbnail a {
+.change-form .field-thumbnail a {
   color: #00AEEE;
   text-decoration: underline;
 }
 
-.change-form .form-row.field-thumbnail a:hover,
-.change-form .form-row.field-thumbnail a:focus {
+.change-form .field-thumbnail a:hover,
+.change-form .field-thumbnail a:focus {
   color: #009BD4;
 }
 
