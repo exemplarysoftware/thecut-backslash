@@ -362,10 +362,6 @@ input[type="submit"]:active {
   clear: both;
 }
 
-.inline-search-form {
-  position: relative;
-}
-
 .inline-search-form input[type="text"],
 .inline-search-form input[type="search"],
 .inline-search-form input[type="submit"] {
@@ -383,10 +379,20 @@ input[type="submit"]:active {
 .inline-search-form input[type="submit"] {
   position: relative;
   left: -1px;
+  overflow: hidden;
   width: 20%;
-  min-width: 70px;
+  text-indent: 999em;
+  background-image: url(../images/search-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
   -webkit-border-radius: 0 2px 2px 0;
           border-radius: 0 2px 2px 0;
+}
+
+@media screen and (min-width: 0) {
+  .inline-search-form input[type="submit"] {
+    background-image: url(../images/search-icon.svg);
+  }
 }
 
 
