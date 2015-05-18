@@ -20,12 +20,17 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+  display: none;
   float: right;
   position: relative;
   left: -1px;
   width: 210px;
   padding: 0 0 0 30px;
   border-left: 1px solid #ececec;
+}
+
+.changelist.filtered .changelist-tools {
+  display: block;
 }
 
 .changelist-tools .search-bar {
