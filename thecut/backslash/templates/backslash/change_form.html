@@ -15,7 +15,7 @@
 {% endblock %}
 
 
-{% block bodyclass %}{{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} change-form{% endblock %}
+{% block bodyclass %}{{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} change-form limit-width{% endblock %}
 
 
 {% block pageclass %}{{ opts.model_name }}-form-page{% endblock %}
