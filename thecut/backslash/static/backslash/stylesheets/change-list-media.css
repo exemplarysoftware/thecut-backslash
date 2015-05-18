@@ -10,8 +10,6 @@
 
 .media .changelist .results table > tbody > tr > th .image-preview {
   display: block;
-  height: 100px;
-  line-height: 100px;
 }
 
 .media .changelist .results table > tbody > tr > th .image-preview > img {
