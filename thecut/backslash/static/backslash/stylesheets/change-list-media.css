@@ -20,7 +20,6 @@
 /* title field */
 .media .changelist .results table > tbody > tr > td:first-of-type {
   font-size: 1em; /* 14/14 */
-  font-weight: bold;
   color: #171F26;
 }
 
