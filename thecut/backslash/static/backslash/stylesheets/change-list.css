@@ -8,7 +8,7 @@
 }
 
 .changelist.filtered .changelist-form {
-  padding-right: 290px;
+  padding-right: 210px;
 }
 
 .changelist.filtered .changelist-form .results,
@@ -23,7 +23,7 @@
   float: right;
   position: relative;
   left: -1px;
-  width: 290px;
+  width: 210px;
   padding: 0 0 0 30px;
   border-left: 1px solid #ececec;
 }
