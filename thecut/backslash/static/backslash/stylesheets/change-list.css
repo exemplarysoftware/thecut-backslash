@@ -48,11 +48,6 @@
   margin-bottom: 15px;
 }
 
-.changelist-tools .search-bar .inline-search-form input[type="text"],
-.changelist-tools .search-bar .inline-search-form input[type="search"] {
-  width: 160px;
-}
-
 .changelist-tools .search-bar .result-msg {
   clear: left;
   display: block;
