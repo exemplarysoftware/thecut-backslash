@@ -96,10 +96,6 @@
  ** Page Form Items
  */
 
-.change-form .form-row.field-featured_content textarea {
-  height: 120px;
-}
-
 .change-form .form-row .datetime {
   margin-bottom: 3px;
 }
