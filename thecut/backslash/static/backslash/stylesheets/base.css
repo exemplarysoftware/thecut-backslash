@@ -812,10 +812,7 @@ input[type="submit"]:active {
  */
 
 .page-header {
-  margin-top: 25px;
-  margin-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 25px 30px;
 }
 
 .page-header:after {
