@@ -2,6 +2,10 @@
  * Base
  */
 
+.change-list .page-header {
+  position: relative;
+}
+
 .change-list .object-toolbar .search-bar {
   width: 240px;
 }
