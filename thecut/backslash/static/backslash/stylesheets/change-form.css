@@ -181,6 +181,9 @@
   color: #009BD4;
 }
 
+.change-form .field-file .image-preview {
+  margin-bottom: 10px;
+}
 
 /* Submit Row */
 
