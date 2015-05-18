@@ -257,7 +257,7 @@ input[type="date"],
 input[type="datetime"],
 input[type="search"],
 input[type="url"] {
-  height: 40px;
+  height: 36px;
 }
 
 textarea {
