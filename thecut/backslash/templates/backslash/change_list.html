@@ -37,6 +37,7 @@
     {% endblock %}
     {% endif %}
     {% block extra_tools %}{% endblock %}
+    <li>{% block search %}{% search_form cl %}{% endblock %}</li>
   </ul>
 {% endblock %}
 
@@ -55,8 +56,6 @@
 {% block content %}
   <div class="changelist{% if cl.has_filters %} filtered{% endif %}" id="changelist">
     <div class="changelist-tools">
-      {% block search %}{% search_form cl %}{% endblock %}
-
       {% comment %}
       {% block date_hierarchy %}{% date_hierarchy cl %}{% endblock %}
       {% endcomment %}
