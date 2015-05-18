@@ -33,6 +33,11 @@
  ** Grid View
  */
 
+.media .changelist .results.grid {
+  background-color: #F3F3F3;
+  border-bottom: 1px solid #ececec;
+}
+
 .media .changelist .results.grid table > thead {
   display: none;
 }
