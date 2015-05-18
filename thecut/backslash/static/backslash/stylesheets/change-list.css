@@ -36,7 +36,6 @@
 }
 
 .changelist-tools .search-bar {
-  width: 240px;
   margin-bottom: 40px;
 }
 
@@ -68,10 +67,6 @@
 .inline-group .inline-related h3 > a:hover,
 .inline-group .inline-related h3 > a:focus {
   color: #009BD4;
-}
-
-.changelist-tools .changelist-filters {
-  width: 240px;
 }
 
 .changelist-tools .changelist-filters > h2 {
