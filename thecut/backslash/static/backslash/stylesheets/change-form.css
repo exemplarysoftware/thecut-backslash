@@ -75,6 +75,10 @@
   background: #f3f3f3;
 }
 
+.change-form .collapse h2 .collapse-toggle {
+  text-decoration: underline;
+}
+
 .change-form .collapsed * {
   display: none;
 }
