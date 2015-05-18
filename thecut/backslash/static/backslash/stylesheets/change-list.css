@@ -6,12 +6,23 @@
   position: relative;
 }
 
-.change-list .object-toolbar .search-bar {
-  width: 240px;
-}
-
 .change-list .object-toolbar .search-bar label {
   display: none;
+}
+
+.change-list .object-toolbar .search-bar input[type=text] {
+  width: 118px;
+  -webkit-transition: width 0.2s ease-out;
+     -moz-transition: width 0.2s ease-out;
+          transition: width 0.2s ease-out;
+}
+
+.change-list .object-toolbar .search-bar input[type=text]:focus {
+  width: 200px;
+}
+
+.change-list .object-toolbar .search-bar input[type=submit] {
+  width: 44px;
 }
 
 .change-list .object-toolbar .search-bar .result-msg {
