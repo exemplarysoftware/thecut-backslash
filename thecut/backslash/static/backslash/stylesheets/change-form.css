@@ -229,8 +229,7 @@
 }
 
 .change-form .submit-row .deletelink:active {
-  background-color: #E3E5E8;
-  background-color: rgba(121, 127, 140, 0.2);
+  background-color: #FFF0F0;
 }
 
 
