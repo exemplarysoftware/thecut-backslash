@@ -129,7 +129,7 @@
 
 .changelist .results table tr > th:first-child,
 .changelist .results table tr > td:first-child {
-  padding-left: 30px;
+  padding-left: 30px !important;
 }
 
 .changelist .results table tr > th:last-child,
