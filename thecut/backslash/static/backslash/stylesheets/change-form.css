@@ -522,3 +522,17 @@
   color: #FE6565;
   margin-bottom: 5px;
 }
+
+
+/*
+ * App Specific
+ */
+
+/*
+ ** Menus
+ */
+
+.app-menus .page-content {
+  padding-left: 0;
+  padding-right: 0;
+}
