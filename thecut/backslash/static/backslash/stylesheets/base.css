@@ -62,8 +62,8 @@ table {
   width: 100%;
 }
 
-table td,
-table tr {
+table th,
+table td {
   text-align: left;
 }
 
