@@ -57,6 +57,7 @@
 .calendarbox .calendar th {
   padding: 7px 0 6px;
   font-size: 0.857em; /* 12/14 */
+  text-align: center;
 }
 
 .calendarbox .calendar td {
