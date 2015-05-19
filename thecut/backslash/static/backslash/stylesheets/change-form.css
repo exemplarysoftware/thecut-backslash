@@ -130,6 +130,10 @@
   margin-bottom: 10px;
 }
 
+.change-form .form-row img {
+  vertical-align: middle;
+}
+
 .change-form .form-row .datetime {
   margin-bottom: 3px;
 }
