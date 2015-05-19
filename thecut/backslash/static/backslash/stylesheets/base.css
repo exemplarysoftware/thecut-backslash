@@ -14,6 +14,10 @@ body {
   min-width: 960px;
 }
 
+body.popup {
+  min-width: 100%;
+}
+
 body.ajax-loading, body.ajax-loading * {
   cursor: wait !important;
 }
