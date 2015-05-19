@@ -32,8 +32,7 @@
 
   </head>
 
-  <body class="{% block bodyclass %}{% endblock %}">
-
+  <body class="{% block bodyclass %}{% endblock %}{% if is_popup %} popup{% endif %}">
     <div class="header">
       <a class="site-id" href="{% url "admin:index" %}">
         <h2 class="site-name">{% if request.site %}{{ request.site.name }}{% elif current_site %}{{ current_site.name }}{% endif %}</h2>
