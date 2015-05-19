@@ -33,6 +33,7 @@
   </head>
 
   <body class="{% block bodyclass %}{% endblock %}{% if is_popup %} popup{% endif %}">
+    {% if not is_popup %}
     <div class="header">
       <a class="site-id" href="{% url "admin:index" %}">
         <h2 class="site-name">{% if request.site %}{{ request.site.name }}{% elif current_site %}{{ current_site.name }}{% endif %}</h2>
@@ -55,6 +56,7 @@
         <h3 class="logo">Backslash <span>\</span></h3>
       </div>
     </div>
+    {% endif %}
 
     <div class="content-panel {% block pageclass %}{% endblock %}">
 
