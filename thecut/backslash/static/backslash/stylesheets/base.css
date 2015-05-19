@@ -810,6 +810,10 @@ input[type="submit"]:active {
   margin-left: 220px;
 }
 
+.popup .content-panel {
+  margin-left: 0;
+}
+
 
 /*
  *** Page Header
