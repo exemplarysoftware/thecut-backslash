@@ -116,6 +116,16 @@
  ** Page Form Items
  */
 
+.change-form .form-row a {
+  color: #00AEEE;
+  text-decoration: underline;
+}
+
+.change-form .form-row a:hover,
+.change-form .form-row a:focus {
+  color: #009BD4;
+}
+
 .change-form .form-row .datetime {
   margin-bottom: 3px;
 }
