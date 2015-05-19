@@ -171,30 +171,6 @@
   margin-bottom: 0;
 }
 
-.change-form .field-link a {
-  color: #00AEEE;
-  text-decoration: underline;
-}
-
-.change-form .field-link a:hover,
-.change-form .field-link a:focus {
-  color: #009BD4;
-}
-
-.change-form .field-link br {
-  margin-bottom: 10px;
-}
-
-.change-form .field-thumbnail a {
-  color: #00AEEE;
-  text-decoration: underline;
-}
-
-.change-form .field-thumbnail a:hover,
-.change-form .field-thumbnail a:focus {
-  color: #009BD4;
-}
-
 .change-form .field-file .image-preview {
   margin-bottom: 10px;
 }
