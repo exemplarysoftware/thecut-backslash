@@ -210,6 +210,12 @@ label.inline {
   display: inline;
 }
 
+label > input {
+  vertical-align: middle;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 fieldset {
   border: none;
   margin: 0;
