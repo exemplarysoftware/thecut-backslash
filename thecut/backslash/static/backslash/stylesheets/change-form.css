@@ -126,6 +126,10 @@
   color: #009BD4;
 }
 
+.change-form .form-row br {
+  margin-bottom: 10px;
+}
+
 .change-form .form-row .datetime {
   margin-bottom: 3px;
 }
