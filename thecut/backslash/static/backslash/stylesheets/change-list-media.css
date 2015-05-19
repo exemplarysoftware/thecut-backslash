@@ -54,6 +54,11 @@
   border-bottom: none;
 }
 
+.media .changelist .results.grid table > tbody > tr:hover,
+.media .changelist .results.grid table > tbody > tr:focus {
+  background: transparent;
+}
+
 .media .changelist .results.grid table > tbody > tr > th,
 .media .changelist .results.grid table > tbody > tr > td {
   display: block;
