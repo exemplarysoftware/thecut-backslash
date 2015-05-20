@@ -524,7 +524,6 @@ input[type="submit"]:active {
   background-image: none;
   background-color: #E6E6E6;
   color: #636773;
-  /*line-height: 38px;*/
   text-shadow: none;
   border: none;
   cursor: not-allowed;
