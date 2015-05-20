@@ -622,6 +622,37 @@ input[type="submit"]:active {
 
 
 /*
+ ** Errors
+ */
+
+.errornote {
+  padding: 8px 15px;
+  margin-top: 5px;
+  color: #FE6565;
+  background-color: #FFF0F0;
+  background-color: rgba(254, 101, 101,0.1);
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.errors {
+  padding: 10px;
+  background: #FFF0F0;
+  background: rgba(254, 101, 101,0.1);
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.errorlist {
+  color: #FE6565;
+}
+
+.errorlist li {
+  margin-bottom: 5px;
+}
+
+
+/*
  *** Paginator
  */
 
