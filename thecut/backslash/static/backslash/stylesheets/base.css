@@ -477,23 +477,6 @@ input[type="submit"]:active {
 
 
 /*
- **** Button - Warning
- */
-
-.button.warning {
-  background-color: #fda924;
-}
-
-.button.warning:hover,
-.button.warning:focus {
-  background-color: #D9911E;
-}
-
-.button.warning:active {
-  background-color: #C2821B;
-}
-
-/*
  **** Button - Danger
  */
 
@@ -541,38 +524,12 @@ input[type="submit"]:active {
   background-image: none;
   background-color: #E6E6E6;
   color: #636773;
-  line-height: 38px;
+  /*line-height: 38px;*/
   text-shadow: none;
   border: none;
   cursor: not-allowed;
 }
 
-/*
- **** Button - Link Only
- */
-
-.button.link-only {
-  height: 26px;
-  padding: 0;
-  background: transparent;
-  color: #636773;
-  line-height: 26px;
-  text-shadow: none;
-  border: 0;
-  border-bottom: 2px solid #CED1D9;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-}
-
-.button.link-only:hover,
-.button.link-only:focus {
-  border-color: #636773;
-}
-
-.button.link-only:active {
-  position: relative;
-  top: 1px;
-}
 
 /*
  ***** Misc
