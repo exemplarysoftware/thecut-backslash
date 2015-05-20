@@ -52,11 +52,6 @@
   letter-spacing: 0.1px;
   text-decoration: none;
   color: #99ADBF;
-  -webkit-transition: background-color 0.15s ease;
-     -moz-transition: background-color 0.15s ease;
-      -ms-transition: background-color 0.15s ease;
-       -o-transition: background-color 0.15s ease;
-          transition: background-color 0.15s ease;
   -moz-osx-font-smoothing: grayscale;
 }
 
