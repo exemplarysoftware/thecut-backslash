@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, unicode_literals
-from django.http import HttpResponseForbidden
-from django.template import loader
+from django.template.response import TemplateResponse
 from pkg_resources import parse_version
 import httpagentparser
 import wrapt
@@ -49,8 +48,8 @@ def reject_unsupported_browsers(browser_requirements, template_name):
                 unsupported_browser = True
 
         if unsupported_browser:
-            template = loader.get_template(template_name)
-            return HttpResponseForbidden(template.render(request=request))
+            return TemplateResponse(request=request, template=template_name,
+                                    status=406)
 
         return view(request, *args, **kwargs)
 
