@@ -6,13 +6,13 @@
  * Page Form
  */
 
-.change-form .page-content fieldset,
-.change-form .page-content .inline-group {
+fieldset,
+.inline-group {
   margin-bottom: 40px;
 }
 
-.change-form .page-content fieldset:last-child,
-.change-form .page-content .inline-group:last-child {
+fieldset:last-child,
+.inline-group:last-child {
   margin-bottom: 0;
 }
 
@@ -22,30 +22,30 @@
   border-top: 1px solid #E1E1E1;
 }
 
-.change-form .form-row:first-child {
+.form-row:first-child {
   padding-top: 0;
   border-top: none;
 }
 
-.change-form .form-row:last-child {
+.form-row:last-child {
   padding-bottom: 0;
 }
 
-.change-form .form-row:last-child {
+.form-row:last-child {
   margin-bottom: 0;
 }
 
-.change-form .form-row:first-child {
+.form-row:first-child {
   margin-top: 0;
 }
 
-.change-form .form-row:after {
+.form-row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.change-form .form-row .field-box {
+.form-row .field-box {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -55,20 +55,20 @@
   margin-bottom: 20px;
 }
 
-.change-form .form-row .field-box:nth-child(n) {
+.form-row .field-box:nth-child(n) {
   width: 49%;
   margin-right: 2%;
 }
 
-.change-form .form-row .field-box:nth-child(2n) {
+.form-row .field-box:nth-child(2n) {
   margin-right: 0;
 }
 
-.change-form .form-row .field-box:nth-last-child(-n+2) {
+.form-row .field-box:nth-last-child(-n+2) {
   margin-bottom: 0;
 }
 
-.change-form .form-row .help {
+.form-row .help {
   color: #9099AB;
   font-size: 0.857em; /* 12/14 */
 }
@@ -76,7 +76,7 @@
 
 /* Collapsed Modules */
 
-.change-form .collapse {
+.collapse {
   height: auto;
   width: 100%;
   padding: 30px;
@@ -86,29 +86,29 @@
   background: #f3f3f3;
 }
 
-.change-form .collapse .form-row {
+.collapse .form-row {
   border-color: #E6E6E6;
 }
 
-.change-form .collapse h2 .collapse-toggle {
+.collapse h2 .collapse-toggle {
   color: #00AEEE;
 }
 
-.change-form .collapse h2 .collapse-toggle:hover,
-.change-form .collapse h2 .collapse-toggle:focus {
+.collapse h2 .collapse-toggle:hover,
+.collapse h2 .collapse-toggle:focus {
   color: #009BD4;
 }
 
-.change-form .collapsed * {
+.collapsed * {
   display: none;
 }
 
-.change-form .collapsed h2 {
+.collapsed h2 {
   display: block;
   margin-bottom: 0;
 }
 
-.change-form .collapsed h2 .collapse-toggle {
+.collapsed h2 .collapse-toggle {
   display: inline;
 }
 
@@ -116,112 +116,112 @@
  ** Page Form Items
  */
 
-.change-form .form-row a {
+.form-row a {
   color: #00AEEE;
 }
 
-.change-form .form-row a:hover,
-.change-form .form-row a:focus {
+.form-row a:hover,
+.form-row a:focus {
   color: #009BD4;
 }
 
-.change-form .form-row br {
+.form-row br {
   margin-bottom: 10px;
 }
 
-.change-form .form-row img {
+.form-row img {
   vertical-align: middle;
 }
 
-.change-form .form-row .datetime {
+.form-row .datetime {
   margin-bottom: 3px;
 }
 
-.change-form .form-row .datetime label {
+.form-row .datetime label {
   display: block;
 }
 
-.change-form .form-row .datetime input[type=text],
-.change-form .form-row .datetime .datetimeshortcuts {
+.form-row .datetime input[type=text],
+.form-row .datetime .datetimeshortcuts {
   display: inline-block;
   vertical-align: middle;
 }
 
-.change-form .form-row .datetime input[type=text] {
+.form-row .datetime input[type=text] {
   width: auto;
   margin-right: 10px;
 }
 
-.change-form .form-row .datetime br {
+.form-row .datetime br {
   display: none;
 }
 
-.change-form .form-row .datetime .datetimeshortcuts {
+.form-row .datetime .datetimeshortcuts {
   margin-right: 40px;
 }
 
-.change-form .form-row .checkbox-row input[type=checkbox],
-.change-form .form-row .checkbox-row label {
+.form-row .checkbox-row input[type=checkbox],
+.form-row .checkbox-row label {
   display: inline-block;
   vertical-align: baseline;
 }
 
-.change-form .form-row .checkbox-row input[type=checkbox] {
+.form-row .checkbox-row input[type=checkbox] {
   margin-right: 5px;
 }
 
-.change-form .form-row .checkbox-row label {
+.form-row .checkbox-row label {
   margin-bottom: 0;
 }
 
-.change-form .field-file .image-preview {
+.field-file .image-preview {
   margin-bottom: 10px;
 }
 
 /* Submit Row */
 
-.change-form .submit-row {
+.submit-row {
   clear: both;
   padding-bottom: 30px;
 }
 
-.change-form .submit-row:after {
+.submit-row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.change-form .submit-row input[type="submit"] {
+.submit-row input[type="submit"] {
   float: right;
   margin-left: 10px;
 }
 
-.change-form .submit-row .deletelink-box {
+.submit-row .deletelink-box {
   float: left;
   margin-bottom: 0;
 }
 
-.change-form .submit-row input[name="_save"] {
+.submit-row input[name="_save"] {
   padding-left: 34px;
   background: #70BF1B url(../images/check-icon.png) 12px 13px no-repeat;
 }
 
 @media screen and (min-width: 0) {
-  .change-form .submit-row input[name="_save"] {
+  .submit-row input[name="_save"] {
     background-image: url(../images/check-icon.svg);
   }
 }
 
-.change-form .submit-row input[name="_save"]:hover,
-.change-form .submit-row input[name="_save"]:focus {
+.submit-row input[name="_save"]:hover,
+.submit-row input[name="_save"]:focus {
   background-color: #61A617;
 }
 
-.change-form .submit-row input[name="_save"]:active {
+.submit-row input[name="_save"]:active {
   background-color: #528C14;
 }
 
-.change-form .submit-row .deletelink {
+.submit-row .deletelink {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -238,13 +238,13 @@
   border: 2px solid #CED1D9;
 }
 
-.change-form .submit-row .deletelink:hover,
-.change-form .submit-row .deletelink:focus {
+.submit-row .deletelink:hover,
+.submit-row .deletelink:focus {
   border-color: #FE6565;
   color: #FE6565;
 }
 
-.change-form .submit-row .deletelink:active {
+.submit-row .deletelink:active {
   background-color: #FFF0F0;
 }
 
@@ -257,8 +257,8 @@
  ** Media App
  */
 
-.change-form .attachedmediaitem.manager,
-.change-form .attachedmediaitem.manager .contenttypes {
+.attachedmediaitem.manager,
+.attachedmediaitem.manager .contenttypes {
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
