@@ -418,7 +418,6 @@ input[type="submit"]:active {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
-  /*height: 36px;*/
   padding: 10px 15px 8px;
   color: #fff;
   font-size: 14px;
