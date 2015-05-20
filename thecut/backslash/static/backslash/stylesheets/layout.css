@@ -38,16 +38,16 @@
 }
 
 .header .nav {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 /* nav links */
 .header .nav a {
   display: block;
-  padding: 7px 25px;
+  padding: 3px 25px;
   border-bottom: none;
   background-color: transparent;
-  font-size: 1.143em; /* 16/14 */
+  font-size: 1em; /* 14 */
   line-height: 1.2;
   letter-spacing: 0.1px;
   text-decoration: none;
@@ -60,16 +60,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* reduce size of nav items if viewport height is < 660px */
-@media screen and (max-height: 660px) {
+/* increase size of nav items if viewport height is > 660px */
+@media screen and (min-height: 660px) {
   .header .nav {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   .header .nav a {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    font-size: 1em; /* 14px */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.143em; /* 16/14px */
   }
 }
 
