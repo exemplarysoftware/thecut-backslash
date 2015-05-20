@@ -62,8 +62,8 @@
   }
 
   .header .nav a {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     font-size: 1.143em; /* 16/14px */
   }
 }
