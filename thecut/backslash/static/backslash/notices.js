@@ -25,14 +25,14 @@ backslashRequire(
 
                     var title = $entry.find('title').text();
                     var content = $entry.find('summary').text();
-                    var image = $entry.find('link[type="image/jpeg"]');
+                    var $image = $entry.find('link[type="image/jpeg"]');
 
                     var $li = $('<li>');
                     var $h2 = $('<h2>').text(title);
                     $li.append($h2);
 
-                    if (image) {
-                        $li.append($('<img>').attr('src', image.attr('href')));
+                    if ($image.length) {
+                        $li.append($('<img>').attr('src', $image.attr('href')));
                     }
 
                     $noticesContainer.append($li.append(content));
