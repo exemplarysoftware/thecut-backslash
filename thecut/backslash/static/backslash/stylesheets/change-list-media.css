@@ -78,7 +78,8 @@
 
 .media .changelist .results.grid table > tbody > tr > th .image-preview {
   display: inline-block;
-  width: 142px;
+  width: auto;
+  max-width: 142px;
   height: 142px;
   margin-bottom: 15px;
   text-align: center;
@@ -122,7 +123,7 @@
   }
 
   .media .changelist .results.grid table > tbody > tr > th .image-preview {
-    width: 174px;
+    max-width: 174px;
     height: 174px;
     line-height: 174px;
   }
@@ -130,7 +131,7 @@
 
 @media only screen and (min-width: 1440px) {
   .media .changelist .results.grid table > tbody > tr > th .image-preview {
-    width: 212px;
+    max-width: 212px;
     height: 212px;
     line-height: 212px;
   }
