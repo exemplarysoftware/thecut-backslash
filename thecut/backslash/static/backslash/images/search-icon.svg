@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>search-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Buttons" sketch:type="MSArtboardGroup" transform="translate(-462.000000, -35.000000)" fill="#FFFFFF">
+            <path d="M468.817043,46.0789485 C467.681324,45.85968 466.596741,45.3103051 465.717259,44.4308235 C463.374114,42.0876778 463.374114,38.2886879 465.717259,35.9455421 C468.060405,33.6023964 471.859395,33.6023964 474.202541,35.9455421 C476.545686,38.2886879 476.545686,42.0876778 474.202541,44.4308235 C473.323059,45.3103051 472.238476,45.85968 471.102757,46.0789485 L471.102757,50.5863005 C471.102757,51.2188414 470.595483,51.7316172 469.9599,51.7316172 C469.328717,51.7316172 468.817043,51.2189531 468.817043,50.5863005 L468.817043,46.0789485 Z M467.131473,43.01661 C468.69357,44.5787071 471.22623,44.5787071 472.788327,43.01661 C474.350424,41.4545128 474.350424,38.9218529 472.788327,37.3597557 C471.22623,35.7976585 468.69357,35.7976585 467.131473,37.3597557 C465.569376,38.9218529 465.569376,41.4545128 467.131473,43.01661 Z" id="search-icon" sketch:type="MSShapeGroup" transform="translate(469.959900, 42.959900) rotate(-45.000000) translate(-469.959900, -42.959900) "></path>
+        </g>
+    </g>
+</svg>

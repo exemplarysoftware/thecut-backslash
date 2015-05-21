@@ -1,0 +1,98 @@
+<!DOCTYPE html>{% load admin_static i18n %}{% load firstof from future %}
+<html lang="{{ LANGUAGE_CODE|default:"en-au" }}">
+
+  <head>
+    <title>{% block title %}{% if request.site %}{{ request.site.name }}{% elif current_site %}{{ current_site.name }}{% endif %} - Backslash{% endblock %}</title>
+    {% block meta %}
+    <meta charset="utf-8" />
+    <meta name="robots" content="none,noarchive,nofollow,noindex" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    {% endblock %}
+
+    <link href="{% static "backslash/stylesheets/normalize.css" %}" type="text/css" rel="stylesheet" />
+    <link href="{% static "backslash/stylesheets/base.css" %}" type="text/css" rel="stylesheet" />
+    <link href="{% static "backslash/stylesheets/layout.css" %}" type="text/css" rel="stylesheet" />
+
+    <script src="{% static "backslash/lib/require.js" %}" type="text/javascript" data-baseUrl="{% static "backslash/" %}"></script>
+    <script src="{% static "backslash/backslash.js" %}" type="text/javascript"></script>
+
+    {% if debug %}
+    {# This includes jQuery for Django Debug Toolbar, as we disabled it's automatic inclusion because of a race condition #}
+    {# https://github.com/django-debug-toolbar/django-debug-toolbar/issues/605 #}
+    <script src="{% static "backslash/lib/jquery.js" %}" type="text/javascript"></script>
+    {% endif %}
+
+    <script type="text/javascript">
+        window.__admin_media_prefix__ = "{% filter escapejs %}{% static "admin/" %}{% endfilter %}";
+    </script>
+
+    {% block extrahead %}{% endblock %}
+
+  </head>
+
+  <body class="{% block bodyclass %}{% endblock %}{% if is_popup %} popup{% endif %}">
+    {% if not is_popup %}
+    <div class="header">
+      <a class="site-id" href="{% url "admin:index" %}">
+        <h2 class="site-name">{% if request.site %}{{ request.site.name }}{% elif current_site %}{{ current_site.name }}{% endif %}</h2>
+        <span>Admin</span>
+      </a>
+
+      <div class="site-navigation">
+        {% include "backslash/_menu.html" %}
+
+        {% if user.is_active and user.is_staff %}
+        {% block userlinks %}
+          {% include "backslash/_userlinks.html" %}
+        {% endblock %}
+        {% endif %}
+
+      </div>
+
+      <div class="backslash-branding">
+        <span>Powered By</span>
+        <h3 class="logo">Backslash <span>\</span></h3>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="content-panel {% block pageclass %}{% endblock %}">
+
+      <div class="page-header">
+      {% block page_header %}
+
+        {% block breadcrumbs %}
+          <ul class="breadcrumbs">
+            <li><a href="{% url "admin:index" %}">{% trans "Home" %}</a></li>
+          </ul>
+        {% endblock %}
+
+        <h1 class="page-title">{% block content_title %}{% if title %}{{ title }}{% endif %}{% endblock %}</h1>
+
+        {% block object_toolbar %}{% endblock %}
+
+      {% endblock %}
+      </div>
+
+      {% block notifications %}
+        {% if messages %}
+        <ul class="messagelist">
+          {% for message in messages %}
+          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message|capfirst }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      {% endblock %}
+
+      <div class="page-content">
+      {% block content %}{% endblock %}
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

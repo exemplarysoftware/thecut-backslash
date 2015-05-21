@@ -1,0 +1,511 @@
+/*
+ * Change Form Styles
+ */
+
+/*
+ * Page Form
+ */
+
+fieldset,
+.inline-group {
+  margin-bottom: 40px;
+}
+
+fieldset:last-child,
+.inline-group:last-child {
+  margin-bottom: 0;
+}
+
+.change-form .form-row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #E1E1E1;
+}
+
+.form-row:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.form-row:last-child {
+  padding-bottom: 0;
+}
+
+.form-row:last-child {
+  margin-bottom: 0;
+}
+
+.form-row:first-child {
+  margin-top: 0;
+}
+
+.form-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.form-row .field-box {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  width: 47.5%;
+  margin-right: 2.5%;
+  margin-bottom: 20px;
+}
+
+.form-row .field-box:nth-child(n) {
+  width: 49%;
+  margin-right: 2%;
+}
+
+.form-row .field-box:nth-child(2n) {
+  margin-right: 0;
+}
+
+.form-row .field-box:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+
+.form-row .help {
+  color: #9099AB;
+  font-size: 0.857em; /* 12/14 */
+}
+
+
+/* Collapsed Modules */
+
+.collapse {
+  height: auto;
+  width: 100%;
+  padding: 30px;
+  margin-left: -30px;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  background: #f3f3f3;
+}
+
+.collapse .form-row {
+  border-color: #E6E6E6;
+}
+
+.collapse h2 .collapse-toggle {
+  color: #00AEEE;
+}
+
+.collapse h2 .collapse-toggle:hover,
+.collapse h2 .collapse-toggle:focus {
+  color: #009BD4;
+}
+
+.collapsed * {
+  display: none;
+}
+
+.collapsed h2 {
+  display: block;
+  margin-bottom: 0;
+}
+
+.collapsed h2 .collapse-toggle {
+  display: inline;
+}
+
+/*
+ ** Page Form Items
+ */
+
+.form-row a {
+  color: #00AEEE;
+}
+
+.form-row a:hover,
+.form-row a:focus {
+  color: #009BD4;
+}
+
+.form-row br {
+  margin-bottom: 10px;
+}
+
+.form-row img {
+  vertical-align: middle;
+}
+
+.field-content textarea {
+  height: 320px;
+}
+
+.form-row .datetime {
+  margin-bottom: 3px;
+}
+
+.form-row .datetime label {
+  display: block;
+}
+
+.form-row .datetime input[type=text],
+.form-row .datetime .datetimeshortcuts {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form-row .datetime input[type=text] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.form-row .datetime br {
+  display: none;
+}
+
+.form-row .datetime .datetimeshortcuts {
+  margin-right: 40px;
+}
+
+.form-row .checkbox-row input[type=checkbox],
+.form-row .checkbox-row label {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.form-row .checkbox-row input[type=checkbox] {
+  margin-right: 5px;
+}
+
+.form-row .checkbox-row label {
+  margin-bottom: 0;
+}
+
+.field-file .image-preview {
+  margin-bottom: 10px;
+}
+
+/* Submit Row */
+
+.submit-row {
+  clear: both;
+  padding-bottom: 30px;
+}
+
+.submit-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.submit-row input[type="submit"] {
+  float: right;
+  margin-left: 10px;
+}
+
+.submit-row .deletelink-box {
+  float: left;
+  margin-bottom: 0;
+}
+
+.submit-row input[name="_save"] {
+  padding-left: 34px;
+  background: #70BF1B url(../images/check-icon.png) 12px 13px no-repeat;
+}
+
+@media screen and (min-width: 0) {
+  .submit-row input[name="_save"] {
+    background-image: url(../images/check-icon.svg);
+  }
+}
+
+.submit-row input[name="_save"]:hover,
+.submit-row input[name="_save"]:focus {
+  background-color: #61A617;
+}
+
+.submit-row input[name="_save"]:active {
+  background-color: #528C14;
+}
+
+.submit-row .deletelink {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  height: 36px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: transparent;
+  color: #636773;
+  font-size: 14px;
+  line-height: 34px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: 2px solid #CED1D9;
+}
+
+.submit-row .deletelink:hover,
+.submit-row .deletelink:focus {
+  border-color: #FE6565;
+  color: #FE6565;
+}
+
+.submit-row .deletelink:active {
+  background-color: #FFF0F0;
+}
+
+
+/*
+ * Apps
+ */
+
+/*
+ ** Media App
+ */
+
+.change-form .attachedmediaitem.manager,
+.change-form .attachedmediaitem.manager .contenttypes {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: -30px;
+}
+
+
+/*
+ * Inlines
+ */
+
+
+/*
+ ** Inlines - Buttons
+ */
+
+.inline-group .add-row a,
+.inline-group .inline-deletelink {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  padding: 10px 15px 8px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.286;
+  background-repeat: no-repeat;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/* Add-new button */
+
+.inline-group .add-row a {
+  padding-left: 34px;
+  background-color: #00AEEE;
+  background-image: url(../images/add-icon.png);
+  background-position: 12px 11px;
+}
+
+.inline-group .add-row a:hover,
+.inline-group .add-row a:focus {
+  background-color: #009BD4;
+}
+
+.inline-group .add-row a:active {
+  background-color: #0089BA;
+}
+
+/* Remove button */
+
+.inline-group .inline-deletelink {
+  padding-left: 32px;
+  background-color: #fe6565;
+  background-image: url(../images/delete-icon.png);
+  background-position: 12px 12px;
+}
+
+.inline-group .inline-deletelink:hover,
+.inline-group .inline-deletelink:focus {
+  background-color: #CC5151;
+}
+
+.inline-group .inline-deletelink:active {
+  background-color: #B84949;
+}
+
+@media screen and (min-width: 0) {
+  .inline-group .add-row a {
+    background-image: url(../images/add-icon.svg);
+  }
+
+  .inline-group .inline-deletelink {
+    background-image: url(../images/delete-icon.svg);
+  }
+}
+
+/* Delete button */
+
+.inline-group .inline-related span.delete {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #CED1D9;
+  font-size: 14px;
+  line-height: 1.286;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.inline-group .inline-related span.delete:hover {
+  border-color: #fe6565;
+}
+
+.inline-group .inline-related span.delete input[type="checkbox"] {
+  position: absolute;
+  top: 9px;
+  left: 8px;
+  margin-right: 0;
+}
+
+.inline-group .inline-related span.delete label {
+  display: inline-block;
+  padding: 8px 15px 6px 30px;
+  margin-bottom: 0;
+  color: #fe6565;
+  cursor: pointer;
+}
+
+
+/*
+ ** Base/Stacked Inlines
+ */
+
+.inline-group .inline-related {
+  padding: 18px;
+  margin-bottom: 20px;
+  border: 1px solid #D8D8D8;
+  background: #FFF;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.inline-group .inline-related h3 > a {
+  font-size: 0.7em; /* 14/20 */
+  text-decoration: underline;
+  color: #00AEEE;
+  margin-left: 10px;
+}
+
+.inline-group .inline-related h3 > a:hover,
+.inline-group .inline-related h3 > a:focus {
+  color: #009BD4;
+}
+
+.inline-group .inline-related .form-row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.inline-group .inline-related .form-row:first-child {
+  padding-top: 0;
+}
+
+.inline-group .inline-related .form-row:last-child {
+  padding-bottom: 0;
+}
+
+.inline-group .inline-related .form-row:last-child {
+  margin-bottom: 0;
+}
+
+.inline-group .inline-related fieldset {
+  margin-bottom: 0;
+}
+
+.inline-group .inline-related .inline-deletelink,
+.inline-group .inline-related span.delete {
+  float: right;
+}
+
+.inline-group .field-content textarea {
+  height: 120px;
+}
+
+.inline-group .empty-form {
+  display: none;
+}
+
+
+/*
+ * Tabular Inlines
+ */
+
+.inline-group .inline-related.tabular {
+  padding: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.inline-group .inline-related.tabular table {
+  width: 100%;
+}
+
+.inline-group .inline-related.tabular table thead {
+  border-bottom: 1px solid #CCC;
+}
+
+.inline-group .inline-related.tabular table thead th {
+  text-align: left;
+  color: #777;
+  font-size: 0.714em;
+  text-transform: uppercase;
+}
+
+.inline-group .inline-related.tabular table .form-row {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.inline-group .inline-related.tabular table thead th,
+.inline-group .inline-related.tabular table .form-row td {
+  padding: 10px;
+}
+
+.inline-group .inline-related.tabular table .form-row td {
+  vertical-align: top;
+}
+
+.inline-group .inline-related.tabular table .form-row td.original {
+  padding: 0;
+}
+
+.inline-group .inline-related.tabular table .form-row.has_original td.original p {
+  display: none;
+}
+
+.inline-group .inline-related.tabular table .add-row a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*
+ * App Specific
+ */
+
+/*
+ ** Menus
+ */
+
+.app-menus #menus {
+  width: 100%;
+  margin-left: -30px;
+}

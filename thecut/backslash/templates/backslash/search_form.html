@@ -1,0 +1,16 @@
+{% load i18n admin_static %}
+{% if cl.search_fields %}
+<div class="search-bar"><form id="changelist-search" action="" method="get">
+<div class="inline-search-form"><!-- DIV needed for valid HTML -->
+<label for="searchbar">Search</label>
+<input type="text" size="40" name="{{ search_var }}" value="{{ cl.query }}"/>
+<input type="submit" value="{% trans "Search" %}" class="button"/>
+{% if show_result_count %}
+    <span class="result-msg">{% blocktrans count counter=cl.result_count %}{{ counter }} result{% plural %}{{ counter }} results{% endblocktrans %} (<a href="?{% if cl.is_popup %}_popup=1{% endif %}">{% blocktrans with full_result_count=cl.full_result_count %}{{ full_result_count }} total{% endblocktrans %}</a>)</span>
+{% endif %}
+{% for pair in cl.params.items %}
+    {% ifnotequal pair.0 search_var %}<input type="hidden" name="{{ pair.0 }}" value="{{ pair.1 }}"/>{% endifnotequal %}
+{% endfor %}
+</div>
+</form></div>
+{% endif %}

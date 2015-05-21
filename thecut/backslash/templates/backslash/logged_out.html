@@ -1,18 +1,17 @@
-{% extends "registration/logged_out.html" %}
-{% load url from future %}
+{% extends "backslash/accounts_base.html" %}
+{% load i18n %}
 
-{% block extrastyle %}
-  {{ block.super }}
-  <link href="{{ STATIC_URL|default:MEDIA_URL }}backslash/backslash.css" type="text/css" rel="stylesheet" />
-  <link href="{{ STATIC_URL|default:MEDIA_URL }}stylesheets/backslash.css" type="text/css" rel="stylesheet" />
-{% endblock %}
 
-{% block breadcrumbs %}<div class="breadcrumbs"></div>{% endblock %}
+{% block title %}Logged out - {{ block.super }}{% endblock %}
+
 
 {% block content %}
-  <br />
-  <ul>
-    <li><a href="{% url "admin:index" %}">Backslash log in</a></li>
-    <li><a href="/">Website homepage</a></li>
+
+  <h1>You have been logged out.</h1>
+
+  <ul class="logout-options">
+    <li><a href="{% url "admin:index" %}">Log back in to Backslash</a></li>
+    <li><a href="/">Visit website homepage</a></li>
   </ul>
+
 {% endblock %}

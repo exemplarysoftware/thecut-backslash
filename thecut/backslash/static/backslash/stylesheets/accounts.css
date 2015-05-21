@@ -1,0 +1,80 @@
+/*
+ * Accounts Page Overrides
+ */
+
+html, body {
+  background-color: #f2f2f2;
+}
+
+body {
+  min-width: 0;
+  max-width: 480px;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 1.714em; /* 24/14 */
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: #00AEEE;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #009BD4;
+}
+
+a:active {
+  position: relative;
+  top: 1px;
+}
+
+ul > li {
+  margin-top: 15px;
+}
+
+ul > li:first-child {
+  margin-top: 0;
+}
+
+
+/*
+ * Header
+ */
+
+.header {
+  margin-bottom: 60px;
+}
+
+.header .logo {
+  font-size: 32px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: #2e3e4d;
+}
+
+.header .logo > span {
+  color: #CB0012;
+  font-size: 30px;
+  position: relative;
+  top: -2px;
+}
+
+
+/*
+ ** Form Inputs
+ */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  height: 45px;
+  border: 1px solid #d9d9d9;
+  font-size: 18px;
+}

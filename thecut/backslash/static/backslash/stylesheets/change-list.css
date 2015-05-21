@@ -1,0 +1,252 @@
+/*
+ * Base
+ */
+
+.change-list .page-header {
+  position: relative;
+}
+
+.change-list .object-toolbar .search-bar label {
+  display: none;
+}
+
+.change-list .object-toolbar .search-bar input[type=text] {
+  width: 118px;
+  -webkit-transition: width 0.2s ease-out;
+     -moz-transition: width 0.2s ease-out;
+          transition: width 0.2s ease-out;
+}
+
+.change-list .object-toolbar .search-bar input[type=text]:focus {
+  width: 200px;
+}
+
+.change-list .object-toolbar .search-bar input[type=submit] {
+  width: 44px;
+}
+
+.change-list .object-toolbar .search-bar .result-msg {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 3px 30px;
+  font-size: 12px;
+  background: #f5f5f5;
+  background-image: -webkit-linear-gradient(#fff, #f5f5f5);
+  background-image:    -moz-linear-gradient(#fff, #f5f5f5);
+  background-image:         linear-gradient(#fff, #f5f5f5);
+}
+
+.change-list .object-toolbar .search-bar .result-msg a {
+  text-decoration: underline;
+  color: #00AEEE;
+}
+
+.change-list .object-toolbar .search-bar .result-msg a:hover,
+.change-list .object-toolbar .search-bar .result-msg a:focus {
+  color: #009BD4;
+}
+
+
+.change-list .page-content {
+  padding-left: 0;
+  padding-right: 0;
+  border-top: 1px solid #e1e1e1;
+}
+
+.changelist.filtered .changelist-form {
+  padding-right: 210px;
+}
+
+.changelist.filtered .changelist-form .results,
+.changelist.filtered .changelist-form .paginator {
+  border-right: 1px solid #ececec;
+}
+
+.changelist-tools {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
+  float: right;
+  position: relative;
+  left: -1px;
+  width: 210px;
+  padding-top: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 1px solid #ececec;
+}
+
+.changelist.filtered .changelist-tools {
+  display: block;
+}
+
+.changelist-tools .changelist-filters > h2 {
+  color: #777777;
+  font-size: 0.714em;
+  height: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.changelist-tools .changelist-filters > h3 {
+  margin-bottom: 5px;
+  font-size: 1em; /* 14/14 */
+  font-weight: bold;
+  color: #585C66;
+}
+
+.changelist-tools .changelist-filters > ul {
+  margin-bottom: 20px;
+}
+
+.changelist-tools .changelist-filters > ul a {
+  border-bottom: none;
+  font-size: 0.857em; /* 12/14 */
+}
+.changelist-tools .changelist-filters > ul a:hover,
+.changelist-tools .changelist-filters > ul a:focus {
+  color: #009BD4;
+}
+
+.changelist-tools .changelist-filters > ul .selected a {
+  text-decoration: underline;
+  color: #00AEEE;
+}
+
+
+
+/*
+ ** Results List
+ */
+
+.changelist .results table > thead > tr > th {
+  height: 12px;
+  color: #777;
+  font-size: 0.714em; /* 10/14 */
+  text-transform: uppercase;
+}
+
+.action-list table > thead > tr > th {
+  height: 12px;
+  color: #777;
+  font-size: 0.714em; /* 10/14 */
+  text-transform: uppercase;
+}
+
+.changelist .results table tr > th,
+.changelist .results table tr > td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.changelist .results table tr > th:first-child,
+.changelist .results table tr > td:first-child {
+  padding-left: 30px !important;
+}
+
+.changelist .results table tr > th:last-child,
+.changelist .results table tr > td:last-child {
+  padding-right: 30px;
+}
+
+.changelist .results table > thead > tr > th > .sortoptions {
+  float: left;
+  position: relative;
+  vertical-align: middle;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.changelist .results table > thead > tr > th > .sortoptions > a {
+  border-bottom: 0;
+}
+
+.changelist .results table > thead > tr > th > .sortoptions > a,
+.changelist .results table > thead > tr > th > .sortoptions > span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.changelist .results table > thead > tr > th > .sortoptions > .sortremove {
+  position: absolute;
+  top: 0;
+  left: -16px;
+  background: url(../images/result-list-sprites.png) no-repeat;
+  background-position: -20px 0;
+  width: 16px;
+  height: 12px;
+  opacity: 0;
+}
+
+.changelist .results table > thead > tr > th > .sortoptions:hover > .sortremove {
+  opacity: 1;
+}
+
+.changelist .results table > thead > tr > th > .sortoptions > .sortpriority {
+  font-size: 0.714em; /* 10/14 */
+  color: #898989;
+}
+
+.changelist .results table > thead > tr > th > .sortoptions > .ascending,
+.changelist .results table > thead > tr > th > .sortoptions > .descending {
+  position: relative;
+  top: 2px;
+  width: 8px;
+  height: 8px;
+  background: url(../images/result-list-sprites.png) no-repeat;
+  background-position: top;
+}
+
+.changelist .results table > thead > tr > th > .sortoptions > .ascending {
+  background-position: 0 0;
+}
+
+.changelist .results table > thead > tr > th > .sortoptions > .descending {
+  background-position: -10px 0;
+}
+
+@media all and (min-width: 0) {
+  .changelist .results table > thead > tr > th > .sortoptions > .sortremove,
+  .changelist .results table > thead > tr > th > .sortoptions > .ascending,
+  .changelist .results table > thead > tr > th > .sortoptions > .descending {
+    background-image: url(../images/result-list-sprites.svg);
+  }
+}
+
+.changelist .results table > thead > tr > th > .sortoptions > .clear {
+  clear: both;
+}
+
+.changelist .results table > tbody > tr > th,
+.changelist .results table > tbody > tr > td {
+  color: #898989;
+}
+
+.changelist .results table > tbody > tr > th > a,
+.changelist .results table > tbody > tr > td > a {
+  display: block;
+  font-weight: normal;
+  font-size: 1.143em; /* 16/14 */
+  color: #171F26;
+  border-bottom: none;
+}
+
+.changelist .results table > tbody > tr:hover,
+.changelist .results table > tbody > tr:focus {
+  background-color: #FCFCFC;
+}
+
+.changelist .results table > tbody > tr > th > a:hover,
+.changelist .results table > tbody > tr > td > a:hover,
+.changelist .results table > tbody > tr > th > a:focus,
+.changelist .results table > tbody > tr > td > a:focus {
+  text-decoration: underline;
+}

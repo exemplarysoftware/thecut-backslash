@@ -1,20 +1,92 @@
-{% extends "admin/change_form.html" %}
+{% extends "backslash/base.html" %}
 {% load url from future %}
-{% load i18n %}
+{% load i18n admin_urls admin_static admin_modify %}
 
-{% block extrastyle %}
+
+{% block title %}{% if add %}{% trans "Add" %} {{ opts.verbose_name }}{% else %}{{ original }}{% endif %} - {{ block.super }}{% endblock %}
+
+
+{% block extrahead %}
   {{ block.super }}
-  <link href="{{ STATIC_URL|default:MEDIA_URL }}backslash/backslash.css" type="text/css" rel="stylesheet" />
-  <link href="{{ STATIC_URL|default:MEDIA_URL }}stylesheets/backslash.css" type="text/css" rel="stylesheet" />
+  <link href="{% static "backslash/stylesheets/change-form.css" %}" type="text/css" rel="stylesheet" />
+  <link href="{% static "backslash/stylesheets/widgets.css" %}" type="text/css" rel="stylesheet" />
+  <script src="{% url "admin:jsi18n" %}" type="text/javascript"></script>
+  {{ media }}
 {% endblock %}
 
-{% block userlinks %}{% include "backslash/_userlinks.html" %}{% endblock %}
+
+{% block bodyclass %}{{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} change-form limit-width{% endblock %}
+
+
+{% block pageclass %}{{ opts.model_name }}-form-page{% endblock %}
+
 
 {% block breadcrumbs %}{% if not is_popup %}
-<div class="breadcrumbs">
-     <a href="../../../">{% trans "Home" %}</a> &gt;
-     {% comment %}<a href="../../">{{ app_label|capfirst|escape }}</a> &gt; {% endcomment %}
-     {% if has_change_permission %}<a href="../">{{ opts.verbose_name_plural|capfirst }}</a>{% else %}{{ opts.verbose_name_plural|capfirst }}{% endif %} &gt;
-     <span class="active">{% if add %}{% trans "Add" %} {{ opts.verbose_name }}{% else %}{{ original|truncatewords:"18" }}{% endif %}</span>
-</div>
+  <ul class="breadcrumbs">
+    <li>{% if has_change_permission %}<a href="../">{{ opts.verbose_name_plural|capfirst }}</a>{% else %}{{ opts.verbose_name_plural|capfirst }}{% endif %} &#92;</li>
+  </ul>
 {% endif %}{% endblock %}
+
+
+{% block content_title %}{% if add %}{% trans "Add" %} {{ opts.verbose_name }}{% else %}{{ original|truncatewords:"18" }}{% endif %}{% endblock %}
+
+
+{% block object_toolbar %}
+  {% if change %}{% if not is_popup %}
+  <ul class="object-toolbar">
+    {% block object-tools-items %}
+    <li>
+      {% url opts|admin_urlname:"history" original.pk|admin_urlquote as history_url %}
+      <a href="{% add_preserved_filters history_url %}" class="historylink button">{% trans "History" %}</a>
+    </li>
+    {% if has_absolute_url %}
+    <li>
+      <a href="{% url "admin:view_on_site" content_type_id original.pk %}" class="viewsitelink button">{% trans "View on site" %}</a>
+    </li>
+    {% endif %}
+    {% endblock %}
+  </ul>
+  {% endif %}{% endif %}
+{% endblock %}
+
+
+{% block content %}
+  <form {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post" id="{{ opts.model_name }}_form">{% csrf_token %}{% block form_top %}{% endblock %}
+    <div>
+    {% if is_popup %}<input type="hidden" name="_popup" value="1" />{% endif %}
+    {% if save_on_top %}{% block submit_buttons_top %}{% submit_row %}{% endblock %}{% endif %}
+    {% if errors %}
+        <p class="errornote">
+        {% if errors|length == 1 %}{% trans "Please correct the error below." %}{% else %}{% trans "Please correct the errors below." %}{% endif %}
+        </p>
+        {{ adminform.form.non_field_errors }}
+    {% endif %}
+
+    {% block field_sets %}
+    {% for fieldset in adminform %}
+      {% include "backslash/includes/fieldset.html" %}
+    {% endfor %}
+    {% endblock %}
+
+    {% block after_field_sets %}{% endblock %}
+
+    {% block inline_field_sets %}
+    {% for inline_admin_formset in inline_admin_formsets %}
+        {% include inline_admin_formset.opts.template %}
+    {% endfor %}
+    {% endblock %}
+
+    {% block after_related_objects %}{% endblock %}
+
+    {% block submit_buttons_bottom %}{% submit_row %}{% endblock %}
+
+    {% if adminform.first_field and add %}
+       <script type="text/javascript">document.getElementById("{{ adminform.first_field.id_for_label }}").focus();</script>
+    {% endif %}
+
+    {# JavaScript for prepopulated fields #}
+    {% prepopulated_fields_js %}
+
+    </div>
+  </form>
+{% endblock %}

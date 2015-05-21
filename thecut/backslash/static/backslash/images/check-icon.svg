@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>check-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSArtboardGroup" transform="translate(-433.000000, -400.000000)" fill="#FFFFFF">
+            <g id="check-mark" sketch:type="MSLayerGroup" transform="translate(432.000000, 399.000000)">
+                <path d="M5.39754702,11.7889244 C5.79620337,12.0992449 6.36423404,12.0637938 6.72104465,11.7063242 L14.7084714,2.70230002 C15.0982406,2.31181105 15.0970175,1.67992398 14.7057395,1.29094075 C14.3144616,0.901957514 13.6812978,0.903178159 13.2915286,1.29366713 L5.94890751,9.68678649 L2.61502623,6.31322463 C2.17954603,5.97423994 1.55116295,6.05175316 1.21149335,6.48635524 C0.871823742,6.92095733 0.949493574,7.54807332 1.38497377,7.887058 L5.39754702,11.7889244 Z" id="check-icon" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

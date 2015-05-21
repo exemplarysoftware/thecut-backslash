@@ -1,36 +1,45 @@
-django.jQuery(document).ready(function($) {
+backslashRequire(
 
-    var $noticesContainer = $('#notices');
-    var server = $noticesContainer.attr('data-server');
-    var domain = $noticesContainer.attr('data-domain');
-    var url = 'https://notices.thecut.net.au/notices.xml' + '?tags=' + server + '&tags=' + domain;
+    ['jquery', 'domReady!'],
 
-    $.ajax({
-	url: url,
-	dataType: 'xml',
-	crossDomain: true,
-	success: function( data ) {
+    function ($) {
 
-	    $(data).find('entry').each(function(iteration) {
-		if (iteration == 0) {
-		    $noticesContainer.before($('<h1>').text('Notices'));
-		}
+        'use strict';
 
-		var title = $(this).find('title').text();
-		var content = $(this).find('summary').text();
-		var image = $(this).find('link[type="image/jpeg"]')
+        var $noticesContainer = $('#notices');
+        var server = $noticesContainer.attr('data-server'),
+            domain = $noticesContainer.attr('data-domain');
+        var url = 'https://notices.thecut.net.au/notices.xml' + '?tags=' + server + '&tags=' + domain;
 
-		var $li = $('<li>')
-		var $h2 = $('<h2>').text(title);
-		$li.append($h2);
+        $.ajax({
+            url: url,
+            dataType: 'xml',
+            crossDomain: true,
+            success: function (data) {
+                $(data).find('entry').each(function (iteration, Element) {
+                    var $entry = $(Element);
 
-		if ( image != null ) {
-		    $li.append($('<img>').attr('src', image.attr('href')));
-		}
+                    if (iteration === 0) {
+                        $noticesContainer.before($('<h1>').text('Notices'));
+                    }
 
-		$noticesContainer.append($li.append(content));
-	    })
-	}
-    })
+                    var title = $entry.find('title').text();
+                    var content = $entry.find('summary').text();
+                    var $image = $entry.find('link[type="image/jpeg"]');
 
-});
+                    var $li = $('<li>');
+                    var $h2 = $('<h2>').text(title);
+                    $li.append($h2);
+
+                    if ($image.length) {
+                        $li.append($('<img>').attr('src', $image.attr('href')));
+                    }
+
+                    $noticesContainer.append($li.append(content));
+                });
+            }
+        });
+
+    }
+
+);
