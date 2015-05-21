@@ -17,7 +17,7 @@ backslashRequire(
             $('.changelist .results').toggleClass('grid');
             // Toggle label on trigger
             $(this).text(function (i, text) {
-                return text === 'Switch to List View' ? 'Switch to Grid View' : 'Switch to List View';
+                return text === 'List View' ? 'Grid View' : 'List View';
             });
         });
 
