@@ -1,9 +1,14 @@
 {% extends "backslash/base.html" %}
+{% load admin_static %}
 
 
 {% block title %}Dashboard - {{ block.super }}{% endblock %}
 
 
+{% block extrahead %}
+  {{ block.super }}
+  <script src="{% static "backslash/notices.js" %}" type="text/javascript"></script>
+{% endblock %}
 
 
 {% block userlinks %}{% include "backslash/_userlinks.html" %}{% endblock %}
@@ -22,6 +27,6 @@
     <p>Select an area to manage from the sidebar to begin.</p>
   </div>
 
-  <ul id="notices" data-domain="{{ current_site.domain }}" data-server="{{ request.META.SERVER_NAME }}"></ul>
+  <ul id="notices" data-domain="{% if request.site %}{{ request.site.domain }}{% elif current_site %}{{ current_site.domain }}{% endif %}" data-server="{{ request.META.SERVER_NAME }}"></ul>
 
 {% endblock %}
