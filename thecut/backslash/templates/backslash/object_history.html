@@ -13,7 +13,6 @@
   <ul class="breadcrumbs">
     <li><a href="{% url opts|admin_urlname:"changelist" %}">{{ module_name }}</a> &#92;</li>
     <li><a href="{% url opts|admin_urlname:"change" object.pk|admin_urlquote %}">{{ object|truncatewords:"18" }}</a> &#92;</li>
-    <li>{% trans "History" %}</li>
   </ul>
 {% endblock %}
 
