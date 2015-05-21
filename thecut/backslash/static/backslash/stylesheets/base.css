@@ -415,9 +415,6 @@ input[type="submit"]:active {
  */
 
 .button {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
   display: inline-block;
   padding: 10px 15px 8px;
   color: #fff;
@@ -499,11 +496,9 @@ input[type="submit"]:active {
 
 .button.low {
   background-color: transparent;
-  background-image: none;
   color: #636773;
   padding-top: 8px;
   padding-bottom: 6px;
-  text-shadow: none;
   border: 2px solid #CED1D9;
 }
 
@@ -522,10 +517,8 @@ input[type="submit"]:active {
  */
 
 .button.disabled {
-  background-image: none;
   background-color: #E6E6E6;
   color: #636773;
-  text-shadow: none;
   border: none;
   cursor: not-allowed;
 }
