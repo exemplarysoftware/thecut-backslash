@@ -133,10 +133,6 @@ fieldset:last-child,
   vertical-align: middle;
 }
 
-.field-content textarea {
-  height: 320px;
-}
-
 .form-row .datetime {
   margin-bottom: 3px;
 }
