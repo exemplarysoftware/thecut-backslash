@@ -1,0 +1,64 @@
+/*
+ * Notices styles
+ */
+
+#notices h2,
+#notices h3,
+#notices h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#notices h2:first-child,
+#notices h3:first-child,
+#notices h4:first-child {
+  margin-top: 0;
+}
+
+#notices h2 {
+  font-size: 1.286em;
+}
+
+#notices h3 {
+  font-size: 1.148em;
+}
+
+#notices h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#notices p {
+  margin-bottom: 5px;
+}
+
+#notices a {
+  color: #00AEEE;
+  text-decoration: underline;
+}
+
+#notices a:hover,
+#notices a:focus {
+  color: #009BD4;
+}
+
+#notices > li > ol,
+#notices > li > ul {
+  list-style-position: inside;
+}
+
+#notices > li > ol {
+  list-style-type: decimal;
+}
+
+#notices > li > ul {
+  list-style-type: disc;
+}
+
+#notices > li {
+  max-width: 720px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 3px solid #00AEEE;
+  background: #fafafa;
+}
