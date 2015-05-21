@@ -2,6 +2,27 @@
  * (Media) Changelist Styles
  */
 
+.page-header .object-toolbar .trigger {
+  padding-left: 32px;
+  background-image: url(../images/list-view-icon.png);
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+}
+
+.page-header .object-toolbar .trigger.grid-view {
+  background-image: url(../images/grid-view-icon.png);
+}
+
+@media all and (min-width: 0) {
+  .page-header .object-toolbar .trigger {
+  background-image: url(../images/list-view-icon.svg);
+  }
+
+  .page-header .object-toolbar .trigger.grid-view {
+    background-image: url(../images/grid-view-icon.svg);
+  }
+}
+
  /*
   ** List View
   ** on the media list, the thumbnail is displayed first followed by
