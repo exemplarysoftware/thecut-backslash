@@ -434,6 +434,10 @@ fieldset:last-child,
   float: right;
 }
 
+.inline-group .field-content textarea {
+  height: 120px;
+}
+
 .inline-group .empty-form {
   display: none;
 }
