@@ -15,6 +15,9 @@ backslashRequire(
         // Toggle grid class
         $('#view-trigger').on('click', function () {
             $('.changelist .results').toggleClass('grid');
+
+            $(this).toggleClass('grid-view');
+
             // Toggle label on trigger
             $(this).text(function (i, text) {
                 return text === 'List View' ? 'Grid View' : 'List View';
