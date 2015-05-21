@@ -1,5 +1,9 @@
 {% extends "backslash/base.html" %}
-{% load i18n %}
+
+
+{% block title %}Dashboard - {{ block.super }}{% endblock %}
+
+
 
 
 {% block userlinks %}{% include "backslash/_userlinks.html" %}{% endblock %}
@@ -7,7 +11,9 @@
 
 {% block breadcrumbs %}{% endblock %}
 
+
 {% block pageclass %}dashboard{% endblock %}
+
 
 {% block content %}
 
