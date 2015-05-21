@@ -1,3 +1,7 @@
 /*
  * Dashboard Styles
  */
+
+ .dashboard .std-content {
+  margin-bottom: 40px;
+ }
