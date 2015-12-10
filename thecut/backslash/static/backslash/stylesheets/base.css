@@ -230,7 +230,8 @@ input[type="password"],
 input[type="date"],
 input[type="datetime"],
 input[type="search"],
-input[type="url"], /* add input types as needed */
+input[type="url"],
+input[type="tel"], /* add input types as needed */
 textarea {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -253,7 +254,8 @@ input[type="password"]:last-child,
 input[type="date"]:last-child,
 input[type="datetime"]:last-child,
 input[type="search"]:last-child,
-input[type="url"]:last-child, /* add input types as needed */
+input[type="url"]:last-child,
+input[type="tel"]:last-child, /* add input types as needed */
 textarea:last-child {
   margin-bottom: 0;
 }
@@ -265,7 +267,8 @@ input[type="password"],
 input[type="date"],
 input[type="datetime"],
 input[type="search"],
-input[type="url"] {
+input[type="url"],
+input[type="tel"] {
   height: 36px;
 }
 
@@ -284,6 +287,7 @@ input[type="date"]:focus,
 input[type="datetime"]:focus,
 input[type="search"]:focus,
 input[type="url"]:focus,
+input[type="tel"]:focus,
 textarea:focus {
   color: #0A0B0D;
   background-color: #fff;
@@ -306,6 +310,7 @@ input[type="date"]:disabled,
 input[type="datetime"]:disabled,
 input[type="search"]:disabled,
 input[type="url"]:disabled,
+input[type="tel"]:disabled,
 textarea:disabled {
   background-color: #f3f3f3;
   cursor: not-allowed;
