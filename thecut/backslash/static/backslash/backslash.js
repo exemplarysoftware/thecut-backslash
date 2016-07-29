@@ -45,6 +45,11 @@ backslashRequire(
             event.preventDefault();
         });
 
+        //Enable javascript needed to make the select all functionality work in change_list
+        $(document).ready(function($) {
+            $("tr input.action-select").actions();
+        });
+
         // $('body > .header').on('mouseover', function () {
         //     $('body').addClass('nav-open');
         // });
