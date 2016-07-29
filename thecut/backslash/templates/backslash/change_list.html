@@ -12,14 +12,6 @@
   <script src="{% url "admin:jsi18n" %}" type="text/javascript"></script>
   {{ media.js }}
 
-<script type="text/javascript">
-(function($) {
-    $(document).ready(function($) {
-        $("tr input.action-select").actions();
-    });
-})(django.jQuery);
-</script>
-
 {% endblock %}
 
 
