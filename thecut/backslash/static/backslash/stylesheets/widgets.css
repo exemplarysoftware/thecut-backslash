@@ -195,6 +195,14 @@
   top: 180px;
 }
 
+.related-widget-wrapper .selector-chooser li  {
+  margin-top: 5px;
+}
+
+.related-widget-wrapper .selector-chooser:first-child  {
+  margin-top: 0;
+}
+
 .related-widget-wrapper .selector-chooser a  {
   font-size: 0;
 }
@@ -208,13 +216,13 @@
   box-sizing: border-box;
   display: block;
   content: "\025BA";
-  font-size: 16px;
+  font-size: 14px;
   width: 25px;
   height: 25px;
   text-align: center;
   background: #00AEEE;
   border-radius: 100%;
-  padding-top: 2px;
+  padding-top: 4px;
   padding-bottom: 3px;
   padding-left: 2px;
   color: #ffffff;
@@ -225,13 +233,13 @@
   box-sizing: border-box;
   display: block;
   content: "\025C4";
-  font-size: 16px;
+  font-size: 14px;
   width: 25px;
   height: 25px;
   text-align: center;
   background: #00AEEE;
   border-radius: 100%;
-  padding-top: 2px;
+  padding-top: 4px;
   padding-bottom: 3px;
   padding-right: 2px;
   color: #ffffff;
@@ -256,5 +264,6 @@
 }
 
 .related-widget-wrapper .selector-available select  {
-  min-height: 300px;
+  min-height: 250px;
+  margin-top: 7px;
 }
