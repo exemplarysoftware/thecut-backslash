@@ -174,3 +174,99 @@
 .clockbox .calendar-cancel a:focus {
   text-decoration: underline;
 }
+
+
+/*
+ ** Related Widget
+ */
+
+.related-widget-wrapper .selector-available,
+.related-widget-wrapper .selector-chosen  {
+  width: 47%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.related-widget-wrapper .selector-chooser  {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  top: 180px;
+}
+
+.related-widget-wrapper .selector-chooser li  {
+  margin-top: 10px;
+}
+
+.related-widget-wrapper .selector-chooser:first-child  {
+  margin-top: 0;
+}
+
+.related-widget-wrapper .selector-chooser a  {
+  font-size: 0;
+  display: block;
+}
+
+.related-widget-wrapper .selector-chooser a:hover:before,
+.related-widget-wrapper .selector-chooser a:focus:before  {
+  background-color: #009BD4;
+}
+
+.related-widget-wrapper .selector-chooser .selector-add:before  {
+  box-sizing: border-box;
+  display: block;
+  content: "\025BA";
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background: #00AEEE;
+  border-radius: 100%;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  padding-left: 2px;
+  color: #ffffff;
+  box-shadow: 0 1px 0 0 #165971;
+  cursor: pointer;
+}
+
+.related-widget-wrapper .selector-chooser .selector-remove:before  {
+  box-sizing: border-box;
+  display: block;
+  content: "\025C4";
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background: #00AEEE;
+  border-radius: 100%;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  padding-right: 2px;
+  color: #ffffff;
+  box-shadow: 0 1px 0 0 #165971;
+  cursor: pointer;
+}
+
+.related-widget-wrapper .selector-available input,
+.related-widget-wrapper .selector-chosen input,
+.related-widget-wrapper .selector-available select,
+.related-widget-wrapper .selector-chosen select  {
+  width: 100%;
+}
+
+.related-widget-wrapper .selector-available #id_permissions_filter label,
+.related-widget-wrapper #id_permissions_filter input  {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.related-widget-wrapper #id_permissions_filter input  {
+  width: 96%;
+}
+
+.related-widget-wrapper .selector-available select  {
+  min-height: 250px;
+  margin-top: 7px;
+}
