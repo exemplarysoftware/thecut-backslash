@@ -121,7 +121,15 @@
   color: #00AEEE;
 }
 
+#changelist table tbody tr.selected {
+    background-color: #FFFFCC;
+}
 
+#changelist .actions.selected {
+    background: #fffccf;
+    border-top: 1px solid #fffee8;
+    border-bottom: 1px solid #edecd6;
+}
 
 /*
  ** Results List
