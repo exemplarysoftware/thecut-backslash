@@ -6,5 +6,5 @@ Available tests
   ``TestCaseName``
   -----------------
 
-  .. autoclass:: thecut.exampleapp.tests.module.TestClassName
+  .. autoclass:: thecut.backslash.tests.module.TestClassName
     :members:

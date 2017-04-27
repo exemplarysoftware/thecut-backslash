@@ -1,16 +1,16 @@
-=============================
-Welcome to thecut-exampleapp
-=============================
+===========================
+Welcome to thecut-backslash
+===========================
 
 ..
-  .. image:: https://travis-ci.org/thecut/thecut-exampleapp.svg
-      :target: https://travis-ci.org/thecut/thecut-exampleapp
+  .. image:: https://travis-ci.org/thecut/thecut-backslash.svg
+      :target: https://travis-ci.org/thecut/thecut-backslash
 
-  .. image:: https://codecov.io/github/thecut/thecut-exampleapp/coverage.svg
-      :target: https://codecov.io/github/thecut/thecut-exampleapp
+  .. image:: https://codecov.io/github/thecut/thecut-backslash/coverage.svg
+      :target: https://codecov.io/github/thecut/thecut-backslash
 
-  .. image:: https://readthedocs.org/projects/thecut-exampleapp/badge/?version=latest
-      :target: http://thecut-exampleapp.readthedocs.io/en/latest/?badge=latest
+  .. image:: https://readthedocs.org/projects/thecut-backslash/badge/?version=latest
+      :target: http://thecut-backslash.readthedocs.io/en/latest/?badge=latest
       :alt: Documentation Status
 
 A reusable application.
@@ -25,13 +25,13 @@ Features
 Documentation
 -------------
 
-The full documentation is at https://thecut-exampleapp.readthedocs.org.
+The full documentation is at https://thecut-backslash.readthedocs.org.
 
 
 Quickstart
 ----------
 
-Install ``thecut-exampleapp`` using the installation instructions found in the project documentation.
+Install ``thecut-backslash`` using the installation instructions found in the project documentation.
 
 
 Credits
