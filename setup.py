@@ -1,4 +1,3 @@
-from version import get_git_version
 from __future__ import print_function
 import codecs
 import io
@@ -6,6 +5,7 @@ import os
 #from thecut.exampleapp import __version__
 from setuptools import setup, find_packages
 import sys
+from version import get_git_version
 
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -26,7 +26,7 @@ long_description = read('README.rst', 'HISTORY.rst')
 setup(
     # General information
     name='thecut-backslash',
-    version=get_git_version,
+    version=get_git_version(),
 
     # Packaging
     packages=find_packages(exclude=['docs']),

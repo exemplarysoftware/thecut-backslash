@@ -26,6 +26,9 @@ try:
             {
                 'BACKEND': 'django.template.backends.django.DjangoTemplates',
                 'OPTIONS': {
+                    'context_processors': [
+                        'django.contrib.auth.context_processors.auth',
+                    ],
                     'loaders': [
                         ('django.template.loaders.cached.Loader',
                          ['django.template.loaders.filesystem.Loader',
