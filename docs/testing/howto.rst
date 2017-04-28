@@ -39,6 +39,14 @@ You can use ``virtualenv`` to test without polluting your system's Python enviro
 
 3. Follow 'Using your system's Python / Django' above.
 
+6. Run the test runner::
+
+    (thecut-ctas) $ python runtests.py
+
+7. Run the tests with coverage
+    coverage run --branch --omit=lib/* runtests.py
+    coverage report -m
+
 
 Using tox
 ---------------------------------
@@ -49,6 +57,7 @@ Python and Django versions.
 1. Install ``tox``::
 
     $ pip install -r requirements-test.txt
+    $ pip install "django>=1.8,<1.9"
 
 2. Run ``tox``::
 
