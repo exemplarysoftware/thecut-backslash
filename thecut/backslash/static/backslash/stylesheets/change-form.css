@@ -502,6 +502,14 @@ fieldset:last-child,
  */
 
 /*
+ ** CKEditor
+ */
+
+.django-ckeditor-widget[style] {
+  display: block !important;
+}
+
+/*
  ** Menus
  */
 
