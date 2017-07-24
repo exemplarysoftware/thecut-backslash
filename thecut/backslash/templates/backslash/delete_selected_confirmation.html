@@ -1,5 +1,11 @@
 {% extends "backslash/base.html" %}
-{% load i18n l10n admin_urls %}
+{% load i18n l10n admin_urls static %}
+
+{% block extrahead %}
+  {{ block.super }}
+  {{ media }}
+  <script type="text/javascript" src="{% static 'admin/js/cancel.js' %}"></script>
+{% endblock %}
 
 
 {% block title %}{{ title }} - {{ block.super }}{% endblock %}
@@ -37,7 +43,7 @@
       {% for deletable_object in deletable_objects %}
         <ul>{{ deletable_object|unordered_list }}</ul>
       {% endfor %}
-      <form action="" method="post">{% csrf_token %}
+      <form method="post">{% csrf_token %}
         <div>
           {% for obj in queryset %}
           <input type="hidden" name="{{ action_checkbox_name }}" value="{{ obj.pk|unlocalize }}" />

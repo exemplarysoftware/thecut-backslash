@@ -1,4 +1,4 @@
-<!DOCTYPE html>{% load admin_static i18n %}
+<!DOCTYPE html>{% load static i18n %}
 <html lang="{{ LANGUAGE_CODE|default:"en-au" }}">
 
   <head>
@@ -25,15 +25,11 @@
     <script src="{% static "backslash/lib/jquery.js" %}" type="text/javascript"></script>
     {% endif %}
 
-    <script type="text/javascript">
-        window.__admin_media_prefix__ = "{% filter escapejs %}{% static "admin/" %}{% endfilter %}";
-    </script>
-
     {% block extrahead %}{% endblock %}
 
   </head>
 
-  <body class="{% block bodyclass %}{% endblock %}{% if is_popup %} popup{% endif %}">
+  <body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}" data-admin-utc-offset="{% now "Z" %}">
     {% if not is_popup %}
     <div class="header">
       <a class="site-id" href="{% url "admin:index" %}">

@@ -1,6 +1,11 @@
 {% extends "backslash/base.html" %}
-{% load i18n admin_urls %}
+{% load i18n admin_urls static %}
 
+{% block extrahead %}
+  {{ block.super }}
+  {{ media }}
+  <script type="text/javascript" src="{% static 'admin/js/cancel.js' %}"></script>
+{% endblock %}
 
 {% block title %}{{ title }} - {{ block.super }}{% endblock %}
 
@@ -36,8 +41,7 @@
   {% else %}
       <p>{% blocktrans with escaped_object=object %}Are you sure you want to delete the {{ object_name }} "{{ escaped_object }}"? <br><br>All of the following related items will be deleted:{% endblocktrans %}</p>
       <ul>{{ deleted_objects|unordered_list }}</ul>
-      <form action="" method="post">
-        {% csrf_token %}
+      <form method="post">{% csrf_token %}
         <div>
           <input type="hidden" name="post" value="yes" />
           <input class="button danger" type="submit" value="{% trans "Yes, I'm sure" %}" />
