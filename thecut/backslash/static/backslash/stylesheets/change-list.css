@@ -59,12 +59,12 @@
   border-top: 1px solid #e1e1e1;
 }
 
-.changelist.filtered .changelist-form {
+.changelist.filtered #changelist-form {
   padding-right: 210px;
 }
 
-.changelist.filtered .changelist-form .results,
-.changelist.filtered .changelist-form .paginator {
+.changelist.filtered #changelist-form .results,
+.changelist.filtered #changelist-form .paginator {
   border-right: 1px solid #ececec;
 }
 
