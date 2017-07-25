@@ -433,6 +433,7 @@ fieldset:last-child,
 }
 
 .inline-group .inline-related fieldset {
+  margin-top: 25px;
   margin-bottom: 0;
 }
 
