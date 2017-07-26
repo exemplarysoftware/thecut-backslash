@@ -6,7 +6,7 @@ from django.contrib import admin
 class ModelAdmin(admin.ModelAdmin):
 
     def __init__(self, *args, **kwargs):
-        super (ModelAdmin, self).__init__(*args, **kwargs)
+        super(ModelAdmin, self).__init__(*args, **kwargs)
         app_label = self.model._meta.app_label
         model_name = self.model._meta.object_name.lower()
 
@@ -33,7 +33,7 @@ class ModelAdmin(admin.ModelAdmin):
             'backslash/{app}/{model}/delete_confirmation.html'.format(
                 app=app_label, model=model_name),
             'backslash/{app}/delete_confirmation.html'.format(app=app_label),
-            'backslash/delete_confirmation.html']
+            'backslash/delete_confirmation.html']  # NOQA
 
         self.delete_selected_confirmation_template = \
             self.delete_selected_confirmation_template or [
@@ -41,7 +41,7 @@ class ModelAdmin(admin.ModelAdmin):
                 app=app_label, model=model_name),
             'backslash/{app}/delete_selected_confirmation.html'.format(
                 app=app_label),
-            'backslash/delete_selected_confirmation.html']
+            'backslash/delete_selected_confirmation.html']  # NOQA
 
         self.object_history_template = self.object_history_template or [
             'backslash/{app}/{model}/object_history.html'.format(

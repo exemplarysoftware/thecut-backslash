@@ -10,12 +10,7 @@ from django.contrib.admin.options import (HORIZONTAL, VERTICAL, StackedInline,
 from thecut.backslash.decorators import register
 from thecut.backslash.options import ModelAdmin
 from thecut.backslash.sites import AdminSite, site
-
-
-try:
-    from django.utils.module_loading import autodiscover_modules
-except ImportError:  # Pre Django 1.7 compatibility
-    from .backports.module_loading import autodiscover_modules
+from django.utils.module_loading import autodiscover_modules
 
 
 __all__ = ['ACTION_CHECKBOX_NAME', 'AdminSite', 'AllValuesFieldListFilter',

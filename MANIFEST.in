@@ -1,4 +1,9 @@
 include RELEASE-VERSION
 include README
+include README.rst
+include HISTORY.rst
 graft thecut/backslash/static
 graft thecut/backslash/templates
+recursive-include docs *.rst
+include LICENSE
+

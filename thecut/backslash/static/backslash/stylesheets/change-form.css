@@ -161,7 +161,7 @@ fieldset:last-child,
 }
 
 .form-row .datetime .datetimeshortcuts {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 .form-row .checkbox-row input[type=checkbox],
@@ -315,6 +315,13 @@ fieldset:last-child,
   background-color: #0089BA;
 }
 
+/* Image Choice Fields */
+
+.form-row .imagechoicefield li {
+  max-width: 120px;
+  margin-right: 2%;
+}
+
 /* Remove button */
 
 .inline-group .inline-deletelink {
@@ -426,6 +433,7 @@ fieldset:last-child,
 }
 
 .inline-group .inline-related fieldset {
+  margin-top: 25px;
   margin-bottom: 0;
 }
 
@@ -500,6 +508,14 @@ fieldset:last-child,
 /*
  * App Specific
  */
+
+/*
+ ** CKEditor
+ */
+
+.django-ckeditor-widget[style] {
+  display: block !important;
+}
 
 /*
  ** Menus
