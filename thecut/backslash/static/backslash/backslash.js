@@ -30,8 +30,6 @@ backslashRequire(
 
         'use strict';
 
-        // var has_logger = !!(window.console && window.console.log);
-
         $.ajaxSetup({traditional: true});
 
         $('body').addClass('js-enabled').ajaxStart(function () {
@@ -44,19 +42,6 @@ backslashRequire(
         $('a[href="#"]').click(function (event) {
             event.preventDefault();
         });
-
-        //Enable javascript needed to make the select all functionality work in change_list
-        $(document).ready(function($) {
-            $("tr input.action-select").actions();
-        });
-
-        // $('body > .header').on('mouseover', function () {
-        //     $('body').addClass('nav-open');
-        // });
-
-        // $('body > .header').on('mouseout', function () {
-        //     $('body').removeClass('nav-open');
-        // });
 
     }
 );
